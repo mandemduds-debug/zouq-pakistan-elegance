@@ -4,7 +4,6 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { MapPin, Phone, Mail, Clock, Instagram, Facebook } from 'lucide-react';
-
 const ContactSection = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [formData, setFormData] = useState({
@@ -14,39 +13,31 @@ const ContactSection = () => {
     message: ''
   });
   const sectionRef = useRef<HTMLElement>(null);
-
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
-      },
-      { threshold: 0.2 }
-    );
-
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        setIsVisible(true);
+      }
+    }, {
+      threshold: 0.2
+    });
     if (sectionRef.current) {
       observer.observe(sectionRef.current);
     }
-
     return () => observer.disconnect();
   }, []);
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle form submission
     console.log('Form submitted:', formData);
   };
-
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
     });
   };
-
-  return (
-    <section id="kontakt" ref={sectionRef} className="py-20 bg-background">
+  return <section id="kontakt" ref={sectionRef} className="py-20 bg-background">
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className={`text-center mb-16 ${isVisible ? 'animate-fade-up' : 'opacity-0'}`}>
@@ -78,7 +69,8 @@ const ContactSection = () => {
                   <div>
                     <h4 className="font-semibold text-foreground mb-1">Telefon</h4>
                     <p className="text-muted-foreground">+47 22 12 34 56</p>
-                    <p className="text-sm text-muted-foreground">Hovedkontor & Oslo</p>
+                    <p className="text-sm text-muted-foreground">
+                  </p>
                   </div>
                 </div>
 
@@ -127,16 +119,10 @@ const ContactSection = () => {
             <div>
               <h4 className="font-semibold text-foreground mb-4">Følg oss</h4>
               <div className="flex space-x-4">
-                <a
-                  href="#"
-                  className="w-10 h-10 bg-gradient-emerald rounded-lg flex items-center justify-center hover-lift transition-all"
-                >
+                <a href="#" className="w-10 h-10 bg-gradient-emerald rounded-lg flex items-center justify-center hover-lift transition-all">
                   <Instagram className="h-5 w-5 text-white" />
                 </a>
-                <a
-                  href="#"
-                  className="w-10 h-10 bg-gradient-gold rounded-lg flex items-center justify-center hover-lift transition-all"
-                >
+                <a href="#" className="w-10 h-10 bg-gradient-gold rounded-lg flex items-center justify-center hover-lift transition-all">
                   <Facebook className="h-5 w-5 text-background" />
                 </a>
               </div>
@@ -157,28 +143,13 @@ const ContactSection = () => {
                       <label htmlFor="name" className="block text-sm font-semibold text-foreground mb-2">
                         Navn *
                       </label>
-                      <Input
-                        id="name"
-                        name="name"
-                        type="text"
-                        required
-                        value={formData.name}
-                        onChange={handleInputChange}
-                        className="border-border focus:ring-primary focus:border-primary"
-                      />
+                      <Input id="name" name="name" type="text" required value={formData.name} onChange={handleInputChange} className="border-border focus:ring-primary focus:border-primary" />
                     </div>
                     <div>
                       <label htmlFor="phone" className="block text-sm font-semibold text-foreground mb-2">
                         Telefon
                       </label>
-                      <Input
-                        id="phone"
-                        name="phone"
-                        type="tel"
-                        value={formData.phone}
-                        onChange={handleInputChange}
-                        className="border-border focus:ring-primary focus:border-primary"
-                      />
+                      <Input id="phone" name="phone" type="tel" value={formData.phone} onChange={handleInputChange} className="border-border focus:ring-primary focus:border-primary" />
                     </div>
                   </div>
                   
@@ -186,37 +157,17 @@ const ContactSection = () => {
                     <label htmlFor="email" className="block text-sm font-semibold text-foreground mb-2">
                       E-post *
                     </label>
-                    <Input
-                      id="email"
-                      name="email"
-                      type="email"
-                      required
-                      value={formData.email}
-                      onChange={handleInputChange}
-                      className="border-border focus:ring-primary focus:border-primary"
-                    />
+                    <Input id="email" name="email" type="email" required value={formData.email} onChange={handleInputChange} className="border-border focus:ring-primary focus:border-primary" />
                   </div>
                   
                   <div>
                     <label htmlFor="message" className="block text-sm font-semibold text-foreground mb-2">
                       Melding *
                     </label>
-                    <Textarea
-                      id="message"
-                      name="message"
-                      required
-                      rows={5}
-                      value={formData.message}
-                      onChange={handleInputChange}
-                      className="border-border focus:ring-primary focus:border-primary resize-none"
-                      placeholder="Fortell oss hvordan vi kan hjelpe deg..."
-                    />
+                    <Textarea id="message" name="message" required rows={5} value={formData.message} onChange={handleInputChange} className="border-border focus:ring-primary focus:border-primary resize-none" placeholder="Fortell oss hvordan vi kan hjelpe deg..." />
                   </div>
                   
-                  <Button 
-                    type="submit" 
-                    className="w-full bg-gradient-gold text-background font-semibold hover:opacity-90 transition-all hover-lift text-lg py-6"
-                  >
+                  <Button type="submit" className="w-full bg-gradient-gold text-background font-semibold hover:opacity-90 transition-all hover-lift text-lg py-6">
                     Send Melding
                   </Button>
                 </form>
@@ -225,8 +176,6 @@ const ContactSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ContactSection;
