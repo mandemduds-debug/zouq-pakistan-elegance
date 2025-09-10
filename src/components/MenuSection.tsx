@@ -8,7 +8,8 @@ import desserts from '@/assets/desserts.jpg';
 const menuItems = [
   {
     category: 'Grill & Tandoor',
-    image: '/lovable-uploads/df28d691-fcae-4363-a23c-6a9561a94587.png',
+    thumbnail: '/lovable-uploads/40eb0406-05e1-4dbb-9c63-c74807ba87f9.png',
+    image: '/lovable-uploads/ebda083b-c1b2-45f2-9fe2-c395c1766af5.png',
     dishes: [
       { name: 'Chicken Tikka', description: 'Saftig kylling marinert i yoghurt og krydder', price: '285,-' },
       { name: 'Seekh Kebab', description: 'Krydret lammefarse grillet på spyd', price: '295,-' },
@@ -17,6 +18,7 @@ const menuItems = [
   },
   {
     category: 'Risretter',
+    thumbnail: biryaniDish,
     image: biryaniDish,
     dishes: [
       { name: 'Lamb Biryani', description: 'Aromatisk basmatiris med mørt lam og saffran', price: '345,-' },
@@ -26,6 +28,7 @@ const menuItems = [
   },
   {
     category: 'Desserter',
+    thumbnail: desserts,
     image: desserts,
     dishes: [
       { name: 'Kheer', description: 'Kremet rispudding med pistasienøtter', price: '125,-' },
@@ -85,7 +88,7 @@ const MenuSection = () => {
             >
               <div className="relative aspect-square overflow-hidden">
                 <img
-                  src={category.image}
+                  src={category.thumbnail}
                   alt={category.category}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
