@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Calendar, ArrowRight } from 'lucide-react';
-import signatureMenuImage from '@/assets/news-signature-menu.jpg';
+
 import culturalEveningImage from '@/assets/news-cultural-evening.jpg';
 import renovationImage from '@/assets/news-renovation.jpg';
 
@@ -11,7 +11,7 @@ const newsItems = [
     title: 'Ny signaturmeny lansert',
     date: '15. mars 2024',
     excerpt: 'Opplev våre nyeste kulinariske kreasjoner med sesongens beste ingredienser og tradisjonelle pakistanske smaker.',
-    image: signatureMenuImage,
+    image: '/lovable-uploads/ebda083b-c1b2-45f2-9fe2-c395c1766af5.png',
     category: 'Meny'
   },
   {
