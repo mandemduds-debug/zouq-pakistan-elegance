@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Music, Users, Utensils, Sparkles } from 'lucide-react';
-import restaurantInterior from '@/assets/restaurant-interior.jpg';
 
 const experiences = [
   {
@@ -55,7 +54,7 @@ const ExperienceSection = () => {
           <div className={`relative ${isVisible ? 'animate-fade-up' : 'opacity-0'}`}>
             <div className="relative overflow-hidden rounded-lg shadow-luxury">
               <img
-                src={restaurantInterior}
+                src="/lovable-uploads/7155ae80-fe93-479c-a432-96b8038af0d3.png"
                 alt="Zouq restaurant experience"
                 className="w-full h-96 object-cover"
               />
