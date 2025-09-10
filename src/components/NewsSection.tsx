@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Calendar, ArrowRight } from 'lucide-react';
 import signatureMenuImage from '@/assets/news-signature-menu.jpg';
 import culturalEveningImage from '@/assets/news-cultural-evening.jpg';
-import awardWinningImage from '@/assets/news-award-winning.jpg';
+import renovationImage from '@/assets/news-renovation.jpg';
 
 const newsItems = [
   {
@@ -22,10 +22,10 @@ const newsItems = [
     category: 'Event'
   },
   {
-    title: 'Zouq vinner "Årets Restaurantopplevelse"',
+    title: 'Ny interiørdesign og oppussing',
     date: '1. april 2024',
-    excerpt: 'Vi er stolte over å motta den prestisjetunge utmerkelsen for vår unike kombinasjon av tradisjonell pakistansk mat og moderne eleganse.',
-    image: awardWinningImage,
+    excerpt: 'Vi har oppgradert våre lokaler med ny interiørdesign som kombinerer moderne eleganse med tradisjonelle pakistanske elementer.',
+    image: renovationImage,
     category: 'Nyheter'
   }
 ];
