@@ -83,7 +83,7 @@ const MenuSection = () => {
               onClick={() => setActiveCategory(index)}
               style={{ animationDelay: `${index * 200}ms` }}
             >
-              <div className="relative h-64 overflow-hidden">
+              <div className="relative h-48 overflow-hidden">
                 <img
                   src={category.image}
                   alt={category.category}
