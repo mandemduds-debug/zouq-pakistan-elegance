@@ -158,7 +158,6 @@ const MenuSection = () => {
               Gå til bestilling
             </a>
           </Button>
-          <p className="mt-2 text-sm text-muted-foreground">Lenke legges inn senere.</p>
         </div>
       </div>
     </section>
