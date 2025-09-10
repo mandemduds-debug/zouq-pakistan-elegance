@@ -25,7 +25,7 @@ const newsItems = [
     title: 'Ny interiørdesign og oppussing',
     date: '1. april 2024',
     excerpt: 'Vi har oppgradert våre lokaler med ny interiørdesign som kombinerer moderne eleganse med tradisjonelle pakistanske elementer.',
-    image: renovationImage,
+    image: '/lovable-uploads/6b57ee31-1ce3-47a3-8a1e-79d15770e2da.png',
     category: 'Nyheter'
   }
 ];
