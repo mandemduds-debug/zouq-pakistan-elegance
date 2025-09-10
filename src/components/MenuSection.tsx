@@ -83,7 +83,7 @@ const MenuSection = () => {
               onClick={() => setActiveCategory(index)}
               style={{ animationDelay: `${index * 200}ms` }}
             >
-              <div className="relative aspect-[4/3] overflow-hidden">
+              <div className="relative aspect-square overflow-hidden">
                 <img
                   src={category.image}
                   alt={category.category}
@@ -122,11 +122,11 @@ const MenuSection = () => {
                   </div>
                 </div>
                 
-                <div className="relative">
+                <div className="relative aspect-square overflow-hidden rounded-lg shadow-luxury">
                   <img
                     src={menuItems[activeCategory].image}
                     alt={menuItems[activeCategory].category}
-                    className="w-full h-80 object-cover rounded-lg shadow-luxury"
+                    className="absolute inset-0 w-full h-full object-cover"
                   />
                 </div>
               </div>
