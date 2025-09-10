@@ -9,7 +9,7 @@ const locations = [
     address: 'Sandvika Storsenter, Storsenteret 2, 1338 Sandvika',
     phone: '+47 67 12 34 56',
     hours: 'Man-Søn: 16:00-23:00',
-    image: '/api/placeholder/400/300',
+    image: '/lovable-uploads/df1e41bf-c5fc-485b-a631-f0898f5169ab.png',
     description: 'Vår flaggskiprestaurant ved Sandvika Storsenter'
   },
   {
@@ -77,12 +77,20 @@ const LocationsSection = () => {
               style={{ animationDelay: `${index * 150}ms` }}
             >
               <div className="relative h-48 overflow-hidden">
-                <div className="w-full h-full bg-gradient-emerald flex items-center justify-center">
-                  <div className="text-white text-center">
-                    <MapPin className="h-12 w-12 mx-auto mb-2 opacity-50" />
-                    <div className="text-sm opacity-75">Bilde kommer snart</div>
+                {location.image.includes('placeholder') ? (
+                  <div className="w-full h-full bg-gradient-emerald flex items-center justify-center">
+                    <div className="text-white text-center">
+                      <MapPin className="h-12 w-12 mx-auto mb-2 opacity-50" />
+                      <div className="text-sm opacity-75">Bilde kommer snart</div>
+                    </div>
                   </div>
-                </div>
+                ) : (
+                  <img
+                    src={location.image}
+                    alt={`${location.name} restaurant`}
+                    className="w-full h-full object-cover"
+                  />
+                )}
                 <div className="absolute inset-0 bg-gradient-overlay opacity-20 group-hover:opacity-40 transition-opacity" />
               </div>
               
