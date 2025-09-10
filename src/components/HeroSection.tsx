@@ -55,8 +55,9 @@ const HeroSection = () => {
               Book Bord
             </Button>
             <Button 
+              variant="outline" 
               size="lg"
-              className="bg-gradient-gold text-background font-semibold hover:opacity-90 transition-all hover-lift text-lg px-8 py-6"
+              className="bg-white text-gold border-white hover:bg-white/90 hover:text-gold transition-all hover-lift text-lg px-8 py-6 font-semibold"
               onClick={() => document.getElementById('meny')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Bestill Takeaway
