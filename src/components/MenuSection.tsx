@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Download } from 'lucide-react';
+import { ShoppingCart } from 'lucide-react';
 import biryaniDish from '@/assets/biryani-dish.jpg';
 import authenticDesserts from '@/assets/authentic-desserts.jpg';
 
@@ -150,13 +150,15 @@ const MenuSection = () => {
           </Card>
         </div>
 
-        {/* Menu Info */}
+        {/* Bestilling */}
         <div className="text-center mt-12">
-          <p className="text-lg text-muted-foreground">
-            Se vår komplette meny med alle retter og priser ovenfor. 
-            <br />
-            Kontakt oss for spesielle allergier eller diettbehov.
-          </p>
+          <Button asChild size="lg" className="hover-lift">
+            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Gå til bestillingssystem">
+              <ShoppingCart className="mr-2 h-5 w-5" />
+              Gå til bestilling
+            </a>
+          </Button>
+          <p className="mt-2 text-sm text-muted-foreground">Lenke legges inn senere.</p>
         </div>
       </div>
     </section>
