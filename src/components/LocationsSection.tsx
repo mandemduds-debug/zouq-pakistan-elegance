@@ -10,7 +10,7 @@ const locations = [
     phone: '+47 67 12 34 56',
     hours: 'Man-Søn: 16:00-23:00',
     image: '/lovable-uploads/df1e41bf-c5fc-485b-a631-f0898f5169ab.png',
-    description: 'Vår flaggskiprestaurant ved Sandvika Storsenter'
+    description: 'Autentisk pakistansk luksus ved Sandvika Storsenter'
   },
   {
     name: 'Zouq Stavanger',
