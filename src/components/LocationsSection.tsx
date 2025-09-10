@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { MapPin, Clock, Phone } from 'lucide-react';
-import StavangerMap from './StavangerMap';
+import LocationMap from './LocationMap';
 
 const locations = [
   {
@@ -131,7 +131,7 @@ const LocationsSection = () => {
         {/* Interactive Map */}
         <div className={`mt-16 ${isVisible ? 'animate-fade-up' : 'opacity-0'}`}>
           <Card className="overflow-hidden shadow-luxury">
-            <StavangerMap />
+            <LocationMap />
           </Card>
         </div>
       </div>
