@@ -3,7 +3,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Download } from 'lucide-react';
 import biryaniDish from '@/assets/biryani-dish.jpg';
-import desserts from '@/assets/desserts.jpg';
+import authenticDesserts from '@/assets/authentic-desserts.jpg';
 
 const menuItems = [
   {
@@ -28,8 +28,8 @@ const menuItems = [
   },
   {
     category: 'Desserter',
-    thumbnail: desserts,
-    image: desserts,
+    thumbnail: authenticDesserts,
+    image: authenticDesserts,
     dishes: [
       { name: 'Kheer', description: 'Kremet rispudding med pistasienøtter', price: '125,-' },
       { name: 'Gulab Jamun', description: 'Søte melkeboller i kardemomme-sirup', price: '135,-' },
