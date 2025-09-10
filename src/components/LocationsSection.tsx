@@ -75,7 +75,9 @@ const LocationsSection: React.FC<LocationsSectionProps> = ({
         </div>
 
         {/* Locations Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className={`grid gap-8 ${
+          locations.length === 2 ? 'md:grid-cols-2 max-w-4xl mx-auto' : 'md:grid-cols-2 lg:grid-cols-3'
+        }`}>
           {locations.map((location, index) => (
             <Card
               key={index}
