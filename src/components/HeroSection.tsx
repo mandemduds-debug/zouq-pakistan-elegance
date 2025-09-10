@@ -60,7 +60,7 @@ const HeroSection = () => {
               className="border-white text-white hover:bg-white hover:text-background transition-all hover-lift text-lg px-8 py-6"
               onClick={() => document.getElementById('meny')?.scrollIntoView({ behavior: 'smooth' })}
             >
-              Se Meny
+              Bestill Takeaway
             </Button>
           </div>
         </div>
