@@ -10,7 +10,7 @@ const locations = [
     phone: '+47 67 12 34 56',
     hours: 'Man-Søn: 16:00-23:00',
     image: '/lovable-uploads/df1e41bf-c5fc-485b-a631-f0898f5169ab.png',
-    description: 'Autentisk pakistansk luksus ved Sandvika Storsenter'
+    description: 'Tradisjonell pakistansk mat i hjertet av Sandvika'
   },
   {
     name: 'Zouq Stavanger',
@@ -26,7 +26,7 @@ const locations = [
     phone: '+47 51 65 43 21',
     hours: 'Man-Søn: 16:30-22:30',
     image: '/lovable-uploads/3aac6634-81d7-42d6-9d70-b33f276fd4a1.png',
-    description: 'Luksuriøs pakistansk cuisine i Sandnes'
+    description: 'Autentiske smaker ved Kvadrat Storsenter'
   }
 ];
 
