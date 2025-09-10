@@ -65,7 +65,7 @@ const AboutSection = () => {
                 <div className="text-sm text-muted-foreground uppercase tracking-wide">Signaturretter</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-serif font-bold text-gold mb-2">5</div>
+                <div className="text-3xl font-serif font-bold text-gold mb-2">3</div>
                 <div className="text-sm text-muted-foreground uppercase tracking-wide">Lokasjoner</div>
               </div>
             </div>

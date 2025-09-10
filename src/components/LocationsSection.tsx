@@ -5,28 +5,12 @@ import { MapPin, Clock, Phone } from 'lucide-react';
 
 const locations = [
   {
-    name: 'Zouq Oslo',
-    address: 'Karl Johans gate 12, 0154 Oslo',
-    phone: '+47 22 12 34 56',
+    name: 'Zouq Sandvika',
+    address: 'Sandvika Storsenter, Storsenteret 2, 1338 Sandvika',
+    phone: '+47 67 12 34 56',
     hours: 'Man-Søn: 16:00-23:00',
     image: '/api/placeholder/400/300',
-    description: 'Vår flaggskiprestaurant i hjertet av Oslo'
-  },
-  {
-    name: 'Zouq Bergen',
-    address: 'Bryggen 8, 5003 Bergen',
-    phone: '+47 55 12 34 56',
-    hours: 'Man-Søn: 17:00-22:30',
-    image: '/api/placeholder/400/300',
-    description: 'Autentisk pakistansk mat ved historiske Bryggen'
-  },
-  {
-    name: 'Zouq Trondheim',
-    address: 'Munkegata 15, 7011 Trondheim',
-    phone: '+47 73 12 34 56',
-    hours: 'Man-Søn: 16:30-23:00',
-    image: '/api/placeholder/400/300',
-    description: 'Luksuriøs spisestue i Trondheims gamle bydel'
+    description: 'Vår flaggskiprestaurant ved Sandvika Storsenter'
   },
   {
     name: 'Zouq Stavanger',
@@ -34,15 +18,15 @@ const locations = [
     phone: '+47 51 12 34 56',
     hours: 'Man-Søn: 17:00-22:00',
     image: '/api/placeholder/400/300',
-    description: 'Moderne eleganse på Oljehovedstaden'
+    description: 'Moderne eleganse i Oljehovedstaden'
   },
   {
-    name: 'Zouq Tromsø',
-    address: 'Storgata 45, 9008 Tromsø',
-    phone: '+47 77 12 34 56',
-    hours: 'Man-Søn: 16:00-22:30',
+    name: 'Zouq Sandnes',
+    address: 'Kvadrat Storsenter, Kvadrat 4, 4306 Sandnes',
+    phone: '+47 51 65 43 21',
+    hours: 'Man-Søn: 16:30-22:30',
     image: '/api/placeholder/400/300',
-    description: 'Varme smaker under nordlyset'
+    description: 'Luksuriøs pakistansk cuisine i Sandnes'
   }
 ];
 
