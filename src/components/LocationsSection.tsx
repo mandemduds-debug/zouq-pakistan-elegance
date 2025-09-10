@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { MapPin, Clock, Phone } from 'lucide-react';
+import StavangerMap from './StavangerMap';
 
 const locations = [
   {
@@ -127,16 +128,10 @@ const LocationsSection = () => {
           ))}
         </div>
 
-        {/* Map Integration Placeholder */}
+        {/* Interactive Map */}
         <div className={`mt-16 ${isVisible ? 'animate-fade-up' : 'opacity-0'}`}>
           <Card className="overflow-hidden shadow-luxury">
-            <div className="h-96 bg-secondary/50 flex items-center justify-center">
-              <div className="text-center text-muted-foreground">
-                <MapPin className="h-16 w-16 mx-auto mb-4 opacity-50" />
-                <p className="text-lg font-semibold mb-2">Interaktivt kart</p>
-                <p className="text-sm">Google Maps integrasjon kommer snart</p>
-              </div>
-            </div>
+            <StavangerMap />
           </Card>
         </div>
       </div>
