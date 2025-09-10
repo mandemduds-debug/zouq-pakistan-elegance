@@ -57,7 +57,7 @@ const HeroSection = () => {
             <Button 
               variant="outline" 
               size="lg"
-              className="border-white text-white hover:bg-white hover:text-background transition-all hover-lift text-lg px-8 py-6"
+              className="border-white text-black hover:bg-white hover:text-background transition-all hover-lift text-lg px-8 py-6"
               onClick={() => document.getElementById('meny')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Bestill Takeaway
