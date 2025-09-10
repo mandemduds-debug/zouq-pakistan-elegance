@@ -34,7 +34,7 @@ const Navigation = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <div className="text-3xl font-serif font-bold text-primary">
+          <div className={`text-3xl font-serif font-bold ${isScrolled ? 'text-primary' : 'text-white'}`}>
             Zouq
           </div>
 
@@ -42,37 +42,37 @@ const Navigation = () => {
           <div className="hidden md:flex items-center space-x-8">
             <button
               onClick={() => scrollToSection('hjem')}
-              className="text-foreground hover:text-primary transition-colors font-medium"
+              className={`${isScrolled ? 'text-foreground' : 'text-white'} hover:text-primary transition-colors font-medium`}
             >
               Hjem
             </button>
             <button
               onClick={() => scrollToSection('om-oss')}
-              className="text-foreground hover:text-primary transition-colors font-medium"
+              className={`${isScrolled ? 'text-foreground' : 'text-white'} hover:text-primary transition-colors font-medium`}
             >
               Om Zouq
             </button>
             <button
               onClick={() => scrollToSection('meny')}
-              className="text-foreground hover:text-primary transition-colors font-medium"
+              className={`${isScrolled ? 'text-foreground' : 'text-white'} hover:text-primary transition-colors font-medium`}
             >
               Meny
             </button>
             <button
               onClick={() => scrollToSection('opplevelsen')}
-              className="text-foreground hover:text-primary transition-colors font-medium"
+              className={`${isScrolled ? 'text-foreground' : 'text-white'} hover:text-primary transition-colors font-medium`}
             >
               Opplevelsen
             </button>
             <button
               onClick={() => scrollToSection('lokasjoner')}
-              className="text-foreground hover:text-primary transition-colors font-medium"
+              className={`${isScrolled ? 'text-foreground' : 'text-white'} hover:text-primary transition-colors font-medium`}
             >
               Lokasjoner
             </button>
             <button
               onClick={() => scrollToSection('kontakt')}
-              className="text-foreground hover:text-primary transition-colors font-medium"
+              className={`${isScrolled ? 'text-foreground' : 'text-white'} hover:text-primary transition-colors font-medium`}
             >
               Kontakt
             </button>
@@ -87,9 +87,9 @@ const Navigation = () => {
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? (
-              <X className="h-6 w-6 text-foreground" />
+              <X className={`h-6 w-6 ${isScrolled ? 'text-foreground' : 'text-white'}`} />
             ) : (
-              <Menu className="h-6 w-6 text-foreground" />
+              <Menu className={`h-6 w-6 ${isScrolled ? 'text-foreground' : 'text-white'}`} />
             )}
           </button>
         </div>
