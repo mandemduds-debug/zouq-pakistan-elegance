@@ -25,7 +25,7 @@ const locations = [
     address: 'Kvadrat Storsenter, Kvadrat 4, 4306 Sandnes',
     phone: '+47 51 65 43 21',
     hours: 'Man-Søn: 16:30-22:30',
-    image: '/api/placeholder/400/300',
+    image: '/lovable-uploads/3aac6634-81d7-42d6-9d70-b33f276fd4a1.png',
     description: 'Luksuriøs pakistansk cuisine i Sandnes'
   }
 ];
