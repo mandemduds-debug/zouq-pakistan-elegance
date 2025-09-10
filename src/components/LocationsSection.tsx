@@ -17,7 +17,7 @@ const locations = [
     address: 'Øvre Holmegate 22, 4006 Stavanger',
     phone: '+47 51 12 34 56',
     hours: 'Man-Søn: 17:00-22:00',
-    image: '/api/placeholder/400/300',
+    image: '/lovable-uploads/6449f5ba-b4d4-40dc-96c5-442acf6bdbed.png',
     description: 'Moderne eleganse i Oljehovedstaden'
   },
   {
