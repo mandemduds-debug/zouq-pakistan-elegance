@@ -8,7 +8,7 @@ import desserts from '@/assets/desserts.jpg';
 const menuItems = [
   {
     category: 'Grill & Tandoor',
-    image: '/lovable-uploads/b09a0b92-4e6d-4157-8c02-e0a36be12d66.png',
+    image: '/lovable-uploads/ebda083b-c1b2-45f2-9fe2-c395c1766af5.png',
     dishes: [
       { name: 'Chicken Tikka', description: 'Saftig kylling marinert i yoghurt og krydder', price: '285,-' },
       { name: 'Seekh Kebab', description: 'Krydret lammefarse grillet på spyd', price: '295,-' },
