@@ -87,18 +87,6 @@ const ContactSection = () => {
                   </div>
                 </div>
 
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0">
-                    <div className="w-12 h-12 bg-gradient-emerald rounded-lg flex items-center justify-center">
-                      <MapPin className="h-6 w-6 text-white" />
-                    </div>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-1">Hovedkontor</h4>
-                    <p className="text-muted-foreground">Karl Johans gate 12</p>
-                    <p className="text-muted-foreground">0154 Oslo, Norge</p>
-                  </div>
-                </div>
 
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0">
