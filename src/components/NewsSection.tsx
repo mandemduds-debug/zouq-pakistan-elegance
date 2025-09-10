@@ -2,27 +2,30 @@ import { useEffect, useRef, useState } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Calendar, ArrowRight } from 'lucide-react';
+import signatureMenuImage from '@/assets/news-signature-menu.jpg';
+import culturalEveningImage from '@/assets/news-cultural-evening.jpg';
+import kristiansandOpeningImage from '@/assets/news-kristiansand-opening.jpg';
 
 const newsItems = [
   {
     title: 'Ny signaturmeny lansert',
     date: '15. mars 2024',
     excerpt: 'Opplev våre nyeste kulinariske kreasjoner med sesongens beste ingredienser og tradisjonelle pakistanske smaker.',
-    image: '/api/placeholder/400/250',
+    image: signatureMenuImage,
     category: 'Meny'
   },
   {
     title: 'Kulturell kveld med live musikk',
     date: '22. mars 2024',
     excerpt: 'Hver fredag inviterer vi til en uforglemmelig kveld med autentisk pakistansk musikk og dans.',
-    image: '/api/placeholder/400/250',
+    image: culturalEveningImage,
     category: 'Event'
   },
   {
     title: 'Zouq åpner i Kristiansand',
     date: '1. april 2024',
     excerpt: 'Vi utvider vår familie med en ny restaurant i Kristiansand. Samme luksuriøse opplevelse, ny lokasjon.',
-    image: '/api/placeholder/400/250',
+    image: kristiansandOpeningImage,
     category: 'Nyheter'
   }
 ];
@@ -74,12 +77,11 @@ const NewsSection = () => {
               style={{ animationDelay: `${index * 200}ms` }}
             >
               <div className="relative h-48 overflow-hidden">
-                <div className="w-full h-full bg-gradient-emerald flex items-center justify-center">
-                  <div className="text-white text-center">
-                    <Calendar className="h-12 w-12 mx-auto mb-2 opacity-50" />
-                    <div className="text-sm opacity-75">Bilde kommer snart</div>
-                  </div>
-                </div>
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
                 <div className="absolute inset-0 bg-gradient-overlay opacity-20 group-hover:opacity-40 transition-opacity" />
                 
                 {/* Category Badge */}
