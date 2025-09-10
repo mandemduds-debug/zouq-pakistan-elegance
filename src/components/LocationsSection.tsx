@@ -3,34 +3,42 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { MapPin, Clock, Phone } from 'lucide-react';
 
-const locations = [
+const defaultLocations = [
   {
-    name: 'Zouq Sandvika',
-    address: 'Sandvika Storsenter, Storsenteret 2, 1338 Sandvika',
-    phone: '+47 67 12 34 56',
-    hours: 'Man-Søn: 16:00-23:00',
+    name: 'Stavanger',
+    address: 'Øvre Holmegate 15, 4006 Stavanger',
+    phone: '+47 51 89 12 34',
+    hours: 'Man-Søn: 15:00-23:00',
+    image: '/lovable-uploads/ec48a68c-03e0-4922-9379-bbc1c48b412e.png',
+    description: 'Vår flaggskiprestaurant i hjerte av Stavanger'
+  },
+  {
+    name: 'Sandnes',
+    address: 'Langgata 45, 4306 Sandnes',
+    phone: '+47 51 68 45 67',
+    hours: 'Man-Søn: 15:00-23:00',
     image: '/lovable-uploads/df1e41bf-c5fc-485b-a631-f0898f5169ab.png',
-    description: 'Tradisjonell pakistansk mat i hjertet av Sandvika'
+    description: 'Moderne eleganse i Sandnes sentrum'
   },
   {
-    name: 'Zouq Stavanger',
-    address: 'Øvre Holmegate 22, 4006 Stavanger',
-    phone: '+47 51 12 34 56',
-    hours: 'Man-Søn: 17:00-22:00',
-    image: '/lovable-uploads/6449f5ba-b4d4-40dc-96c5-442acf6bdbed.png',
-    description: 'Moderne eleganse i Oljehovedstaden'
-  },
-  {
-    name: 'Zouq Sandnes',
-    address: 'Kvadrat Storsenter, Kvadrat 4, 4306 Sandnes',
-    phone: '+47 51 65 43 21',
-    hours: 'Man-Søn: 16:30-22:30',
-    image: '/lovable-uploads/3aac6634-81d7-42d6-9d70-b33f276fd4a1.png',
-    description: 'Autentiske smaker ved Kvadrat Storsenter'
+    name: 'Sandvika',
+    address: 'Sandvika Storsenter, 1338 Sandvika',
+    phone: '+47 67 54 89 12',
+    hours: 'Man-Søn: 15:00-23:00',
+    image: '/lovable-uploads/40a3966a-253d-46ab-ab9d-de95a85989b9.png',
+    description: 'Pakistansk luksus ved fjorden'
   }
 ];
 
-const LocationsSection = () => {
+interface LocationsSectionProps {
+  locations?: typeof defaultLocations;
+  title?: string;
+}
+
+const LocationsSection: React.FC<LocationsSectionProps> = ({ 
+  locations = defaultLocations, 
+  title = "Våre Lokasjoner" 
+}) => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
 
@@ -57,7 +65,7 @@ const LocationsSection = () => {
         {/* Header */}
         <div className={`text-center mb-16 ${isVisible ? 'animate-fade-up' : 'opacity-0'}`}>
           <h2 className="text-4xl md:text-5xl font-serif font-bold text-foreground mb-6">
-            Våre Lokasjoner
+            {title}
           </h2>
           <div className="w-20 h-1 bg-gradient-gold mx-auto mb-8" />
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
@@ -96,7 +104,7 @@ const LocationsSection = () => {
               
               <CardContent className="p-6">
                 <h3 className="text-xl font-serif font-bold text-foreground mb-2">
-                  {location.name}
+                  Zouq {location.name}
                 </h3>
                 <p className="text-sm text-muted-foreground mb-4">
                   {location.description}
