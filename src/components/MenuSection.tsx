@@ -13,7 +13,12 @@ const menuItems = [
     dishes: [
       { name: 'Chicken Tikka', description: 'Saftig kylling marinert i yoghurt og krydder', price: '285,-' },
       { name: 'Seekh Kebab', description: 'Krydret lammefarse grillet på spyd', price: '295,-' },
+      { name: 'Lamb Chops', description: 'Møre lammekotelett med pakistanske krydder', price: '385,-' },
+      { name: 'Tandoori Chicken', description: 'Hel kylling grillet i tandoor-ovn', price: '345,-' },
+      { name: 'Fish Tikka', description: 'Marinert torsk grillet på spyd', price: '325,-' },
       { name: 'Mixed Grill Platter', description: 'Utvalg av våre beste grillretter', price: '445,-' },
+      { name: 'Chicken Malai Boti', description: 'Kremet kyllingfileter fra tandoor', price: '295,-' },
+      { name: 'Beef Seekh Kebab', description: 'Krydret storfekjøtt grillet på spyd', price: '315,-' }
     ]
   },
   {
@@ -23,7 +28,11 @@ const menuItems = [
     dishes: [
       { name: 'Lamb Biryani', description: 'Aromatisk basmatiris med mørt lam og saffran', price: '345,-' },
       { name: 'Chicken Biryani', description: 'Klassisk biryani med saftig kylling', price: '325,-' },
+      { name: 'Beef Biryani', description: 'Rik biryani med mørt storfekjøtt', price: '335,-' },
+      { name: 'Prawn Biryani', description: 'Eksotisk biryani med reker og krydder', price: '365,-' },
       { name: 'Vegetable Pulao', description: 'Krydret ris med sesongens grønnsaker', price: '265,-' },
+      { name: 'Sindhi Biryani', description: 'Tradisjonell biryani med poteter og plommer', price: '315,-' },
+      { name: 'Jeera Rice', description: 'Basmatiris med spiskummen og ghee', price: '185,-' }
     ]
   },
   {
@@ -34,6 +43,10 @@ const menuItems = [
       { name: 'Kheer', description: 'Kremet rispudding med pistasienøtter', price: '125,-' },
       { name: 'Gulab Jamun', description: 'Søte melkeboller i kardemomme-sirup', price: '135,-' },
       { name: 'Kulfi', description: 'Tradisjonell pakistansk is med mandler', price: '115,-' },
+      { name: 'Ras Malai', description: 'Mjuke paneer-boller i søt melk', price: '145,-' },
+      { name: 'Halwa Puri', description: 'Tradisjonell semulegrøt med puri', price: '155,-' },
+      { name: 'Falooda', description: 'Søt drink med is, nudler og nøtter', price: '125,-' },
+      { name: 'Barfi', description: 'Søte melkekarameller med pistasj', price: '95,-' }
     ]
   }
 ];
@@ -137,12 +150,13 @@ const MenuSection = () => {
           </Card>
         </div>
 
-        {/* Download Menu Button */}
+        {/* Menu Info */}
         <div className="text-center mt-12">
-          <Button variant="outline" size="lg" className="hover-lift border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-            <Download className="mr-2 h-5 w-5" />
-            Last ned full meny (PDF)
-          </Button>
+          <p className="text-lg text-muted-foreground">
+            Se vår komplette meny med alle retter og priser ovenfor. 
+            <br />
+            Kontakt oss for spesielle allergier eller diettbehov.
+          </p>
         </div>
       </div>
     </section>
