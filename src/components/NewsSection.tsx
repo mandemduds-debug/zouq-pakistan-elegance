@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Calendar, ArrowRight } from 'lucide-react';
 import signatureMenuImage from '@/assets/news-signature-menu.jpg';
 import culturalEveningImage from '@/assets/news-cultural-evening.jpg';
-import kristiansandOpeningImage from '@/assets/news-kristiansand-opening.jpg';
+import awardWinningImage from '@/assets/news-award-winning.jpg';
 
 const newsItems = [
   {
@@ -22,10 +22,10 @@ const newsItems = [
     category: 'Event'
   },
   {
-    title: 'Zouq åpner i Kristiansand',
+    title: 'Zouq vinner "Årets Restaurantopplevelse"',
     date: '1. april 2024',
-    excerpt: 'Vi utvider vår familie med en ny restaurant i Kristiansand. Samme luksuriøse opplevelse, ny lokasjon.',
-    image: kristiansandOpeningImage,
+    excerpt: 'Vi er stolte over å motta den prestisjetunge utmerkelsen for vår unike kombinasjon av tradisjonell pakistansk mat og moderne eleganse.',
+    image: awardWinningImage,
     category: 'Nyheter'
   }
 ];
