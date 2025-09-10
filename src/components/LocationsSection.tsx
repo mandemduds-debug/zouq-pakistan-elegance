@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { MapPin, Clock, Phone } from 'lucide-react';
-import LocationMap from './LocationMap';
 
 const locations = [
   {
@@ -119,20 +118,33 @@ const LocationsSection = () => {
                 </div>
                 
                 <Button 
+                  onClick={() => {
+                    const address = encodeURIComponent(location.address);
+                    window.open(`https://www.google.com/maps/dir/?api=1&destination=${address}`, '_blank');
+                  }}
                   className="w-full bg-gradient-gold text-background font-semibold hover:opacity-90 transition-all"
                 >
-                  Book Bord
+                  Få Veibeskrivelse
                 </Button>
               </CardContent>
             </Card>
           ))}
         </div>
 
-        {/* Interactive Map */}
-        <div className={`mt-16 ${isVisible ? 'animate-fade-up' : 'opacity-0'}`}>
-          <Card className="overflow-hidden shadow-luxury">
-            <LocationMap />
-          </Card>
+        {/* Simple Map Link */}
+        <div className={`mt-16 text-center ${isVisible ? 'animate-fade-up' : 'opacity-0'}`}>
+          <Button
+            onClick={() => {
+              const allAddresses = locations.map(loc => encodeURIComponent(loc.address)).join('/');
+              window.open(`https://www.google.com/maps/search/Zouq+restaurant+Norge`, '_blank');
+            }}
+            variant="outline"
+            size="lg"
+            className="bg-background hover:bg-secondary/20"
+          >
+            <MapPin className="h-5 w-5 mr-2" />
+            Se alle restauranter på kart
+          </Button>
         </div>
       </div>
     </section>
