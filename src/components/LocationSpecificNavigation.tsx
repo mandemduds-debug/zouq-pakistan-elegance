@@ -81,6 +81,12 @@ const LocationSpecificNavigation: React.FC<LocationSpecificNavigationProps> = ({
               Opplevelsen
             </button>
             <button 
+              onClick={() => scrollToSection('catering')} 
+              className="hover:text-gold transition-colors"
+            >
+              Catering
+            </button>
+            <button 
               onClick={() => scrollToSection('galleri')} 
               className="hover:text-gold transition-colors"
             >
@@ -156,6 +162,12 @@ const LocationSpecificNavigation: React.FC<LocationSpecificNavigationProps> = ({
                 className="text-left py-2 hover:text-gold transition-colors"
               >
                 Opplevelsen
+              </button>
+              <button 
+                onClick={() => scrollToSection('catering')} 
+                className="text-left py-2 hover:text-gold transition-colors"
+              >
+                Catering
               </button>
               <button 
                 onClick={() => scrollToSection('galleri')} 

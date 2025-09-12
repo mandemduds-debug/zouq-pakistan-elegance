@@ -3,6 +3,7 @@ import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
 import MenuSection from '@/components/MenuSection';
 import ExperienceSection from '@/components/ExperienceSection';
+import StavangerCateringSection from '@/components/StavangerCateringSection';
 import GallerySection from '@/components/GallerySection';
 import NewsSection from '@/components/NewsSection';
 import ContactSection from '@/components/ContactSection';
@@ -121,6 +122,7 @@ const Stavanger = () => {
       <AboutSection />
       <MenuSection />
       <ExperienceSection />
+      <StavangerCateringSection />
       <GallerySection />
       <LocationsSection locations={stavangerOtherLocations} title="Andre Avdelinger" />
       <NewsSection />

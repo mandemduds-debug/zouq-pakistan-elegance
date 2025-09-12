@@ -3,6 +3,7 @@ import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
 import MenuSection from '@/components/MenuSection';
 import ExperienceSection from '@/components/ExperienceSection';
+import SandnesCateringSection from '@/components/SandnesCateringSection';
 import GallerySection from '@/components/GallerySection';
 import NewsSection from '@/components/NewsSection';
 import ContactSection from '@/components/ContactSection';
@@ -121,6 +122,7 @@ const Sandnes = () => {
       <AboutSection />
       <MenuSection />
       <ExperienceSection />
+      <SandnesCateringSection />
       <GallerySection />
       <LocationsSection locations={sandnesOtherLocations} title="Andre Avdelinger" />
       <NewsSection />
