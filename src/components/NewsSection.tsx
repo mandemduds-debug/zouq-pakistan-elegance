@@ -120,9 +120,9 @@ const NewsSection = () => {
 
         {/* Newsletter Signup */}
         <div className={`${isVisible ? 'animate-fade-up' : 'opacity-0'}`}>
-          <Card className="bg-gradient-red text-white shadow-luxury">
+          <Card className="bg-primary text-white shadow-luxury">
             <CardContent className="p-8 text-center">
-              <h3 className="text-2xl font-serif font-bold mb-4">
+              <h3 className="text-2xl font-serif font-bold mb-4 text-white">
                 Hold deg oppdatert
               </h3>
               <p className="text-white/90 mb-6 max-w-2xl mx-auto">
