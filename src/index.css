@@ -18,10 +18,10 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 12%;
 
-    /* Emerald Green - Primary Brand */
-    --primary: 158 64% 22%;
+    /* Deep Red/Burgundy - Primary Brand */
+    --primary: 0 70% 35%;
     --primary-foreground: 0 0% 98%;
-    --primary-light: 158 54% 32%;
+    --primary-light: 0 60% 45%;
     
     /* Gold Accents */
     --gold: 43 96% 56%;
@@ -40,7 +40,7 @@ All colors MUST be HSL.
     --muted: 0 0% 96%;
     --muted-foreground: 0 0% 45%;
 
-    --accent: 158 64% 22%;
+    --accent: 0 70% 35%;
     --accent-foreground: 0 0% 98%;
 
     --destructive: 0 84% 60%;
@@ -48,18 +48,18 @@ All colors MUST be HSL.
 
     --border: 0 0% 90%;
     --input: 0 0% 90%;
-    --ring: 158 64% 22%;
+    --ring: 0 70% 35%;
 
     /* Luxury Design Elements */
-    --gradient-hero: linear-gradient(135deg, hsl(158 64% 22%), hsl(43 96% 56%));
+    --gradient-hero: linear-gradient(135deg, hsl(0 70% 35%), hsl(43 96% 56%));
     --gradient-gold: linear-gradient(135deg, hsl(43 96% 56%), hsl(43 96% 46%));
-    --gradient-emerald: linear-gradient(135deg, hsl(158 64% 22%), hsl(158 54% 32%));
+    --gradient-red: linear-gradient(135deg, hsl(0 70% 35%), hsl(0 60% 45%));
     --gradient-overlay: linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 100%);
     
     /* Shadows & Effects */
     --shadow-luxury: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
     --shadow-gold: 0 10px 25px -3px rgba(218, 165, 32, 0.3);
-    --shadow-emerald: 0 10px 25px -3px rgba(52, 211, 153, 0.3);
+    --shadow-red: 0 10px 25px -3px rgba(139, 69, 19, 0.3);
 
     /* Typography */
     --font-serif: 'Crimson Text', serif;
@@ -99,7 +99,7 @@ All colors MUST be HSL.
     --popover: 0 0% 8%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 158 54% 32%;
+    --primary: 0 60% 45%;
     --primary-foreground: 0 0% 98%;
 
     --secondary: 0 0% 14%;
@@ -108,7 +108,7 @@ All colors MUST be HSL.
     --muted: 0 0% 14%;
     --muted-foreground: 0 0% 65%;
 
-    --accent: 158 54% 32%;
+    --accent: 0 60% 45%;
     --accent-foreground: 0 0% 98%;
 
     --destructive: 0 62% 50%;
@@ -116,7 +116,7 @@ All colors MUST be HSL.
 
     --border: 0 0% 18%;
     --input: 0 0% 18%;
-    --ring: 158 54% 32%;
+    --ring: 0 60% 45%;
 
     /* Dark mode gradients */
     --gradient-overlay: linear-gradient(180deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.5) 100%);
@@ -170,8 +170,8 @@ All colors MUST be HSL.
     background: var(--gradient-gold);
   }
 
-  .gradient-emerald {
-    background: var(--gradient-emerald);
+  .gradient-red {
+    background: var(--gradient-red);
   }
 
   /* Parallax container */
@@ -210,8 +210,8 @@ All colors MUST be HSL.
     box-shadow: var(--shadow-gold);
   }
 
-  .hover-emerald:hover {
-    box-shadow: var(--shadow-emerald);
+  .hover-red:hover {
+    box-shadow: var(--shadow-red);
   }
 
   /* Pattern overlay for Pakistani design elements */
@@ -228,7 +228,7 @@ All colors MUST be HSL.
     bottom: 0;
     background-image: 
       radial-gradient(circle at 25% 25%, rgba(218, 165, 32, 0.1) 0%, transparent 50%),
-      radial-gradient(circle at 75% 75%, rgba(52, 211, 153, 0.1) 0%, transparent 50%);
+      radial-gradient(circle at 75% 75%, rgba(139, 69, 19, 0.1) 0%, transparent 50%);
     pointer-events: none;
   }
 }
