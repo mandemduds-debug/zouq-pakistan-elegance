@@ -93,7 +93,7 @@ const MenuSection = () => {
           {menuItems.map((category, index) => (
             <Card
               key={index}
-              className={`group cursor-pointer transition-all duration-500 hover-lift hover-emerald overflow-hidden ${
+              className={`group cursor-pointer transition-all duration-500 hover-lift hover-red overflow-hidden ${
                 isVisible ? 'animate-scale-in' : 'opacity-0'
               } ${activeCategory === index ? 'ring-2 ring-primary' : ''}`}
               onClick={() => setActiveCategory(index)}

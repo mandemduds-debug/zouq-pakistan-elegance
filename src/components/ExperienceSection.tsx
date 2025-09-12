@@ -92,7 +92,7 @@ const ExperienceSection = () => {
                   <CardContent className="p-6">
                     <div className="flex items-start space-x-4">
                       <div className="flex-shrink-0">
-                        <div className="w-12 h-12 bg-gradient-emerald rounded-lg flex items-center justify-center">
+                        <div className="w-12 h-12 bg-gradient-red rounded-lg flex items-center justify-center">
                           <experience.icon className="h-6 w-6 text-white" />
                         </div>
                       </div>

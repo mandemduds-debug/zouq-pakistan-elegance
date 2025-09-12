@@ -62,7 +62,7 @@ const ContactSection = () => {
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0">
-                    <div className="w-12 h-12 bg-gradient-emerald rounded-lg flex items-center justify-center">
+                    <div className="w-12 h-12 bg-gradient-red rounded-lg flex items-center justify-center">
                       <Phone className="h-6 w-6 text-white" />
                     </div>
                   </div>
@@ -107,7 +107,7 @@ const ContactSection = () => {
             <div>
               <h4 className="font-semibold text-foreground mb-4">Følg oss</h4>
               <div className="flex space-x-4">
-                <a href="#" className="w-10 h-10 bg-gradient-emerald rounded-lg flex items-center justify-center hover-lift transition-all">
+                <a href="#" className="w-10 h-10 bg-gradient-red rounded-lg flex items-center justify-center hover-lift transition-all">
                   <Instagram className="h-5 w-5 text-white" />
                 </a>
                 <a href="#" className="w-10 h-10 bg-gradient-gold rounded-lg flex items-center justify-center hover-lift transition-all">

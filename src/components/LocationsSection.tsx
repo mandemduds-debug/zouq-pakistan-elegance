@@ -81,14 +81,14 @@ const LocationsSection: React.FC<LocationsSectionProps> = ({
           {locations.map((location, index) => (
             <Card
               key={index}
-              className={`group overflow-hidden hover-lift hover-emerald transition-all duration-500 ${
+              className={`group overflow-hidden hover-lift hover-red transition-all duration-500 ${
                 isVisible ? 'animate-scale-in' : 'opacity-0'
               }`}
               style={{ animationDelay: `${index * 150}ms` }}
             >
               <div className="relative h-48 overflow-hidden">
                 {location.image.includes('placeholder') ? (
-                  <div className="w-full h-full bg-gradient-emerald flex items-center justify-center">
+                  <div className="w-full h-full bg-gradient-red flex items-center justify-center">
                     <div className="text-white text-center">
                       <MapPin className="h-12 w-12 mx-auto mb-2 opacity-50" />
                       <div className="text-sm opacity-75">Bilde kommer snart</div>
