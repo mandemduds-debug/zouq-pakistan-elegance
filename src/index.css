@@ -18,15 +18,15 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 12%;
 
-    /* Deep Red/Burgundy - Primary Brand */
-    --primary: 0 70% 35%;
+    /* Earth Brown - Primary Brand */
+    --primary: 28 44% 42%;
     --primary-foreground: 0 0% 98%;
-    --primary-light: 0 60% 45%;
+    --primary-light: 28 34% 52%;
     
-    /* Gold Accents - Luxury Pakistani Restaurant */
-    --gold: 45 85% 47%;
-    --gold-light: 45 75% 57%;
-    --gold-dark: 45 90% 37%;
+    /* Warm Beige Accents */
+    --beige: 35 30% 65%;
+    --beige-light: 35 25% 75%;
+    --beige-dark: 35 35% 55%;
 
     /* Earth Tones */
     --earth: 28 44% 52%;
@@ -40,7 +40,7 @@ All colors MUST be HSL.
     --muted: 0 0% 96%;
     --muted-foreground: 0 0% 45%;
 
-    --accent: 0 70% 35%;
+    --accent: 28 44% 42%;
     --accent-foreground: 0 0% 98%;
 
     --destructive: 0 84% 60%;
@@ -48,18 +48,18 @@ All colors MUST be HSL.
 
     --border: 0 0% 90%;
     --input: 0 0% 90%;
-    --ring: 0 70% 35%;
+    --ring: 28 44% 42%;
 
     /* Luxury Design Elements */
-    --gradient-hero: linear-gradient(135deg, hsl(0 70% 35%), hsl(45 85% 47%));
-    --gradient-gold: linear-gradient(135deg, hsl(45 85% 47%), hsl(45 90% 37%));
-    --gradient-red: linear-gradient(135deg, hsl(0 70% 35%), hsl(0 60% 45%));
+    --gradient-hero: linear-gradient(135deg, hsl(28 44% 42%), hsl(35 30% 65%));
+    --gradient-beige: linear-gradient(135deg, hsl(35 30% 65%), hsl(35 35% 55%));
+    --gradient-earth: linear-gradient(135deg, hsl(28 44% 42%), hsl(28 34% 52%));
     --gradient-overlay: linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 100%);
     
     /* Shadows & Effects */
     --shadow-luxury: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-    --shadow-gold: 0 10px 25px -3px rgba(227, 191, 36, 0.25);
-    --shadow-red: 0 10px 25px -3px rgba(139, 69, 19, 0.3);
+    --shadow-beige: 0 10px 25px -3px rgba(139, 119, 101, 0.25);
+    --shadow-earth: 0 10px 25px -3px rgba(101, 87, 73, 0.3);
 
     /* Typography */
     --font-serif: 'Crimson Text', serif;
@@ -99,7 +99,7 @@ All colors MUST be HSL.
     --popover: 0 0% 8%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 0 60% 45%;
+    --primary: 28 34% 52%;
     --primary-foreground: 0 0% 98%;
 
     --secondary: 0 0% 14%;
@@ -108,7 +108,7 @@ All colors MUST be HSL.
     --muted: 0 0% 14%;
     --muted-foreground: 0 0% 65%;
 
-    --accent: 0 60% 45%;
+    --accent: 28 34% 52%;
     --accent-foreground: 0 0% 98%;
 
     --destructive: 0 62% 50%;
@@ -116,7 +116,7 @@ All colors MUST be HSL.
 
     --border: 0 0% 18%;
     --input: 0 0% 18%;
-    --ring: 0 60% 45%;
+    --ring: 28 34% 52%;
 
     /* Dark mode gradients */
     --gradient-overlay: linear-gradient(180deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.5) 100%);
@@ -166,12 +166,12 @@ All colors MUST be HSL.
     background: var(--gradient-hero);
   }
 
-  .gradient-gold {
-    background: var(--gradient-gold);
+  .gradient-beige {
+    background: var(--gradient-beige);
   }
 
-  .gradient-red {
-    background: var(--gradient-red);
+  .gradient-earth {
+    background: var(--gradient-earth);
   }
 
   /* Parallax container */
@@ -206,12 +206,12 @@ All colors MUST be HSL.
     box-shadow: var(--shadow-luxury);
   }
 
-  .hover-gold:hover {
-    box-shadow: var(--shadow-gold);
+  .hover-beige:hover {
+    box-shadow: var(--shadow-beige);
   }
 
-  .hover-red:hover {
-    box-shadow: var(--shadow-red);
+  .hover-earth:hover {
+    box-shadow: var(--shadow-earth);
   }
 
   /* Pattern overlay for Pakistani design elements */
@@ -227,8 +227,8 @@ All colors MUST be HSL.
     right: 0;
     bottom: 0;
     background-image: 
-      radial-gradient(circle at 25% 25%, rgba(227, 191, 36, 0.08) 0%, transparent 50%),
-      radial-gradient(circle at 75% 75%, rgba(185, 155, 19, 0.08) 0%, transparent 50%);
+      radial-gradient(circle at 25% 25%, rgba(139, 119, 101, 0.08) 0%, transparent 50%),
+      radial-gradient(circle at 75% 75%, rgba(121, 103, 89, 0.08) 0%, transparent 50%);
     pointer-events: none;
   }
 }
