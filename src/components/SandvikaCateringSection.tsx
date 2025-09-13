@@ -248,7 +248,7 @@ const SandvikaCateringSection = () => {
               <Button 
                 variant="outline" 
                 size="lg"
-                className="border-background text-background hover:bg-background hover:text-gold font-semibold text-lg px-8 py-6"
+                className="bg-background/20 border-background text-background hover:bg-background hover:text-gold font-semibold text-lg px-8 py-6"
               >
                 <Phone className="h-5 w-5 mr-2" />
                 Få et Tilbud i Dag
