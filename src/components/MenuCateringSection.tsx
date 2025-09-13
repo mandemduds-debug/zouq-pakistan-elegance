@@ -2,7 +2,8 @@ import { useState, useEffect, useRef } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { ShoppingCart, Phone, Users, Calendar, MapPin, Star } from 'lucide-react';
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
+import { ShoppingCart, Phone, Users, Calendar, MapPin, Star, Check, Clock, ChevronDown } from 'lucide-react';
 import biryaniDish from '@/assets/biryani-dish.jpg';
 import authenticDesserts from '@/assets/authentic-desserts.jpg';
 
@@ -187,68 +188,399 @@ const MenuCateringSection = ({ locationName }: MenuCateringSectionProps) => {
           <TabsContent value="catering" className="space-y-12">
             {/* Hero Section */}
             <div className="text-center mb-12">
-              <h3 className="text-3xl font-serif font-bold text-foreground mb-4">
-                Catering i {locationName || 'Norge'}
+              <h3 className="text-3xl md:text-4xl font-serif font-bold text-foreground mb-4">
+                Catering {locationName ? `${locationName}` : 'Norge'} - Bryllup, Konfirmasjon & Bedriftsarrangementer
               </h3>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                La oss skape uforglemmelige kulinariske opplevelser for dine gjester
+              <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+                Opplev Zouqs eksklusive pakistanske catering i {locationName ? `${locationName} sentrum og omegn` : 'Norge'}. 
+                Vi kombinerer tradisjonell smak med moderne eleganse for alle dine arrangementer.
               </p>
             </div>
 
-            {/* Catering Types */}
-            <div className="grid md:grid-cols-3 gap-8 mb-12">
-              {cateringTypes.map((type, index) => (
-                <Card key={index} className="hover-lift transition-all duration-300">
-                  <CardContent className="p-8 text-center">
-                    <div className="w-16 h-16 bg-gradient-gold rounded-full flex items-center justify-center mx-auto mb-6">
-                      <type.icon className="h-8 w-8 text-background" />
-                    </div>
-                    <h4 className="text-xl font-serif font-bold text-foreground mb-4">
-                      {type.title}
-                    </h4>
-                    <p className="text-muted-foreground">
-                      {type.description}
-                    </p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-
-            {/* Features */}
-            <div className="bg-background rounded-lg p-8">
-              <h4 className="text-2xl font-serif font-bold text-foreground mb-6 text-center">
-                Hvorfor velge Zouq Catering?
+            {/* Why Choose Us - Expanded */}
+            <div className="mb-16">
+              <h4 className="text-2xl font-serif font-semibold text-foreground mb-8 text-center">
+                Hvorfor velge Zouq for catering i {locationName || 'Norge'}?
               </h4>
-              <div className="grid md:grid-cols-3 gap-6 text-center">
-                <div>
-                  <Star className="h-8 w-8 text-gold mx-auto mb-3" />
-                  <h5 className="font-semibold text-foreground mb-2">Premium Kvalitet</h5>
-                  <p className="text-sm text-muted-foreground">Kun de beste ingredienser</p>
+              <div className="grid md:grid-cols-3 gap-8">
+                <div className="text-center">
+                  <div className="w-16 h-16 mx-auto mb-4 bg-gradient-gold rounded-full flex items-center justify-center">
+                    <Check className="h-8 w-8 text-background" />
+                  </div>
+                  <h5 className="text-lg font-semibold text-foreground mb-2">Moderne Eleganse</h5>
+                  <p className="text-muted-foreground">Sofistikert presentasjon av autentiske pakistanske retter</p>
                 </div>
-                <div>
-                  <Users className="h-8 w-8 text-gold mx-auto mb-3" />
-                  <h5 className="font-semibold text-foreground mb-2">Fleksible Løsninger</h5>
-                  <p className="text-sm text-muted-foreground">Tilpasset dine behov</p>
+                <div className="text-center">
+                  <div className="w-16 h-16 mx-auto mb-4 bg-gradient-gold rounded-full flex items-center justify-center">
+                    <Clock className="h-8 w-8 text-background" />
+                  </div>
+                  <h5 className="text-lg font-semibold text-foreground mb-2">Lokal Tilstedeværelse</h5>
+                  <p className="text-muted-foreground">Rask og pålitelig levering i hele {locationName || 'Norge'}-området</p>
                 </div>
-                <div>
-                  <MapPin className="h-8 w-8 text-gold mx-auto mb-3" />
-                  <h5 className="font-semibold text-foreground mb-2">Pålitelig Levering</h5>
-                  <p className="text-sm text-muted-foreground">Alltid til avtalt tid</p>
+                <div className="text-center">
+                  <div className="w-16 h-16 mx-auto mb-4 bg-gradient-gold rounded-full flex items-center justify-center">
+                    <Star className="h-8 w-8 text-background" />
+                  </div>
+                  <h5 className="text-lg font-semibold text-foreground mb-2">Premium Kvalitet</h5>
+                  <p className="text-muted-foreground">Kun de beste ingredienser og halal-sertifiserte råvarer</p>
                 </div>
               </div>
             </div>
 
-            {/* CTA */}
+            {/* Detailed Catering Categories */}
+            <div className="grid md:grid-cols-2 gap-8 mb-16">
+              <Card className="overflow-hidden hover-lift">
+                <CardContent className="p-8">
+                  <h4 className="text-2xl font-serif font-semibold text-foreground mb-4">
+                    Catering til Konfirmasjoner i {locationName || 'Norge'}
+                  </h4>
+                  <p className="text-muted-foreground mb-6 leading-relaxed">
+                    Feir konfirmasjonen med stil i {locationName || 'Norge'}! Våre menyalternativer passer perfekt 
+                    for familiefeiringer med gjester i alle aldre, servert med varme og omsorg.
+                  </p>
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li className="flex items-center gap-2">
+                      <Check className="h-4 w-4 text-gold" />
+                      Familievennlige menyer
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <Check className="h-4 w-4 text-gold" />
+                      Halal-sertifiserte ingredienser
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <Check className="h-4 w-4 text-gold" />
+                      Milde og krydrede alternativer
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <Check className="h-4 w-4 text-gold" />
+                      Fleksible porsjonstørrelser
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              <Card className="overflow-hidden hover-lift">
+                <CardContent className="p-8">
+                  <h4 className="text-2xl font-serif font-semibold text-foreground mb-4">
+                    Catering til Bryllup i {locationName || 'Norge'}
+                  </h4>
+                  <p className="text-muted-foreground mb-6 leading-relaxed">
+                    Gjør bryllupsdagen magisk med våre luksuriøse bryllupspakker. 
+                    Perfekt for romantiske feiringer i {locationName || 'Norge'} med familie og venner.
+                  </p>
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li className="flex items-center gap-2">
+                      <Check className="h-4 w-4 text-gold" />
+                      Eksklusive bryllupsmennyer
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <Check className="h-4 w-4 text-gold" />
+                      Elegant presentasjon og servering
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <Check className="h-4 w-4 text-gold" />
+                      Komplett serviceopplevelse
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <Check className="h-4 w-4 text-gold" />
+                      Skreddersydde pakkeløsninger
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              <Card className="overflow-hidden hover-lift">
+                <CardContent className="p-8">
+                  <h4 className="text-2xl font-serif font-semibold text-foreground mb-4">
+                    Catering til Selskaper & Private Anledninger
+                  </h4>
+                  <p className="text-muted-foreground mb-6 leading-relaxed">
+                    Fra private middager til store familiefester i {locationName || 'Norge'} - vi tilpasser 
+                    opplevelsen etter dine ønsker og budsjett.
+                  </p>
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li className="flex items-center gap-2">
+                      <Check className="h-4 w-4 text-gold" />
+                      Fleksible pakkeløsninger
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <Check className="h-4 w-4 text-gold" />
+                      Hjemlevering tilgjengelig
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <Check className="h-4 w-4 text-gold" />
+                      Rimelige og konkurransedyktige priser
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <Check className="h-4 w-4 text-gold" />
+                      Personlig kundeservice
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              <Card className="overflow-hidden hover-lift">
+                <CardContent className="p-8">
+                  <h4 className="text-2xl font-serif font-semibold text-foreground mb-4">
+                    Julebord Catering & Bedriftsarrangementer {locationName || 'Norge'}
+                  </h4>
+                  <p className="text-muted-foreground mb-6 leading-relaxed">
+                    Skap minneverdige bedriftsopplevelser i {locationName || 'Norge'} med vår profesjonelle 
+                    catering. Ideelt for julebord, møter og teambuilding-events.
+                  </p>
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li className="flex items-center gap-2">
+                      <Check className="h-4 w-4 text-gold" />
+                      Bedriftstilpassede menyer
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <Check className="h-4 w-4 text-gold" />
+                      Enkel bestillingsprosess
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <Check className="h-4 w-4 text-gold" />
+                      Profesjonell håndtering og servering
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <Check className="h-4 w-4 text-gold" />
+                      Fakturaordning for bedrifter
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Delivery Areas */}
+            <div className="mb-16">
+              <Card className="overflow-hidden">
+                <CardContent className="p-8 text-center">
+                  <h4 className="text-2xl font-serif font-semibold text-foreground mb-4">
+                    Leveringsområder rundt {locationName || 'Norge'}
+                  </h4>
+                  <p className="text-muted-foreground mb-6 max-w-3xl mx-auto leading-relaxed">
+                    {locationName === 'Sandnes' && (
+                      <>Vi leverer catering til hele Sandnes og nærområdene, inkludert Bryne, 
+                      Nærbø, Ålgård, Gjesdal og Stavanger. Ta kontakt for å bekrefte levering 
+                      til ditt arrangement.</>
+                    )}
+                    {locationName === 'Stavanger' && (
+                      <>Vi leverer catering til hele Stavanger og nærområdene, inkludert Sandnes, 
+                      Sola, Randaberg, Klepp og Gjesdal. Ta kontakt for å bekrefte levering 
+                      til ditt arrangement.</>
+                    )}
+                    {locationName === 'Sandvika' && (
+                      <>Vi leverer catering til hele Oslo-området, inkludert Bærum, Asker, 
+                      Oslo sentrum, Lysaker og Fornebu. Ta kontakt for å bekrefte levering 
+                      til ditt arrangement.</>
+                    )}
+                    {!locationName && (
+                      <>Vi leverer catering til våre lokalområder. Ta kontakt for å bekrefte levering 
+                      til ditt arrangement.</>
+                    )}
+                  </p>
+                  <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
+                    <MapPin className="h-4 w-4 text-gold" />
+                    <span>
+                      {locationName === 'Sandnes' && 'Hovedlokasjon: Langgata 45, Sandnes sentrum'}
+                      {locationName === 'Stavanger' && 'Hovedlokasjon: Stavanger sentrum'}
+                      {locationName === 'Sandvika' && 'Hovedlokasjon: Sandvika sentrum'}
+                      {!locationName && 'Kontakt oss for nærmeste lokasjon'}
+                    </span>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Pricing Information */}
+            <div className="mb-16">
+              <h4 className="text-2xl font-serif font-semibold text-center text-foreground mb-8">
+                Catering Priser & Pakker
+              </h4>
+              <div className="grid md:grid-cols-3 gap-6">
+                <Card className="hover-lift">
+                  <CardContent className="p-6 text-center">
+                    <h5 className="text-xl font-serif font-semibold text-foreground mb-3">
+                      Standard Pakke
+                    </h5>
+                    <p className="text-2xl font-bold text-gold mb-4">Fra 295,-</p>
+                    <p className="text-sm text-muted-foreground mb-4">per person</p>
+                    <ul className="text-sm text-muted-foreground space-y-2">
+                      <li>• 3-retters meny</li>
+                      <li>• Grunnleggende servering</li>
+                      <li>• Minimum 20 personer</li>
+                    </ul>
+                  </CardContent>
+                </Card>
+                <Card className="hover-lift border-gold">
+                  <CardContent className="p-6 text-center">
+                    <h5 className="text-xl font-serif font-semibold text-foreground mb-3">
+                      Premium Pakke
+                    </h5>
+                    <p className="text-2xl font-bold text-gold mb-4">Fra 495,-</p>
+                    <p className="text-sm text-muted-foreground mb-4">per person</p>
+                    <ul className="text-sm text-muted-foreground space-y-2">
+                      <li>• 5-retters luksusmeny</li>
+                      <li>• Full service og servering</li>
+                      <li>• Elegant borddekning</li>
+                    </ul>
+                  </CardContent>
+                </Card>
+                <Card className="hover-lift">
+                  <CardContent className="p-6 text-center">
+                    <h5 className="text-xl font-serif font-semibold text-foreground mb-3">
+                      Skreddersydd
+                    </h5>
+                    <p className="text-2xl font-bold text-gold mb-4">På forespørsel</p>
+                    <p className="text-sm text-muted-foreground mb-4">Tilpasset dine behov</p>
+                    <ul className="text-sm text-muted-foreground space-y-2">
+                      <li>• Personlig konsultasjon</li>
+                      <li>• Fleksible løsninger</li>
+                      <li>• Alle budsjetter</li>
+                    </ul>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+
+            {/* FAQ Section with Collapsible */}
+            <div className="mb-16">
+              <h4 className="text-2xl font-serif font-semibold text-center text-foreground mb-8">
+                Ofte Stilte Spørsmål om Catering
+              </h4>
+              <div className="space-y-4 max-w-4xl mx-auto">
+                <Collapsible>
+                  <CollapsibleTrigger asChild>
+                    <Card className="cursor-pointer hover:bg-accent/50 transition-colors">
+                      <CardContent className="p-6">
+                        <div className="flex items-center justify-between">
+                          <h5 className="text-lg font-semibold text-foreground">
+                            Hvor lang tid trenger dere på forhånd?
+                          </h5>
+                          <ChevronDown className="h-5 w-5 text-muted-foreground" />
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </CollapsibleTrigger>
+                  <CollapsibleContent>
+                    <Card className="border-t-0 rounded-t-none">
+                      <CardContent className="p-6 pt-0">
+                        <p className="text-muted-foreground">
+                          Vi anbefaler minimum 48 timer for mindre arrangementer (under 30 personer) 
+                          og 1 uke for større events. For bryllup og større bedriftsarrangementer 
+                          anbefaler vi 2-3 ukers varsel. Kontakt oss for hasteoppdrag - vi gjør vårt beste!
+                        </p>
+                      </CardContent>
+                    </Card>
+                  </CollapsibleContent>
+                </Collapsible>
+
+                <Collapsible>
+                  <CollapsibleTrigger asChild>
+                    <Card className="cursor-pointer hover:bg-accent/50 transition-colors">
+                      <CardContent className="p-6">
+                        <div className="flex items-center justify-between">
+                          <h5 className="text-lg font-semibold text-foreground">
+                            Kan dere tilpasse menyen for allergier og kostbehov?
+                          </h5>
+                          <ChevronDown className="h-5 w-5 text-muted-foreground" />
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </CollapsibleTrigger>
+                  <CollapsibleContent>
+                    <Card className="border-t-0 rounded-t-none">
+                      <CardContent className="p-6 pt-0">
+                        <p className="text-muted-foreground">
+                          Absolutt! Vi tilpasser gjerne menyen for allergier, vegetariske/veganske behov, 
+                          og andre kostrestriksjoner. Alle våre retter er halal-sertifiserte. 
+                          Gi oss detaljert beskjed ved bestilling så lager vi en perfekt meny for alle gjestene.
+                        </p>
+                      </CardContent>
+                    </Card>
+                  </CollapsibleContent>
+                </Collapsible>
+
+                <Collapsible>
+                  <CollapsibleTrigger asChild>
+                    <Card className="cursor-pointer hover:bg-accent/50 transition-colors">
+                      <CardContent className="p-6">
+                        <div className="flex items-center justify-between">
+                          <h5 className="text-lg font-semibold text-foreground">
+                            Inkluderer dere oppsett, servering og opprydning?
+                          </h5>
+                          <ChevronDown className="h-5 w-5 text-muted-foreground" />
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </CollapsibleTrigger>
+                  <CollapsibleContent>
+                    <Card className="border-t-0 rounded-t-none">
+                      <CardContent className="p-6 pt-0">
+                        <p className="text-muted-foreground">
+                          Vi tilbyr både takeaway-løsninger og full service. Vår full service inkluderer 
+                          oppsett av buffet/bordservering, profesjonell servering under arrangementet, 
+                          og komplett opprydning etterpå. Velg løsningen som passer best for ditt arrangement og budsjett.
+                        </p>
+                      </CardContent>
+                    </Card>
+                  </CollapsibleContent>
+                </Collapsible>
+
+                <Collapsible>
+                  <CollapsibleTrigger asChild>
+                    <Card className="cursor-pointer hover:bg-accent/50 transition-colors">
+                      <CardContent className="p-6">
+                        <div className="flex items-center justify-between">
+                          <h5 className="text-lg font-semibold text-foreground">
+                            Hvor langt leverer dere catering?
+                          </h5>
+                          <ChevronDown className="h-5 w-5 text-muted-foreground" />
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </CollapsibleTrigger>
+                  <CollapsibleContent>
+                    <Card className="border-t-0 rounded-t-none">
+                      <CardContent className="p-6 pt-0">
+                        <p className="text-muted-foreground">
+                          Vi leverer hovedsakelig innenfor en radius på 30-50 km fra våre restauranter. 
+                          For spesielle anledninger kan vi vurdere lengre distanser. 
+                          Kontakt oss for å bekrefte levering til ditt ønskede sted - vi finner alltid en løsning!
+                        </p>
+                      </CardContent>
+                    </Card>
+                  </CollapsibleContent>
+                </Collapsible>
+              </div>
+            </div>
+
+            {/* Enhanced CTA */}
             <div className="text-center">
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="hover-lift">
-                  <Calendar className="h-5 w-5 mr-2" />
-                  Book Catering
-                </Button>
-                <Button variant="outline" size="lg" className="bg-background/20 border-background text-background hover:bg-background hover:text-gold hover-lift">
-                  <Phone className="h-5 w-5 mr-2" />
-                  Få et Tilbud
-                </Button>
+              <div className="bg-gradient-gold rounded-2xl p-8 md:p-12 text-background">
+                <h4 className="text-2xl md:text-3xl font-serif font-bold mb-4">
+                  Klar for å bestille catering i {locationName || 'Norge'}?
+                </h4>
+                <p className="text-lg mb-8 opacity-90 max-w-2xl mx-auto">
+                  La oss gjøre ditt neste arrangement i {locationName || 'Norge'} til en kulinarisk opplevelse. 
+                  Kontakt oss for skreddersydd tilbud og personlig service!
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <Button 
+                    size="lg" 
+                    className="bg-background text-gold hover:bg-background/90 font-semibold text-lg px-8 py-6"
+                  >
+                    <Calendar className="h-5 w-5 mr-2" />
+                    Bestill Catering Nå
+                  </Button>
+                  <Button 
+                    variant="outline" 
+                    size="lg"
+                    className="bg-background/20 border-background text-background hover:bg-background hover:text-gold font-semibold text-lg px-8 py-6"
+                  >
+                    <Phone className="h-5 w-5 mr-2" />
+                    Få et Tilbud i Dag
+                  </Button>
+                </div>
               </div>
             </div>
           </TabsContent>
