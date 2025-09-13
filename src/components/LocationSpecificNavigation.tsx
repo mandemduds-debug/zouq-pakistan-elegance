@@ -35,8 +35,8 @@ const LocationSpecificNavigation: React.FC<LocationSpecificNavigationProps> = ({
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled 
-        ? 'bg-background/95 backdrop-blur-sm shadow-luxury text-foreground' 
-        : 'bg-transparent text-white'
+        ? 'bg-white/95 backdrop-blur-sm shadow-luxury text-foreground' 
+        : 'bg-white text-foreground'
     }`}>
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
