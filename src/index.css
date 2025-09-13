@@ -9,7 +9,7 @@ All colors MUST be HSL.
 @layer base {
   :root {
     /* Core Brand Colors - Luxury Pakistani Restaurant */
-    --background: 35 20% 88%;
+    --background: 35 20% 84%;
     --foreground: 0 0% 12%;
 
     --card: 0 0% 100%;
