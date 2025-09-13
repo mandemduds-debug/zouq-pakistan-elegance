@@ -64,10 +64,10 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Services */}
+          {/* Services & News */}
           <div>
             <h3 className="text-lg font-semibold text-background mb-4">Tjenester</h3>
-            <ul className="space-y-2">
+            <ul className="space-y-2 mb-6">
               <li>
                 <a href="#" className="text-background/80 hover:text-gold transition-colors">
                   Bordbestilling
@@ -85,12 +85,26 @@ const Footer = () => {
               </li>
               <li>
                 <a href="#" className="text-background/80 hover:text-gold transition-colors">
-                  Selskaper
+                  Takeaway
+                </a>
+              </li>
+            </ul>
+            
+            <h4 className="text-base font-semibold text-background mb-3">Nyheter</h4>
+            <ul className="space-y-2">
+              <li>
+                <a href="#" className="text-background/80 hover:text-gold transition-colors text-sm">
+                  Ny signaturmeny lansert
                 </a>
               </li>
               <li>
-                <a href="#" className="text-background/80 hover:text-gold transition-colors">
-                  Takeaway
+                <a href="#" className="text-background/80 hover:text-gold transition-colors text-sm">
+                  Kulturell kveld med live musikk
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-background/80 hover:text-gold transition-colors text-sm">
+                  Ny interiørdesign
                 </a>
               </li>
             </ul>

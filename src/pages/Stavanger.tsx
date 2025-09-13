@@ -1,14 +1,9 @@
 import LocationSpecificNavigation from '@/components/LocationSpecificNavigation';
-import HeroSection from '@/components/HeroSection';
-import AboutSection from '@/components/AboutSection';
-import MenuSection from '@/components/MenuSection';
-import ExperienceSection from '@/components/ExperienceSection';
-import StavangerCateringSection from '@/components/StavangerCateringSection';
+import ZouqAboutSection from '@/components/ZouqAboutSection';
+import MenuCateringSection from '@/components/MenuCateringSection';
 import GallerySection from '@/components/GallerySection';
-import NewsSection from '@/components/NewsSection';
-import ContactSection from '@/components/ContactSection';
+import VisitUsSection from '@/components/VisitUsSection';
 import Footer from '@/components/Footer';
-import LocationsSection from '@/components/LocationsSection';
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { ChevronDown } from 'lucide-react';
@@ -119,14 +114,10 @@ const Stavanger = () => {
     <div className="min-h-screen bg-background">
       <LocationSpecificNavigation locationName="Stavanger" />
       <StavangerHeroSection />
-      <AboutSection />
-      <MenuSection />
-      <ExperienceSection />
-      <StavangerCateringSection />
+      <ZouqAboutSection />
+      <MenuCateringSection locationName="Stavanger" />
       <GallerySection />
-      <LocationsSection locations={stavangerOtherLocations} title="Andre Avdelinger" />
-      <NewsSection />
-      <ContactSection />
+      <VisitUsSection locations={stavangerOtherLocations} currentLocationName="Stavanger" />
       <Footer />
     </div>
   );

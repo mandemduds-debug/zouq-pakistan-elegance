@@ -1,14 +1,9 @@
 import LocationSpecificNavigation from '@/components/LocationSpecificNavigation';
-import HeroSection from '@/components/HeroSection';
-import AboutSection from '@/components/AboutSection';
-import MenuSection from '@/components/MenuSection';
-import ExperienceSection from '@/components/ExperienceSection';
-import SandvikaCateringSection from '@/components/SandvikaCateringSection';
+import ZouqAboutSection from '@/components/ZouqAboutSection';
+import MenuCateringSection from '@/components/MenuCateringSection';
 import GallerySection from '@/components/GallerySection';
-import NewsSection from '@/components/NewsSection';
-import ContactSection from '@/components/ContactSection';
+import VisitUsSection from '@/components/VisitUsSection';
 import Footer from '@/components/Footer';
-import LocationsSection from '@/components/LocationsSection';
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { ChevronDown } from 'lucide-react';
@@ -119,14 +114,10 @@ const Sandvika = () => {
     <div className="min-h-screen bg-background">
       <LocationSpecificNavigation locationName="Sandvika" />
       <SandvikaHeroSection />
-      <AboutSection />
-      <MenuSection />
-      <ExperienceSection />
-      <SandvikaCateringSection />
+      <ZouqAboutSection />
+      <MenuCateringSection locationName="Sandvika" />
       <GallerySection />
-      <LocationsSection locations={sandvikaOtherLocations} title="Andre Avdelinger" />
-      <NewsSection />
-      <ContactSection />
+      <VisitUsSection locations={sandvikaOtherLocations} currentLocationName="Sandvika" />
       <Footer />
     </div>
   );
