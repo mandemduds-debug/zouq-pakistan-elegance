@@ -12,16 +12,16 @@ All colors MUST be HSL.
     --background: 35 25% 78%;
     --foreground: 0 0% 12%;
 
-    --card: 35 15% 92%;
-    --card-foreground: 0 0% 12%;
+    --card: 35 20% 88%;
+    --card-foreground: 0 0% 8%;
 
-    --popover: 35 15% 92%;
-    --popover-foreground: 0 0% 12%;
+    --popover: 35 20% 88%;
+    --popover-foreground: 0 0% 8%;
 
     /* Earth Brown - Primary Brand */
-    --primary: 28 44% 42%;
+    --primary: 28 50% 38%;
     --primary-foreground: 0 0% 98%;
-    --primary-light: 28 34% 52%;
+    --primary-light: 28 40% 48%;
     
     /* Warm Beige Accents */
     --beige: 35 30% 65%;
@@ -29,9 +29,9 @@ All colors MUST be HSL.
     --beige-dark: 35 35% 55%;
 
     /* Refined Gold - Warmer & Sophisticated */
-    --gold: 40 60% 55%;
-    --gold-light: 40 50% 65%;
-    --gold-dark: 40 70% 45%;
+    --gold: 42 75% 50%;
+    --gold-light: 42 65% 60%;
+    --gold-dark: 42 85% 40%;
 
     /* Earth Tones */
     --earth: 28 44% 52%;
@@ -45,28 +45,28 @@ All colors MUST be HSL.
     --muted: 0 0% 96%;
     --muted-foreground: 0 0% 45%;
 
-    --accent: 28 44% 42%;
+    --accent: 28 50% 38%;
     --accent-foreground: 0 0% 98%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 90%;
-    --input: 0 0% 90%;
-    --ring: 28 44% 42%;
+    --border: 0 0% 85%;
+    --input: 0 0% 85%;
+    --ring: 28 50% 38%;
 
     /* Luxury Design Elements */
-    --gradient-hero: linear-gradient(135deg, hsl(28 44% 42%), hsl(40 60% 55%));
+    --gradient-hero: linear-gradient(135deg, hsl(28 50% 38%), hsl(42 75% 50%));
     --gradient-beige: linear-gradient(135deg, hsl(35 30% 65%), hsl(35 35% 55%));
-    --gradient-earth: linear-gradient(135deg, hsl(28 44% 42%), hsl(28 34% 52%));
-    --gradient-gold: linear-gradient(135deg, hsl(40 60% 55%), hsl(40 70% 45%));
+    --gradient-earth: linear-gradient(135deg, hsl(28 50% 38%), hsl(28 40% 48%));
+    --gradient-gold: linear-gradient(135deg, hsl(42 75% 50%), hsl(42 85% 40%));
     --gradient-overlay: linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 100%);
     
     /* Shadows & Effects */
     --shadow-luxury: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-    --shadow-beige: 0 10px 25px -3px rgba(139, 119, 101, 0.25);
-    --shadow-earth: 0 10px 25px -3px rgba(101, 87, 73, 0.3);
-    --shadow-gold: 0 10px 25px -3px rgba(184, 134, 11, 0.25);
+    --shadow-beige: 0 10px 25px -3px rgba(139, 119, 101, 0.3);
+    --shadow-earth: 0 10px 25px -3px rgba(101, 87, 73, 0.4);
+    --shadow-gold: 0 10px 25px -3px rgba(184, 134, 11, 0.4);
 
     /* Typography */
     --font-serif: 'Crimson Text', serif;
