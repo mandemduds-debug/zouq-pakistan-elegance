@@ -95,7 +95,7 @@ const ZouqAboutSection = () => {
           <div className={`relative ${isVisible ? 'animate-slide-left' : 'opacity-0'}`}>
             <div className="relative overflow-hidden rounded-lg shadow-luxury">
               <img
-                src="lovable-uploads/02c9a918-de9d-4f45-9445-4599a3958732.png"
+                src="/src/assets/restaurant-interior.jpg"
                 alt="Zouq restaurant interior"
                 className="w-full h-full object-cover hover-lift"
               />
@@ -110,7 +110,7 @@ const ZouqAboutSection = () => {
           <div className={`relative order-2 lg:order-1 ${isVisible ? 'animate-fade-up' : 'opacity-0'}`}>
             <div className="relative overflow-hidden rounded-lg shadow-luxury">
               <img
-                src="lovable-uploads/7155ae80-fe93-479c-a432-96b8038af0d3.png"
+                src="/src/assets/spices-gallery.jpg"
                 alt="Zouq restaurant experience"
                 className="w-full h-80 object-cover"
               />

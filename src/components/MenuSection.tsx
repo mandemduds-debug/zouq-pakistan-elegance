@@ -8,8 +8,8 @@ import authenticDesserts from '@/assets/authentic-desserts.jpg';
 const menuItems = [
   {
     category: 'Grill & Tandoor',
-    thumbnail: 'lovable-uploads/7dc4a78f-1f1e-4873-8f47-589c84560373.png',
-    image: 'lovable-uploads/ebda083b-c1b2-45f2-9fe2-c395c1766af5.png',
+    thumbnail: '/src/assets/grill-menu.jpg',
+    image: '/src/assets/biryani-dish.jpg',
     dishes: [
       { name: 'Chicken Tikka', description: 'Saftig kylling marinert i yoghurt og krydder', price: '285,-' },
       { name: 'Seekh Kebab', description: 'Krydret lammefarse grillet på spyd', price: '295,-' },

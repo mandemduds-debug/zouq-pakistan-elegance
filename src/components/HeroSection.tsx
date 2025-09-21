@@ -21,7 +21,7 @@ const HeroSection = () => {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
         <img
-          src="lovable-uploads/ad2bceb7-0cc8-49be-98a3-54b3b40df759.png"
+          src="/src/assets/hero-image.jpg"
           alt="Pakistani cuisine"
           className="w-full h-full object-cover"
         />

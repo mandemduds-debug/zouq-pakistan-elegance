@@ -75,7 +75,7 @@ const AboutSection = () => {
           <div className={`relative ${isVisible ? 'animate-slide-left' : 'opacity-0'}`}>
             <div className="relative overflow-hidden rounded-lg shadow-luxury">
               <img
-                src="lovable-uploads/02c9a918-de9d-4f45-9445-4599a3958732.png"
+                src="/src/assets/restaurant-interior.jpg"
                 alt="Zouq restaurant interior"
                 className="w-full h-full object-cover hover-lift"
               />
