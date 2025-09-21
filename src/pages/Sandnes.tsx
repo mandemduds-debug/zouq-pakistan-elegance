@@ -15,7 +15,7 @@ const sandnesOtherLocations = [
     address: 'Øvre Holmegate 15, 4006 Stavanger',
     phone: '+47 51 89 12 34',
     hours: 'Man-Søn: 15:00-23:00',
-    image: 'lovable-uploads/ec48a68c-03e0-4922-9379-bbc1c48b412e.png',
+    image: '/src/assets/restaurant-interior.jpg',
     description: 'Vår flaggskiprestaurant i hjerte av Stavanger'
   },
   {
@@ -23,7 +23,7 @@ const sandnesOtherLocations = [
     address: 'Sandvika Storsenter, 1338 Sandvika',
     phone: '+47 67 54 89 12',
     hours: 'Man-Søn: 15:00-23:00',
-    image: 'lovable-uploads/40a3966a-253d-46ab-ab9d-de95a85989b9.png',
+    image: '/src/assets/restaurant-interior.jpg',
     description: 'Pakistansk luksus ved fjorden'
   }
 ];
@@ -48,7 +48,7 @@ const SandnesHeroSection = () => {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
         <img
-          src="lovable-uploads/df1e41bf-c5fc-485b-a631-f0898f5169ab.png"
+          src="/src/assets/hero-image.jpg"
           alt="Zouq Sandnes"
           className="w-full h-full object-cover"
         />
