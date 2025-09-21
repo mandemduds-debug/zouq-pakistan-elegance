@@ -1,12 +1,12 @@
 import { useEffect, useRef, useState } from 'react';
 
 const galleryImages = [
-  { src: '/lovable-uploads/ec48a68c-03e0-4922-9379-bbc1c48b412e.png', alt: 'Tradisjonell biryani med autentiske krydder', category: 'Risretter' },
-  { src: '/lovable-uploads/0569bfec-2201-4826-aaee-bb73953e3383.png', alt: 'Fritert kylling med grønn chutney', category: 'Frityr' },
-  { src: '/lovable-uploads/c61c4a04-7bc6-4201-99c0-b6b51f685055.png', alt: 'Fersk naan-brød laget på tradisjonelt vis', category: 'Brød' },
-  { src: '/lovable-uploads/643fe63f-5487-4326-b506-16a1ee12231f.png', alt: 'Sizzling kebabs med grønnsaker', category: 'Grill' },
-  { src: '/lovable-uploads/40a3966a-253d-46ab-ab9d-de95a85989b9.png', alt: 'Krydret kylling med ris og drikke', category: 'Hovedretter' },
-  { src: '/lovable-uploads/d8928046-754e-48f3-872b-f3bb00c6fbef.png', alt: 'Vår erfarne kjøkkensjef', category: 'Kjøkken' }
+  { src: 'lovable-uploads/ec48a68c-03e0-4922-9379-bbc1c48b412e.png', alt: 'Tradisjonell biryani med autentiske krydder', category: 'Risretter' },
+  { src: 'lovable-uploads/0569bfec-2201-4826-aaee-bb73953e3383.png', alt: 'Fritert kylling med grønn chutney', category: 'Frityr' },
+  { src: 'lovable-uploads/c61c4a04-7bc6-4201-99c0-b6b51f685055.png', alt: 'Fersk naan-brød laget på tradisjonelt vis', category: 'Brød' },
+  { src: 'lovable-uploads/643fe63f-5487-4326-b506-16a1ee12231f.png', alt: 'Sizzling kebabs med grønnsaker', category: 'Grill' },
+  { src: 'lovable-uploads/40a3966a-253d-46ab-ab9d-de95a85989b9.png', alt: 'Krydret kylling med ris og drikke', category: 'Hovedretter' },
+  { src: 'lovable-uploads/d8928046-754e-48f3-872b-f3bb00c6fbef.png', alt: 'Vår erfarne kjøkkensjef', category: 'Kjøkken' }
 ];
 
 const GallerySection = () => {

@@ -11,7 +11,7 @@ const newsItems = [
     title: 'Ny signaturmeny lansert',
     date: '15. mars 2024',
     excerpt: 'Opplev våre nyeste kulinariske kreasjoner med sesongens beste ingredienser og tradisjonelle pakistanske smaker.',
-    image: '/lovable-uploads/ebda083b-c1b2-45f2-9fe2-c395c1766af5.png',
+    image: 'lovable-uploads/ebda083b-c1b2-45f2-9fe2-c395c1766af5.png',
     category: 'Meny'
   },
   {
@@ -25,7 +25,7 @@ const newsItems = [
     title: 'Ny interiørdesign og oppussing',
     date: '1. april 2024',
     excerpt: 'Vi har oppgradert våre lokaler med ny interiørdesign som kombinerer moderne eleganse med tradisjonelle pakistanske elementer.',
-    image: '/lovable-uploads/6b57ee31-1ce3-47a3-8a1e-79d15770e2da.png',
+    image: 'lovable-uploads/6b57ee31-1ce3-47a3-8a1e-79d15770e2da.png',
     category: 'Nyheter'
   }
 ];

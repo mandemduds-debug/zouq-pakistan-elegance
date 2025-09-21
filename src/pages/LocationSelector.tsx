@@ -11,7 +11,7 @@ const locations = [
     address: 'Øvre Holmegate 15, 4006 Stavanger',
     phone: '+47 51 89 12 34',
     hours: 'Man-Søn: 15:00-23:00',
-    image: '/lovable-uploads/ec48a68c-03e0-4922-9379-bbc1c48b412e.png',
+    image: 'lovable-uploads/ec48a68c-03e0-4922-9379-bbc1c48b412e.png',
     description: 'Vår flaggskiprestaurant i hjerte av Stavanger',
     route: '/stavanger'
   },
@@ -21,7 +21,7 @@ const locations = [
     address: 'Langgata 45, 4306 Sandnes',
     phone: '+47 51 68 45 67',
     hours: 'Man-Søn: 15:00-23:00',
-    image: '/lovable-uploads/df1e41bf-c5fc-485b-a631-f0898f5169ab.png',
+    image: 'lovable-uploads/df1e41bf-c5fc-485b-a631-f0898f5169ab.png',
     description: 'Moderne eleganse i Sandnes sentrum',
     route: '/sandnes'
   },
@@ -31,7 +31,7 @@ const locations = [
     address: 'Sandvika Storsenter, 1338 Sandvika',
     phone: '+47 67 54 89 12',
     hours: 'Man-Søn: 15:00-23:00',
-    image: '/lovable-uploads/40a3966a-253d-46ab-ab9d-de95a85989b9.png',
+    image: 'lovable-uploads/40a3966a-253d-46ab-ab9d-de95a85989b9.png',
     description: 'Pakistansk luksus ved fjorden',
     route: '/sandvika'
   }
@@ -56,7 +56,7 @@ const LocationSelector = () => {
         {/* Background Image with Overlay */}
         <div className="absolute inset-0">
           <img
-            src="/lovable-uploads/ad2bceb7-0cc8-49be-98a3-54b3b40df759.png"
+            src="lovable-uploads/ad2bceb7-0cc8-49be-98a3-54b3b40df759.png"
             alt="Zouq Restaurant"
             className="w-full h-full object-cover"
           />
