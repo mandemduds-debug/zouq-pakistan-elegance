@@ -1,12 +1,16 @@
 import { useEffect, useRef, useState } from 'react';
+import biryaniDish from '@/assets/biryani-dish.jpg';
+import grillMenu from '@/assets/grill-menu.jpg';
+import authenticDesserts from '@/assets/authentic-desserts.jpg';
+import spicesGallery from '@/assets/spices-gallery.jpg';
 
 const galleryImages = [
-  { src: '/src/assets/biryani-dish.jpg', alt: 'Tradisjonell biryani med autentiske krydder', category: 'Risretter' },
-  { src: '/src/assets/grill-menu.jpg', alt: 'Fritert kylling med grønn chutney', category: 'Frityr' },
-  { src: '/src/assets/authentic-desserts.jpg', alt: 'Fersk naan-brød laget på tradisjonelt vis', category: 'Brød' },
-  { src: '/src/assets/grill-menu.jpg', alt: 'Sizzling kebabs med grønnsaker', category: 'Grill' },
-  { src: '/src/assets/biryani-dish.jpg', alt: 'Krydret kylling med ris og drikke', category: 'Hovedretter' },
-  { src: '/src/assets/spices-gallery.jpg', alt: 'Vår erfarne kjøkkensjef', category: 'Kjøkken' }
+  { src: biryaniDish, alt: 'Tradisjonell biryani med autentiske krydder', category: 'Risretter' },
+  { src: grillMenu, alt: 'Fritert kylling med grønn chutney', category: 'Frityr' },
+  { src: authenticDesserts, alt: 'Fersk naan-brød laget på tradisjonelt vis', category: 'Brød' },
+  { src: grillMenu, alt: 'Sizzling kebabs med grønnsaker', category: 'Grill' },
+  { src: biryaniDish, alt: 'Krydret kylling med ris og drikke', category: 'Hovedretter' },
+  { src: spicesGallery, alt: 'Vår erfarne kjøkkensjef', category: 'Kjøkken' }
 ];
 
 const GallerySection = () => {
