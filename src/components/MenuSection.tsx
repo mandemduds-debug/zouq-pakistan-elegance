@@ -4,12 +4,13 @@ import { Button } from '@/components/ui/button';
 import { ShoppingCart } from 'lucide-react';
 import biryaniDish from '@/assets/biryani-dish.jpg';
 import authenticDesserts from '@/assets/authentic-desserts.jpg';
+import grillMenu from '@/assets/grill-menu.jpg';
 
 const menuItems = [
   {
     category: 'Grill & Tandoor',
-    thumbnail: '/src/assets/grill-menu.jpg',
-    image: '/src/assets/biryani-dish.jpg',
+    thumbnail: grillMenu,
+    image: biryaniDish,
     dishes: [
       { name: 'Chicken Tikka', description: 'Saftig kylling marinert i yoghurt og krydder', price: '285,-' },
       { name: 'Seekh Kebab', description: 'Krydret lammefarse grillet på spyd', price: '295,-' },

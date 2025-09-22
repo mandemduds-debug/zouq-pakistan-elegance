@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { MapPin, Clock, Phone } from 'lucide-react';
+import restaurantInterior from '@/assets/restaurant-interior.jpg';
 
 const defaultLocations = [
   {
@@ -9,15 +10,15 @@ const defaultLocations = [
     address: 'Øvre Holmegate 15, 4006 Stavanger',
     phone: '+47 51 89 12 34',
     hours: 'Man-Søn: 15:00-23:00',
-    image: '/src/assets/restaurant-interior.jpg',
-    description: 'Vår flaggskiprestaurant i hjerte av Stavanger'
+    image: restaurantInterior,
+    description: 'Vår flaggskiprestaurant i hjarte av Stavanger'
   },
   {
     name: 'Sandnes',
     address: 'Langgata 45, 4306 Sandnes',
     phone: '+47 51 68 45 67',
     hours: 'Man-Søn: 15:00-23:00',
-    image: '/src/assets/restaurant-interior.jpg',
+    image: restaurantInterior,
     description: 'Moderne eleganse i Sandnes sentrum'
   },
   {
@@ -25,7 +26,7 @@ const defaultLocations = [
     address: 'Sandvika Storsenter, 1338 Sandvika',
     phone: '+47 67 54 89 12',
     hours: 'Man-Søn: 15:00-23:00',
-    image: '/src/assets/restaurant-interior.jpg',
+    image: restaurantInterior,
     description: 'Pakistansk luksus ved fjorden'
   }
 ];

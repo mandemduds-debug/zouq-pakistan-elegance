@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import restaurantInterior from '@/assets/restaurant-interior.jpg';
 
 const AboutSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -75,7 +76,7 @@ const AboutSection = () => {
           <div className={`relative ${isVisible ? 'animate-slide-left' : 'opacity-0'}`}>
             <div className="relative overflow-hidden rounded-lg shadow-luxury">
               <img
-                src="/src/assets/restaurant-interior.jpg"
+                src={restaurantInterior}
                 alt="Zouq restaurant interior"
                 className="w-full h-full object-cover hover-lift"
               />

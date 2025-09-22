@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Music, Users, Utensils, Sparkles } from 'lucide-react';
+import restaurantInterior from '@/assets/restaurant-interior.jpg';
+import spicesGallery from '@/assets/spices-gallery.jpg';
 
 const experiences = [
   {
@@ -95,7 +97,7 @@ const ZouqAboutSection = () => {
           <div className={`relative ${isVisible ? 'animate-slide-left' : 'opacity-0'}`}>
             <div className="relative overflow-hidden rounded-lg shadow-luxury">
               <img
-                src="/src/assets/restaurant-interior.jpg"
+                src={restaurantInterior}
                 alt="Zouq restaurant interior"
                 className="w-full h-full object-cover hover-lift"
               />
@@ -110,7 +112,7 @@ const ZouqAboutSection = () => {
           <div className={`relative order-2 lg:order-1 ${isVisible ? 'animate-fade-up' : 'opacity-0'}`}>
             <div className="relative overflow-hidden rounded-lg shadow-luxury">
               <img
-                src="/src/assets/spices-gallery.jpg"
+                src={spicesGallery}
                 alt="Zouq restaurant experience"
                 className="w-full h-80 object-cover"
               />

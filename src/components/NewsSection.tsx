@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Calendar, ArrowRight } from 'lucide-react';
-
+import biryaniDish from '@/assets/biryani-dish.jpg';
 import culturalEveningImage from '@/assets/news-cultural-evening.jpg';
 import renovationImage from '@/assets/news-renovation.jpg';
 
@@ -11,7 +11,7 @@ const newsItems = [
     title: 'Ny signaturmeny lansert',
     date: '15. mars 2024',
     excerpt: 'Opplev våre nyeste kulinariske kreasjoner med sesongens beste ingredienser og tradisjonelle pakistanske smaker.',
-    image: '/src/assets/biryani-dish.jpg',
+    image: biryaniDish,
     category: 'Meny'
   },
   {
@@ -25,7 +25,7 @@ const newsItems = [
     title: 'Ny interiørdesign og oppussing',
     date: '1. april 2024',
     excerpt: 'Vi har oppgradert våre lokaler med ny interiørdesign som kombinerer moderne eleganse med tradisjonelle pakistanske elementer.',
-    image: '/src/assets/news-renovation.jpg',
+    image: renovationImage,
     category: 'Nyheter'
   }
 ];

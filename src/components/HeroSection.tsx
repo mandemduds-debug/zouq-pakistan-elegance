@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { ChevronDown } from 'lucide-react';
+import heroImage from '@/assets/hero-image.jpg';
 
 const HeroSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -21,7 +22,7 @@ const HeroSection = () => {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
         <img
-          src="/src/assets/hero-image.jpg"
+          src={heroImage}
           alt="Pakistani cuisine"
           className="w-full h-full object-cover"
         />
