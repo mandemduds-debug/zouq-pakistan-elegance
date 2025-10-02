@@ -52,7 +52,7 @@ const LocationSelector = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         {/* Background Image with Overlay */}
         <div className="absolute inset-0">
           <img
@@ -69,13 +69,13 @@ const LocationSelector = () => {
         {/* Content */}
         <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
           <div className={`transition-all duration-1000 ${isVisible ? 'animate-fade-up' : 'opacity-0 translate-y-10'}`}>
-            <h1 className="text-6xl md:text-8xl font-serif font-bold text-white mb-6 leading-tight">
+            <h1 className="text-5xl md:text-6xl font-serif font-bold text-white mb-4 leading-tight">
               Zouq
             </h1>
-            <p className="text-2xl md:text-3xl text-gold font-serif font-semibold mb-6">
+            <p className="text-xl md:text-2xl text-gold font-serif font-semibold mb-3">
               Velg din restaurant
             </p>
-            <p className="text-lg md:text-xl text-white/80 mb-16 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-base md:text-lg text-white/80 max-w-2xl mx-auto leading-relaxed">
               Opplev autentiske smaker fra Pakistan i elegante og moderne omgivelser
             </p>
           </div>
@@ -83,14 +83,14 @@ const LocationSelector = () => {
       </section>
 
       {/* Location Selection */}
-      <section className="py-20 bg-background">
+      <section className="py-12 bg-background">
         <div className="container mx-auto px-6">
-          <div className={`text-center mb-16 ${isVisible ? 'animate-fade-up' : 'opacity-0'}`}>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-foreground mb-4">
+          <div className={`text-center mb-12 ${isVisible ? 'animate-fade-up' : 'opacity-0'}`}>
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mb-3">
               Våre Restauranter
             </h2>
-            <div className="w-24 h-1 bg-gradient-gold mx-auto mb-6"></div>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <div className="w-24 h-1 bg-gradient-gold mx-auto mb-4"></div>
+            <p className="text-base text-muted-foreground max-w-2xl mx-auto">
               Velg den restauranten som passer deg best. Hver lokasjon tilbyr den samme høye kvaliteten og autentiske smaken.
             </p>
           </div>
