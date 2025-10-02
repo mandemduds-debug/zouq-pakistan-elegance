@@ -54,7 +54,7 @@ const StavangerHeroSection = () => {
           alt="Zouq Stavanger"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/70" />
+        <div className="absolute inset-0 bg-black/60" />
       </div>
 
       {/* Pattern Overlay */}
