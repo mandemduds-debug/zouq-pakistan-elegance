@@ -1,6 +1,7 @@
 import LocationSpecificNavigation from '@/components/LocationSpecificNavigation';
 import ZouqAboutSection from '@/components/ZouqAboutSection';
 import MenuCateringSection from '@/components/MenuCateringSection';
+import ExperienceSection from '@/components/ExperienceSection';
 import GallerySection from '@/components/GallerySection';
 import VisitUsSection from '@/components/VisitUsSection';
 import Footer from '@/components/Footer';
@@ -53,7 +54,7 @@ const StavangerHeroSection = () => {
           alt="Zouq Stavanger"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-overlay" />
+        <div className="absolute inset-0 bg-black/50" />
       </div>
 
       {/* Pattern Overlay */}
@@ -116,6 +117,7 @@ const Stavanger = () => {
       <StavangerHeroSection />
       <ZouqAboutSection />
       <MenuCateringSection locationName="Stavanger" />
+      <ExperienceSection />
       <GallerySection />
       <VisitUsSection locations={stavangerOtherLocations} currentLocationName="Stavanger" />
       <Footer />
