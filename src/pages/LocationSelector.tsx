@@ -53,7 +53,7 @@ const LocationSelector = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background flex flex-col pb-0">
+    <div className="bg-background flex flex-col">
       {/* Kompakt Header */}
       <header className="relative py-6 flex items-center justify-center bg-primary">
         <div className="relative z-10 text-center px-6">
@@ -125,7 +125,7 @@ const LocationSelector = () => {
       </main>
 
       {/* Kompakt Footer */}
-      <footer className="bg-primary text-primary-foreground py-6 mt-auto">
+      <footer className="bg-primary text-primary-foreground py-6">
         <div className="container mx-auto px-6">
           <div className="text-center">
             <div className="flex flex-wrap justify-center gap-4 text-sm">
