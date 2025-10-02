@@ -125,7 +125,7 @@ const LocationSelector = () => {
       </main>
 
       {/* Kompakt Footer */}
-      <footer className="bg-primary text-primary-foreground py-6">
+      <footer className="bg-primary text-primary-foreground pt-6 pb-0">
         <div className="container mx-auto px-6">
           <div className="text-center">
             <div className="flex flex-wrap justify-center gap-4 text-sm">
