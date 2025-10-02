@@ -1,7 +1,7 @@
 import LocationSpecificNavigation from '@/components/LocationSpecificNavigation';
 import ZouqAboutSection from '@/components/ZouqAboutSection';
 import MenuCateringSection from '@/components/MenuCateringSection';
-import ExperienceSection from '@/components/ExperienceSection';
+import ZouqExperienceSection from '@/components/ZouqExperienceSection';
 import GallerySection from '@/components/GallerySection';
 import VisitUsSection from '@/components/VisitUsSection';
 import Footer from '@/components/Footer';
@@ -117,7 +117,7 @@ const Stavanger = () => {
       <StavangerHeroSection />
       <ZouqAboutSection />
       <MenuCateringSection locationName="Stavanger" />
-      <ExperienceSection />
+      <ZouqExperienceSection />
       <GallerySection />
       <VisitUsSection locations={stavangerOtherLocations} currentLocationName="Stavanger" />
       <Footer />
