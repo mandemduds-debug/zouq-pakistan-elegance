@@ -61,11 +61,8 @@ const LocationSelector = () => {
           <img 
             src={zouqLogo} 
             alt="Zouq Restaurant Logo" 
-            className="h-16 md:h-20 mx-auto mb-2"
+            className="h-16 md:h-20 mx-auto"
           />
-          <p className="text-lg md:text-xl text-gold font-serif font-semibold">
-            Velg din restaurant
-          </p>
         </div>
       </header>
 
@@ -90,12 +87,9 @@ const LocationSelector = () => {
                   />
                 </div>
                 <CardContent className="p-5">
-                  <h2 className="text-2xl font-serif font-bold text-foreground mb-2">
+                  <h2 className="text-2xl font-serif font-bold text-foreground mb-4">
                     {location.name}
                   </h2>
-                  <p className="text-muted-foreground mb-4 text-sm leading-relaxed">
-                    {location.description}
-                  </p>
                   
                   <div className="space-y-2 mb-5">
                     <div className="flex items-start text-sm text-muted-foreground">
