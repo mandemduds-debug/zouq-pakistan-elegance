@@ -107,7 +107,8 @@ const LocationSelector = () => {
                   </div>
                   
                   <Button 
-                    className="w-full bg-gradient-gold text-background font-semibold hover:opacity-90 transition-all"
+                    className="w-full bg-gradient-gold font-semibold hover:opacity-90 transition-all"
+                    style={{ color: '#f4e9da' }}
                   >
                     Velg Restaurant
                   </Button>
