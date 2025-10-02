@@ -7,6 +7,7 @@ import Footer from '@/components/Footer';
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { ChevronDown } from 'lucide-react';
+import stavangerHero from '@/assets/stavanger-hero.png';
 
 // Location-specific locations (excluding current location)
 const stavangerOtherLocations = [
@@ -48,7 +49,7 @@ const StavangerHeroSection = () => {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
         <img
-          src="/src/assets/hero-image.jpg"
+          src={stavangerHero}
           alt="Zouq Stavanger"
           className="w-full h-full object-cover"
         />
@@ -65,14 +66,13 @@ const StavangerHeroSection = () => {
             Zouq Stavanger
           </h1>
           <p className="text-xl md:text-2xl text-white/90 mb-4 font-light">
-            Vår flaggskiprestaurant i hjerte av Stavanger
+            Autentisk pakistansk mat midt i hjertet av Stavanger
           </p>
           <p className="text-2xl md:text-3xl text-gold font-serif font-semibold mb-8">
             Øvre Holmegate 15
           </p>
           <p className="text-lg md:text-xl text-white/80 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Opplev autentiske smaker fra Pakistan i elegante og moderne omgivelser. 
-            Vi kombinerer tradisjonell gjestfrihet med sofistikert kulinarisk kunstnerskap.
+            Opplev pakistansk mat i elegante og moderne omgivelser – der tradisjonell gjestfrihet møter ekte pakistansk matkultur.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 
