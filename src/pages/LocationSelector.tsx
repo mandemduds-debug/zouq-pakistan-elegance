@@ -67,7 +67,7 @@ const LocationSelector = () => {
       </header>
 
       {/* Restauranter - Synlige Umiddelbart */}
-      <main className="flex-1 py-12 pb-6" style={{ backgroundColor: '#f4e9da' }}>
+      <main className="py-12 pb-4" style={{ backgroundColor: '#f4e9da' }}>
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid md:grid-cols-3 gap-6 max-w-7xl mx-auto">
             {locations.map((location, index) => (
@@ -118,7 +118,7 @@ const LocationSelector = () => {
               </Card>
             ))}
           </div>
-          <p className="text-center text-foreground text-base md:text-lg mt-8 max-w-2xl mx-auto">
+          <p className="text-center text-foreground text-base md:text-lg mt-6 mb-2 max-w-2xl mx-auto">
             Spis ekte pakistansk mat. Vi tilbyr både dine-in og takeaway. Velg din restaurant for å utforske menyen vår.
           </p>
         </div>
