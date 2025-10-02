@@ -118,7 +118,7 @@ const LocationSelector = () => {
               </Card>
             ))}
           </div>
-          <p className="text-center text-foreground text-base md:text-lg mt-6 mb-2 max-w-2xl mx-auto">
+          <p className="text-center text-foreground text-base md:text-lg mt-10 mb-8 max-w-2xl mx-auto">
             Spis ekte pakistansk mat. Vi tilbyr både dine-in og takeaway. Velg din restaurant for å utforske menyen vår.
           </p>
         </div>
