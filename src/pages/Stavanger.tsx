@@ -46,7 +46,7 @@ const StavangerHeroSection = () => {
   };
 
   return (
-    <section id="hjem" className="relative h-screen flex items-center justify-center overflow-hidden">
+    <section id="hjem" className="relative h-[70vh] flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
         <img
@@ -54,7 +54,7 @@ const StavangerHeroSection = () => {
           alt="Zouq Stavanger"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/50" />
+        <div className="absolute inset-0 bg-black/70" />
       </div>
 
       {/* Pattern Overlay */}
@@ -63,16 +63,16 @@ const StavangerHeroSection = () => {
       {/* Content */}
       <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
         <div className={`transition-all duration-1000 ${isVisible ? 'animate-fade-up' : 'opacity-0 translate-y-10'}`}>
-          <h1 className="text-5xl md:text-7xl font-serif font-bold text-white mb-6 leading-tight">
+          <h1 className="text-6xl md:text-8xl font-serif font-bold text-white mb-6 leading-tight">
             Zouq Stavanger
           </h1>
-          <p className="text-2xl md:text-3xl text-gold font-serif font-semibold mb-8">
+          <p className="text-3xl md:text-4xl text-gold font-serif font-semibold mb-8">
             Øvre Holmegate 15
           </p>
-          <p className="text-xl md:text-2xl text-white/90 mb-4 font-light">
+          <p className="text-2xl md:text-3xl text-white/90 mb-4 font-light">
             Autentisk pakistansk mat midt i hjertet av Stavanger
           </p>
-          <p className="text-lg md:text-xl text-white/80 mb-12 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-white/80 mb-12 max-w-2xl mx-auto leading-relaxed">
             Opplev pakistansk mat i elegante og moderne omgivelser – der tradisjonell gjestfrihet møter ekte pakistansk matkultur.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
