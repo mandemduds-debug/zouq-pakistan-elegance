@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import stavangerImage from '@/assets/stavanger-location.png';
 import sandnesImage from '@/assets/sandnes-location.png';
 import sandvikaImage from '@/assets/sandvika-location.png';
+import zouqLogo from '@/assets/zouq-logo.png';
 
 const locations = [
   {
@@ -57,9 +58,11 @@ const LocationSelector = () => {
       {/* Kompakt Header */}
       <header className="relative py-6 flex items-center justify-center bg-primary">
         <div className="relative z-10 text-center px-6">
-          <h1 className="text-4xl md:text-5xl font-serif font-bold text-primary-foreground mb-1">
-            Zouq
-          </h1>
+          <img 
+            src={zouqLogo} 
+            alt="Zouq Restaurant Logo" 
+            className="h-16 md:h-20 mx-auto mb-2"
+          />
           <p className="text-lg md:text-xl text-gold font-serif font-semibold">
             Velg din restaurant
           </p>
