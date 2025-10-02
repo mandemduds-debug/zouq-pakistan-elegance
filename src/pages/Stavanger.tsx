@@ -77,14 +77,14 @@ const StavangerHeroSection = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 
               size="lg" 
-              className="bg-gradient-gold text-background font-semibold hover:opacity-90 transition-all hover-lift text-lg px-8 py-6"
+              className="bg-gradient-gold text-white font-semibold hover:opacity-90 transition-all hover-lift text-lg px-8 py-6"
             >
               Book Bord
             </Button>
             <Button 
               variant="outline" 
               size="lg"
-              className="bg-white text-gold border-white hover:bg-white/90 hover:text-gold transition-all hover-lift text-lg px-8 py-6 font-semibold"
+              className="bg-white/10 text-white border-white hover:bg-white/20 transition-all hover-lift text-lg px-8 py-6 font-semibold"
               onClick={() => document.getElementById('meny')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Bestill Takeaway
