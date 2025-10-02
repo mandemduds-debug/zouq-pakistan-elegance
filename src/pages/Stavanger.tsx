@@ -65,11 +65,11 @@ const StavangerHeroSection = () => {
           <h1 className="text-5xl md:text-7xl font-serif font-bold text-white mb-6 leading-tight">
             Zouq Stavanger
           </h1>
-          <p className="text-xl md:text-2xl text-white/90 mb-4 font-light">
-            Autentisk pakistansk mat midt i hjertet av Stavanger
-          </p>
           <p className="text-2xl md:text-3xl text-gold font-serif font-semibold mb-8">
             Øvre Holmegate 15
+          </p>
+          <p className="text-xl md:text-2xl text-white/90 mb-4 font-light">
+            Autentisk pakistansk mat midt i hjertet av Stavanger
           </p>
           <p className="text-lg md:text-xl text-white/80 mb-12 max-w-2xl mx-auto leading-relaxed">
             Opplev pakistansk mat i elegante og moderne omgivelser – der tradisjonell gjestfrihet møter ekte pakistansk matkultur.
