@@ -1,29 +1,22 @@
 import { useEffect, useRef, useState } from 'react';
 import restaurantInterior from '@/assets/restaurant-interior.jpg';
-
 const ZouqAboutSection = () => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
-
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
-      },
-      { threshold: 0.2 }
-    );
-
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        setIsVisible(true);
+      }
+    }, {
+      threshold: 0.2
+    });
     if (sectionRef.current) {
       observer.observe(sectionRef.current);
     }
-
     return () => observer.disconnect();
   }, []);
-
-  return (
-    <section id="om-oss" ref={sectionRef} className="py-32 bg-background">
+  return <section id="om-oss" ref={sectionRef} className="py-32 bg-background">
       <div className="container mx-auto px-6">
         {/* Main About Content */}
         <div className="grid lg:grid-cols-2 gap-20 items-center">
@@ -53,7 +46,7 @@ const ZouqAboutSection = () => {
 
             <div className="grid md:grid-cols-3 gap-8 pt-8">
               <div className="text-center">
-                <div className="text-3xl font-serif font-bold text-gold mb-2">15+</div>
+                <div className="text-3xl font-serif font-bold text-gold mb-2">12+</div>
                 <div className="text-sm text-muted-foreground uppercase tracking-wide">År erfaring</div>
               </div>
               <div className="text-center">
@@ -70,18 +63,12 @@ const ZouqAboutSection = () => {
           {/* Image */}
           <div className={`relative ${isVisible ? 'animate-slide-left' : 'opacity-0'}`}>
             <div className="relative overflow-hidden rounded-lg shadow-luxury">
-              <img
-                src={restaurantInterior}
-                alt="Zouq restaurant interior"
-                className="w-full h-full object-cover hover-lift"
-              />
+              <img src={restaurantInterior} alt="Zouq restaurant interior" className="w-full h-full object-cover hover-lift" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ZouqAboutSection;
