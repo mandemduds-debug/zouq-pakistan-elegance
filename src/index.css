@@ -18,10 +18,10 @@ All colors MUST be HSL.
     --popover: 35 20% 88%;
     --popover-foreground: 0 0% 8%;
 
-    /* Earth Brown - Primary Brand */
-    --primary: 28 50% 38%;
+    /* Dark Green - Primary Brand */
+    --primary: 107 26% 17%;
     --primary-foreground: 0 0% 98%;
-    --primary-light: 28 40% 48%;
+    --primary-light: 107 26% 27%;
     
     /* Warm Beige Accents */
     --beige: 35 30% 65%;
