@@ -12,10 +12,6 @@ const Footer = () => {
             <div className="text-3xl font-serif font-bold text-gold mb-4">
               Zouq
             </div>
-            <p className="text-background/80 leading-relaxed mb-6">
-              En smak av Pakistan, løftet til luksus. Vi skaper ikke bare måltider, 
-              men opplevelser som engasjerer alle sanser.
-            </p>
             <div className="flex space-x-4">
               <a
                 href="#"

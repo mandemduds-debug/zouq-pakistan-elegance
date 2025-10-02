@@ -64,11 +64,8 @@ const LocationSelector = () => {
       </header>
 
       {/* Restauranter - Synlige Umiddelbart */}
-      <main className="flex-1 bg-muted py-12">
+      <main className="flex-1 py-12" style={{ backgroundColor: '#f4e9da' }}>
         <div className="container mx-auto px-4 md:px-6">
-          <p className="text-center text-foreground text-base md:text-lg mb-8 max-w-2xl mx-auto">
-            Spis ekte pakistansk mat. Vi tilbyr både dine-in og takeaway. Velg din restaurant for å utforske menyen vår.
-          </p>
           <div className="grid md:grid-cols-3 gap-6 max-w-7xl mx-auto">
             {locations.map((location, index) => (
               <Card 
@@ -118,6 +115,9 @@ const LocationSelector = () => {
               </Card>
             ))}
           </div>
+          <p className="text-center text-foreground text-base md:text-lg mt-8 max-w-2xl mx-auto">
+            Spis ekte pakistansk mat. Vi tilbyr både dine-in og takeaway. Velg din restaurant for å utforske menyen vår.
+          </p>
         </div>
       </main>
 
@@ -125,9 +125,6 @@ const LocationSelector = () => {
       <footer className="bg-primary text-primary-foreground py-6">
         <div className="container mx-auto px-6">
           <div className="text-center">
-            <p className="text-sm text-primary-foreground/80 mb-3">
-              En smak av Pakistan, løftet til luksus
-            </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm">
               <a href="tel:+4751891234" className="hover:text-gold transition-colors">
                 Tlf: +47 51 89 12 34
