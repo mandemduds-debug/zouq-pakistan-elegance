@@ -38,7 +38,7 @@ const ZouqAboutSection = () => {
               </p>
               
               <p>
-                På Zouq tar vi vare på den pakistanske matkulturen og ekte gjestfriheten. Vi serverer autentiske smaker laget etter tradisjonelle oppskrifter, presentert på en moderne og autentisk måte.
+                På Zouq serverer vi autentisk pakistansk mat, laget etter tradisjonelle oppskrifter. Hos oss møter du også den ekte gjestfriheten og den levende matkulturen Pakistan er kjent for.
               </p>
             </div>
 
