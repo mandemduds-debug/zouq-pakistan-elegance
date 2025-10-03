@@ -1,7 +1,7 @@
 import LocationSpecificNavigation from '@/components/LocationSpecificNavigation';
 import ZouqAboutSection from '@/components/ZouqAboutSection';
 import MenuCateringSection from '@/components/MenuCateringSection';
-import GallerySection from '@/components/GallerySection';
+
 import VisitUsSection from '@/components/VisitUsSection';
 import Footer from '@/components/Footer';
 import { useState, useEffect } from 'react';
@@ -116,7 +116,7 @@ const Sandvika = () => {
       <SandvikaHeroSection />
       <ZouqAboutSection />
       <MenuCateringSection locationName="Sandvika" />
-      <GallerySection />
+      
       <VisitUsSection locations={sandvikaOtherLocations} currentLocationName="Sandvika" />
       <Footer />
     </div>
