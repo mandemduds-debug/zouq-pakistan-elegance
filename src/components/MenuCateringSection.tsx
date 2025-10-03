@@ -7,6 +7,10 @@ import { ShoppingCart, Phone, Users, Calendar, MapPin, Star, Check, Clock, Chevr
 import biryaniDish from '@/assets/biryani-dish.jpg';
 import authenticDesserts from '@/assets/authentic-desserts.jpg';
 import grillMenu from '@/assets/grill-menu.jpg';
+import menuWrapDeal from '@/assets/menu-wrap-deal.jpg';
+import menuVegetarDeal from '@/assets/menu-vegetar-deal.jpg';
+import menuButterChicken from '@/assets/menu-butter-chicken.jpg';
+import menuSnackDeal from '@/assets/menu-snack-deal.jpg';
 
 const menuCategories = [
   {
@@ -189,12 +193,28 @@ const MenuCateringSection = ({ locationName }: MenuCateringSectionProps) => {
 
         <Tabs defaultValue="meny" className="w-full">
           <TabsList className="grid w-full grid-cols-2 mb-12">
-            <TabsTrigger value="meny">Vår Meny</TabsTrigger>
+            <TabsTrigger value="meny">Meny</TabsTrigger>
             <TabsTrigger value="catering">Catering</TabsTrigger>
           </TabsList>
 
           {/* Menu Tab */}
           <TabsContent value="meny" className="space-y-8">
+            {/* Menu Images Gallery */}
+            <div className={`grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 ${isVisible ? 'animate-fade-up' : 'opacity-0'}`}>
+              <div className="relative aspect-square overflow-hidden rounded-lg shadow-lg hover-lift">
+                <img src={menuWrapDeal} alt="Wrap Deal" className="w-full h-full object-cover" />
+              </div>
+              <div className="relative aspect-square overflow-hidden rounded-lg shadow-lg hover-lift">
+                <img src={menuVegetarDeal} alt="Vegetar Deal" className="w-full h-full object-cover" />
+              </div>
+              <div className="relative aspect-square overflow-hidden rounded-lg shadow-lg hover-lift">
+                <img src={menuButterChicken} alt="Butter Chicken Deal" className="w-full h-full object-cover" />
+              </div>
+              <div className="relative aspect-square overflow-hidden rounded-lg shadow-lg hover-lift">
+                <img src={menuSnackDeal} alt="Snack Deal" className="w-full h-full object-cover" />
+              </div>
+            </div>
+
             {/* Complete Menu with All Categories */}
             <div className={`space-y-6 ${isVisible ? 'animate-fade-up' : 'opacity-0'}`}>
               {menuCategories.map((category, categoryIndex) => (
