@@ -38,9 +38,7 @@ const ZouqAboutSection = () => {
               </p>
               
               <p>
-                På Zouq tar vi denne rike arven og løfter den til nye høyder. Vi kombinerer 
-                <span className="text-gold font-semibold"> autentiske smaker</span> med moderne 
-                kulinarisk innovasjon, tradisjonelle oppskrifter med elegante presentasjoner.
+                På Zouq tar vi vare på den pakistanske matkulturen og ekte gjestfriheten. Vi serverer autentiske smaker laget etter tradisjonelle oppskrifter, presentert på en moderne og autentisk måte.
               </p>
             </div>
 
