@@ -10,38 +10,41 @@ import grillMenu from '@/assets/grill-menu.jpg';
 
 const menuItems = [
   {
-    category: 'Grill & Tandoor',
+    category: 'Meal Deals',
     thumbnail: grillMenu,
-    image: biryaniDish,
+    image: grillMenu,
     dishes: [
-      { name: 'Chicken Tikka', description: 'Saftig kylling marinert i yoghurt og krydder', price: '285,-' },
-      { name: 'Seekh Kebab', description: 'Krydret lammefarse grillet på spyd', price: '295,-' },
-      { name: 'Lamb Chops', description: 'Møre lammekotelett med pakistanske krydder', price: '385,-' },
-      { name: 'Tandoori Chicken', description: 'Hel kylling grillet i tandoor-ovn', price: '345,-' },
-      { name: 'Fish Tikka', description: 'Marinert torsk grillet på spyd', price: '325,-' },
-      { name: 'Mixed Grill Platter', description: 'Utvalg av våre beste grillretter', price: '445,-' }
+      { name: 'Wrap deal', description: 'Kylling Tikka wrap og valgfri 0,5 l brus', price: '180,-' },
+      { name: 'Butter Chicken deal', description: 'Butter chicken, naan og valgfri brus', price: '299,-' },
+      { name: 'BBQ deal', description: 'Tandoori kyllinglår, naan valgfri 0,5 l brus', price: '299,-' },
+      { name: 'Burger deal', description: 'Cheeseburger, pommes frites valgfri 0,5 l brus', price: '219,-' },
+      { name: 'Snack deal', description: 'Pakora vegetar, Potato cheese balls, samosa vegetar valgfri 0,5 l brus', price: '215,-' },
+      { name: 'Naan dip deal', description: 'Naan, chutney mix valgfri 0,5 l brus', price: '129,-' }
     ]
   },
   {
-    category: 'Risretter',
-    thumbnail: biryaniDish,
-    image: biryaniDish,
-    dishes: [
-      { name: 'Lamb Biryani', description: 'Aromatisk basmatiris med mørt lam og saffran', price: '345,-' },
-      { name: 'Chicken Biryani', description: 'Klassisk biryani med saftig kylling', price: '325,-' },
-      { name: 'Beef Biryani', description: 'Rik biryani med mørt storfekjøtt', price: '335,-' },
-      { name: 'Prawn Biryani', description: 'Eksotisk biryani med reker og krydder', price: '365,-' }
-    ]
-  },
-  {
-    category: 'Desserter',
+    category: 'Vegetar & Vegan',
     thumbnail: authenticDesserts,
     image: authenticDesserts,
     dishes: [
-      { name: 'Kheer', description: 'Kremet rispudding med pistasienøtter', price: '125,-' },
-      { name: 'Gulab Jamun', description: 'Søte melkeboller i kardemomme-sirup', price: '135,-' },
-      { name: 'Kulfi', description: 'Tradisjonell pakistansk is med mandler', price: '115,-' },
-      { name: 'Ras Malai', description: 'Mjuke paneer-boller i søt melk', price: '145,-' }
+      { name: 'Vegetar deal', description: 'Daal tarka, naan og valgfri 0,5 l brus', price: '275,-' },
+      { name: 'Vegan deal', description: 'Chana masala, roti og valgfri 0,5 l brus', price: '275,-' },
+      { name: 'Daal Tarka', description: 'Gule linser med indiske krydder', price: '235,-' },
+      { name: 'Chana Masala', description: 'Kikerter i krydret tomatsaus', price: '245,-' },
+      { name: 'Pakora Vegetar', description: 'Friterte grønnsaker i kikertdeig', price: '145,-' },
+      { name: 'Samosa Vegetar', description: 'Sprø trekanter fylt med krydrede grønnsaker', price: '135,-' }
+    ]
+  },
+  {
+    category: 'Grill & Tandoor',
+    thumbnail: biryaniDish,
+    image: biryaniDish,
+    dishes: [
+      { name: 'Chicken Tikka', description: 'Saftig kylling marinert i yoghurt og krydder', price: '285,-' },
+      { name: 'Tandoori Kyllinglår', description: 'Kyllinglår grillet i tandoor-ovn', price: '265,-' },
+      { name: 'Seekh Kebab', description: 'Krydret lammefarse grillet på spyd', price: '295,-' },
+      { name: 'Lamb Chops', description: 'Møre lammekotelett med pakistanske krydder', price: '385,-' },
+      { name: 'Mixed Grill Platter', description: 'Utvalg av våre beste grillretter', price: '445,-' }
     ]
   }
 ];
