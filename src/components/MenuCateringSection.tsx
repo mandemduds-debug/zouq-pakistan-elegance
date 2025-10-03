@@ -14,19 +14,19 @@ import menuSnackDeal from '@/assets/menu-snack-deal.jpg';
 import menuNaanDip from '@/assets/menu-naan-dip.jpg';
 import menuBurgerDeal from '@/assets/menu-burger-deal.jpg';
 import menuBbqDeal from '@/assets/menu-bbq-deal.jpg';
-import menuSamosaKylling from '@/assets/menu-samosa-kylling.jpg';
-import menuSamosaVegetar from '@/assets/menu-samosa-vegetar.jpg';
-import menuPakoraKylling from '@/assets/menu-pakora-kylling.jpg';
-import menuPlainNaan from '@/assets/menu-plain-naan.jpg';
-import menuGarlicNaan from '@/assets/menu-garlic-naan.jpg';
-import menuChickenTikka from '@/assets/menu-chicken-tikka.jpg';
-import menuSeekhKebab from '@/assets/menu-seekh-kebab.jpg';
-import menuChickenWrap from '@/assets/menu-chicken-wrap.jpg';
-import menuTikkaPizza from '@/assets/menu-tikka-pizza.jpg';
-import menuCheeseburger from '@/assets/menu-cheeseburger.jpg';
-import menuMangoLassi from '@/assets/menu-mango-lassi.jpg';
-import menuVeganDeal from '@/assets/menu-vegan-deal.jpg';
-import menuRaita from '@/assets/menu-raita.jpg';
+import menuSamosaKylling from '/lovable-uploads/40a3966a-253d-46ab-ab9d-de95a85989b9.png';
+import menuSamosaVegetar from '/lovable-uploads/df1e41bf-c5fc-485b-a631-f0898f5169ab.png';
+import menuPakoraKylling from '/lovable-uploads/0569bfec-2201-4826-aaee-bb73953e3383.png';
+import menuPlainNaan from '/lovable-uploads/6449f5ba-b4d4-40dc-96c5-442acf6bdbed.png';
+import menuGarlicNaan from '/lovable-uploads/643fe63f-5487-4326-b506-16a1ee12231f.png';
+import menuChickenTikka from '/lovable-uploads/ec48a68c-03e0-4922-9379-bbc1c48b412e.png';
+import menuSeekhKebab from '/lovable-uploads/6b57ee31-1ce3-47a3-8a1e-79d15770e2da.png';
+import menuChickenWrap from '/lovable-uploads/3aac6634-81d7-42d6-9d70-b33f276fd4a1.png';
+import menuTikkaPizza from '/lovable-uploads/df28d691-fcae-4363-a23c-6a9561a94587.png';
+import menuCheeseburger from '/lovable-uploads/02c9a918-de9d-4f45-9445-4599a3958732.png';
+import menuMangoLassi from '/lovable-uploads/ebda083b-c1b2-45f2-9fe2-c395c1766af5.png';
+import menuVeganDeal from '/lovable-uploads/c61c4a04-7bc6-4201-99c0-b6b51f685055.png';
+import menuRaita from '/lovable-uploads/40eb0406-05e1-4dbb-9c63-c74807ba87f9.png';
 
 const menuCategories = [
   {
