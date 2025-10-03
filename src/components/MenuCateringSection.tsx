@@ -11,124 +11,140 @@ import menuWrapDeal from '@/assets/menu-wrap-deal.jpg';
 import menuVegetarDeal from '@/assets/menu-vegetar-deal.jpg';
 import menuButterChicken from '@/assets/menu-butter-chicken.jpg';
 import menuSnackDeal from '@/assets/menu-snack-deal.jpg';
+import menuNaanDip from '@/assets/menu-naan-dip.jpg';
+import menuBurgerDeal from '@/assets/menu-burger-deal.jpg';
+import menuBbqDeal from '@/assets/menu-bbq-deal.jpg';
+import menuSamosaKylling from '@/assets/menu-samosa-kylling.jpg';
+import menuSamosaVegetar from '@/assets/menu-samosa-vegetar.jpg';
+import menuPakoraKylling from '@/assets/menu-pakora-kylling.jpg';
+import menuPlainNaan from '@/assets/menu-plain-naan.jpg';
+import menuGarlicNaan from '@/assets/menu-garlic-naan.jpg';
+import menuChickenTikka from '@/assets/menu-chicken-tikka.jpg';
+import menuSeekhKebab from '@/assets/menu-seekh-kebab.jpg';
+import menuChickenWrap from '@/assets/menu-chicken-wrap.jpg';
+import menuTikkaPizza from '@/assets/menu-tikka-pizza.jpg';
+import menuCheeseburger from '@/assets/menu-cheeseburger.jpg';
+import menuMangoLassi from '@/assets/menu-mango-lassi.jpg';
+import menuVeganDeal from '@/assets/menu-vegan-deal.jpg';
+import menuRaita from '@/assets/menu-raita.jpg';
 
 const menuCategories = [
   {
     name: 'Meal deals',
     dishes: [
-      { name: 'Wrap deal', description: 'Kylling Tikka wrap og valgfri 0,5 l brus', price: '180,-' },
-      { name: 'Vegetar deal', description: 'Daal tarka, naan og valgfri 0,5 l brus', price: '275,-' },
-      { name: 'Butter Chicken deal', description: 'Butter chicken, naan og valgfri brus', price: '299,-' },
-      { name: 'Snack deal', description: 'Pakora vegetar, Potato cheese balls, samosa vegetar valgfri 0,5 l brus', price: '215,-' },
-      { name: 'Naan dip deal', description: 'Naan, chutney mix valgfri 0,5 l brus', price: '129,-' },
-      { name: 'Burger deal', description: 'Cheeseburger, pommes frites valgfri 0,5 l brus', price: '219,-' },
-      { name: 'BBQ deal', description: 'Tandoori kyllinglår, naan valgfri 0,5 l brus', price: '299,-' },
-      { name: 'Vegan deal', description: 'Chana masala, roti og valgfri 0,5 l brus', price: '275,-' }
+      { name: 'Wrap deal', description: 'Kylling Tikka wrap og valgfri 0,5 l brus', price: '180,-', image: menuWrapDeal },
+      { name: 'Vegetar deal', description: 'Daal tarka, naan og valgfri 0,5 l brus', price: '275,-', image: menuVegetarDeal },
+      { name: 'Butter Chicken deal', description: 'Butter chicken, naan og valgfri brus', price: '299,-', image: menuButterChicken },
+      { name: 'Snack deal', description: 'Pakora vegetar, Potato cheese balls, samosa vegetar valgfri 0,5 l brus', price: '215,-', image: menuSnackDeal },
+      { name: 'Naan dip deal', description: 'Naan, chutney mix valgfri 0,5 l brus', price: '129,-', image: menuNaanDip },
+      { name: 'Burger deal', description: 'Cheeseburger, pommes frites valgfri 0,5 l brus', price: '219,-', image: menuBurgerDeal },
+      { name: 'BBQ deal', description: 'Tandoori kyllinglår, naan valgfri 0,5 l brus', price: '299,-', image: menuBbqDeal },
+      { name: 'Vegan deal', description: 'Chana masala, roti og valgfri 0,5 l brus', price: '275,-', image: menuVeganDeal }
     ]
   },
   {
     name: 'Street food, salat & supper',
     dishes: [
-      { name: 'Samosa kylling', description: 'Sprø trekanter fylt med krydret kylling', price: '145,-' },
-      { name: 'Samosa vegetar', description: 'Sprø trekanter fylt med krydrede grønnsaker', price: '135,-' },
-      { name: 'Pakora kylling', description: 'Fritert kylling i kikertdeig', price: '155,-' },
-      { name: 'Pakora vegetar', description: 'Friterte grønnsaker i kikertdeig', price: '145,-' },
-      { name: 'Potato cheese balls', description: 'Friterte potetboller med ost', price: '145,-' },
-      { name: 'Daal suppe', description: 'Kremet linsesuppe med krydder', price: '125,-' },
-      { name: 'Kylling suppe', description: 'Varmende kyllingsuppe', price: '135,-' },
-      { name: 'Grønn salat', description: 'Frisk salat med vår spesielle dressing', price: '95,-' }
+      { name: 'Samosa kylling', description: 'Sprø trekanter fylt med krydret kylling', price: '145,-', image: menuSamosaKylling },
+      { name: 'Samosa vegetar', description: 'Sprø trekanter fylt med krydrede grønnsaker', price: '135,-', image: menuSamosaVegetar },
+      { name: 'Pakora kylling', description: 'Fritert kylling i kikertdeig', price: '155,-', image: menuPakoraKylling },
+      { name: 'Pakora vegetar', description: 'Friterte grønnsaker i kikertdeig', price: '145,-', image: authenticDesserts },
+      { name: 'Potato cheese balls', description: 'Friterte potetboller med ost', price: '145,-', image: menuSnackDeal },
+      { name: 'Daal suppe', description: 'Kremet linsesuppe med krydder', price: '125,-', image: menuVegetarDeal },
+      { name: 'Kylling suppe', description: 'Varmende kyllingsuppe', price: '135,-', image: grillMenu },
+      { name: 'Grønn salat', description: 'Frisk salat med vår spesielle dressing', price: '95,-', image: authenticDesserts }
     ]
   },
   {
     name: 'Naan-brød & Roti',
     dishes: [
-      { name: 'Plain naan', description: 'Klassisk hvitt naan-brød', price: '45,-' },
-      { name: 'Butter naan', description: 'Naan penslet med smør', price: '55,-' },
-      { name: 'Garlic naan', description: 'Naan med hvitløk', price: '65,-' },
-      { name: 'Cheese naan', description: 'Naan fylt med ost', price: '75,-' },
-      { name: 'Keema naan', description: 'Naan fylt med krydret kjøttfarse', price: '85,-' },
-      { name: 'Peshawari naan', description: 'Søtt naan med nøtter og rosiner', price: '75,-' },
-      { name: 'Roti', description: 'Tradisjonelt fullkorn-flatbrød', price: '45,-' }
+      { name: 'Plain naan', description: 'Klassisk hvitt naan-brød', price: '45,-', image: menuPlainNaan },
+      { name: 'Butter naan', description: 'Naan penslet med smør', price: '55,-', image: menuPlainNaan },
+      { name: 'Garlic naan', description: 'Naan med hvitløk', price: '65,-', image: menuGarlicNaan },
+      { name: 'Cheese naan', description: 'Naan fylt med ost', price: '75,-', image: menuPlainNaan },
+      { name: 'Keema naan', description: 'Naan fylt med krydret kjøttfarse', price: '85,-', image: menuPlainNaan },
+      { name: 'Peshawari naan', description: 'Søtt naan med nøtter og rosiner', price: '75,-', image: menuPlainNaan },
+      { name: 'Roti', description: 'Tradisjonelt fullkorn-flatbrød', price: '45,-', image: menuPlainNaan }
     ]
   },
   {
     name: 'Grill & Tandoori (inkl ris)',
     dishes: [
-      { name: 'Chicken Tikka', description: 'Saftig kylling marinert i yoghurt og krydder', price: '285,-' },
-      { name: 'Chicken Malai Tikka', description: 'Kremet kylling tikka', price: '295,-' },
-      { name: 'Tandoori kyllinglår', description: 'Kyllinglår grillet i tandoor-ovn', price: '275,-' },
-      { name: 'Seekh Kebab', description: 'Krydret lammefarse grillet på spyd', price: '295,-' },
-      { name: 'Lamb Chops', description: 'Møre lammekotelett med pakistanske krydder', price: '385,-' },
-      { name: 'Mixed Grill', description: 'Utvalg av våre beste grillretter', price: '445,-' },
-      { name: 'Fish Tikka', description: 'Marinert fisk grillet på spyd', price: '325,-' },
-      { name: 'Paneer Tikka', description: 'Grillet ost med krydder (vegetar)', price: '265,-' }
+      { name: 'Chicken Tikka', description: 'Saftig kylling marinert i yoghurt og krydder', price: '285,-', image: menuChickenTikka },
+      { name: 'Chicken Malai Tikka', description: 'Kremet kylling tikka', price: '295,-', image: menuChickenTikka },
+      { name: 'Tandoori kyllinglår', description: 'Kyllinglår grillet i tandoor-ovn', price: '275,-', image: menuBbqDeal },
+      { name: 'Seekh Kebab', description: 'Krydret lammefarse grillet på spyd', price: '295,-', image: menuSeekhKebab },
+      { name: 'Lamb Chops', description: 'Møre lammekotelett med pakistanske krydder', price: '385,-', image: grillMenu },
+      { name: 'Mixed Grill', description: 'Utvalg av våre beste grillretter', price: '445,-', image: grillMenu },
+      { name: 'Fish Tikka', description: 'Marinert fisk grillet på spyd', price: '325,-', image: menuChickenTikka },
+      { name: 'Paneer Tikka', description: 'Grillet ost med krydder (vegetar)', price: '265,-', image: authenticDesserts }
     ]
   },
   {
     name: 'Gruppemeny (inkl ris)',
     dishes: [
-      { name: 'Chicken Karahi', description: 'Kylling i wok med paprika og tomat', price: '315,-' },
-      { name: 'Butter Chicken', description: 'Kylling i kremet tomatsaus', price: '315,-' },
-      { name: 'Chicken Korma', description: 'Kylling i mild kremet saus', price: '315,-' },
-      { name: 'Lamb Karahi', description: 'Lam i wok med paprika og tomat', price: '345,-' },
-      { name: 'Lamb Korma', description: 'Lam i mild kremet saus', price: '345,-' },
-      { name: 'Beef Nihari', description: 'Langsomt kokt storfekjøtt', price: '335,-' },
-      { name: 'Palak Paneer', description: 'Ost i spinatsaus (vegetar)', price: '285,-' },
-      { name: 'Daal Tarka', description: 'Gule linser med krydder (vegetar)', price: '265,-' },
-      { name: 'Chana Masala', description: 'Kikerter i krydret tomatsaus (vegan)', price: '265,-' }
+      { name: 'Chicken Karahi', description: 'Kylling i wok med paprika og tomat', price: '315,-', image: menuButterChicken },
+      { name: 'Butter Chicken', description: 'Kylling i kremet tomatsaus', price: '315,-', image: menuButterChicken },
+      { name: 'Chicken Korma', description: 'Kylling i mild kremet saus', price: '315,-', image: menuButterChicken },
+      { name: 'Lamb Karahi', description: 'Lam i wok med paprika og tomat', price: '345,-', image: grillMenu },
+      { name: 'Lamb Korma', description: 'Lam i mild kremet saus', price: '345,-', image: grillMenu },
+      { name: 'Beef Nihari', description: 'Langsomt kokt storfekjøtt', price: '335,-', image: biryaniDish },
+      { name: 'Palak Paneer', description: 'Ost i spinatsaus (vegetar)', price: '285,-', image: authenticDesserts },
+      { name: 'Daal Tarka', description: 'Gule linser med krydder (vegetar)', price: '265,-', image: menuVegetarDeal },
+      { name: 'Chana Masala', description: 'Kikerter i krydret tomatsaus (vegan)', price: '265,-', image: menuVeganDeal }
     ]
   },
   {
     name: 'Naan wraps',
     dishes: [
-      { name: 'Chicken Tikka wrap', description: 'Kylling tikka i naan med salat og dressing', price: '175,-' },
-      { name: 'Seekh Kebab wrap', description: 'Lammekebab i naan med salat og dressing', price: '185,-' },
-      { name: 'Paneer Tikka wrap', description: 'Grillet ost i naan med salat (vegetar)', price: '165,-' },
-      { name: 'Falafel wrap', description: 'Falafel i naan med salat (vegan)', price: '155,-' }
+      { name: 'Chicken Tikka wrap', description: 'Kylling tikka i naan med salat og dressing', price: '175,-', image: menuChickenWrap },
+      { name: 'Seekh Kebab wrap', description: 'Lammekebab i naan med salat og dressing', price: '185,-', image: menuWrapDeal },
+      { name: 'Paneer Tikka wrap', description: 'Grillet ost i naan med salat (vegetar)', price: '165,-', image: menuChickenWrap },
+      { name: 'Falafel wrap', description: 'Falafel i naan med salat (vegan)', price: '155,-', image: menuWrapDeal }
     ]
   },
   {
     name: 'Pizza',
     dishes: [
-      { name: 'Margherita', description: 'Tomat, ost', price: '165,-' },
-      { name: 'Pepperoni', description: 'Tomat, ost, pepperoni', price: '185,-' },
-      { name: 'Tikka Pizza', description: 'Tomat, ost, chicken tikka, løk, paprika', price: '195,-' },
-      { name: 'Kebab Pizza', description: 'Tomat, ost, kebab, løk, paprika', price: '195,-' },
-      { name: 'Vegetar Pizza', description: 'Tomat, ost, grønnsaker', price: '175,-' }
+      { name: 'Margherita', description: 'Tomat, ost', price: '165,-', image: menuTikkaPizza },
+      { name: 'Pepperoni', description: 'Tomat, ost, pepperoni', price: '185,-', image: menuTikkaPizza },
+      { name: 'Tikka Pizza', description: 'Tomat, ost, chicken tikka, løk, paprika', price: '195,-', image: menuTikkaPizza },
+      { name: 'Kebab Pizza', description: 'Tomat, ost, kebab, løk, paprika', price: '195,-', image: menuTikkaPizza },
+      { name: 'Vegetar Pizza', description: 'Tomat, ost, grønnsaker', price: '175,-', image: menuTikkaPizza }
     ]
   },
   {
     name: 'Burgermeny',
     dishes: [
-      { name: 'Hamburger', description: 'Burger med salat, tomat, løk, dressing', price: '165,-' },
-      { name: 'Cheeseburger', description: 'Burger med ost, salat, tomat, løk, dressing', price: '179,-' },
-      { name: 'Chicken Burger', description: 'Kyllingburger med salat og dressing', price: '175,-' },
-      { name: 'Tikka Burger', description: 'Chicken tikka burger med spesialdressing', price: '189,-' },
-      { name: 'Veggie Burger', description: 'Vegetarburger med salat (vegetar)', price: '165,-' }
+      { name: 'Hamburger', description: 'Burger med salat, tomat, løk, dressing', price: '165,-', image: menuCheeseburger },
+      { name: 'Cheeseburger', description: 'Burger med ost, salat, tomat, løk, dressing', price: '179,-', image: menuCheeseburger },
+      { name: 'Chicken Burger', description: 'Kyllingburger med salat og dressing', price: '175,-', image: menuBurgerDeal },
+      { name: 'Tikka Burger', description: 'Chicken tikka burger med spesialdressing', price: '189,-', image: menuBurgerDeal },
+      { name: 'Veggie Burger', description: 'Vegetarburger med salat (vegetar)', price: '165,-', image: menuCheeseburger }
     ]
   },
   {
     name: 'Chutneys & Dressinger',
     dishes: [
-      { name: 'Raita', description: 'Yoghurt med agurk og mynte', price: '45,-' },
-      { name: 'Mango chutney', description: 'Søt og syrlig mangochutney', price: '35,-' },
-      { name: 'Mint chutney', description: 'Frisk myntesaus', price: '35,-' },
-      { name: 'Tamarind chutney', description: 'Søt og syrlig tamarindsaus', price: '35,-' },
-      { name: 'Chili sauce', description: 'Sterk chilisaus', price: '35,-' },
-      { name: 'Hvitløksdressing', description: 'Kremet hvitløksdressing', price: '45,-' }
+      { name: 'Raita', description: 'Yoghurt med agurk og mynte', price: '45,-', image: menuRaita },
+      { name: 'Mango chutney', description: 'Søt og syrlig mangochutney', price: '35,-', image: menuRaita },
+      { name: 'Mint chutney', description: 'Frisk myntesaus', price: '35,-', image: menuRaita },
+      { name: 'Tamarind chutney', description: 'Søt og syrlig tamarindsaus', price: '35,-', image: menuRaita },
+      { name: 'Chili sauce', description: 'Sterk chilisaus', price: '35,-', image: menuRaita },
+      { name: 'Hvitløksdressing', description: 'Kremet hvitløksdressing', price: '45,-', image: menuRaita }
     ]
   },
   {
     name: 'Drikke',
     dishes: [
-      { name: 'Coca-Cola 0,5L', description: 'Klassisk Coca-Cola', price: '45,-' },
-      { name: 'Coca-Cola Zero 0,5L', description: 'Sukkerfri Coca-Cola', price: '45,-' },
-      { name: 'Fanta 0,5L', description: 'Appelsin brus', price: '45,-' },
-      { name: 'Sprite 0,5L', description: 'Sitron/lime brus', price: '45,-' },
-      { name: 'Vann 0,5L', description: 'Flaskevann', price: '35,-' },
-      { name: 'Lassi Sweet', description: 'Søt yoghurtdrikk', price: '65,-' },
-      { name: 'Lassi Salt', description: 'Salt yoghurtdrikk', price: '65,-' },
-      { name: 'Mango Lassi', description: 'Yoghurtdrikk med mango', price: '75,-' }
+      { name: 'Coca-Cola 0,5L', description: 'Klassisk Coca-Cola', price: '45,-', image: menuMangoLassi },
+      { name: 'Coca-Cola Zero 0,5L', description: 'Sukkerfri Coca-Cola', price: '45,-', image: menuMangoLassi },
+      { name: 'Fanta 0,5L', description: 'Appelsin brus', price: '45,-', image: menuMangoLassi },
+      { name: 'Sprite 0,5L', description: 'Sitron/lime brus', price: '45,-', image: menuMangoLassi },
+      { name: 'Vann 0,5L', description: 'Flaskevann', price: '35,-', image: menuMangoLassi },
+      { name: 'Lassi Sweet', description: 'Søt yoghurtdrikk', price: '65,-', image: menuMangoLassi },
+      { name: 'Lassi Salt', description: 'Salt yoghurtdrikk', price: '65,-', image: menuMangoLassi },
+      { name: 'Mango Lassi', description: 'Yoghurtdrikk med mango', price: '75,-', image: menuMangoLassi }
     ]
   }
 ];
@@ -236,18 +252,27 @@ const MenuCateringSection = ({ locationName }: MenuCateringSectionProps) => {
                               key={dishIndex} 
                               className="border-b border-border pb-4 last:border-b-0 hover:bg-secondary/10 p-3 rounded-lg transition-colors"
                             >
-                              <div className="flex justify-between items-start gap-4">
-                                <div className="flex-1">
-                                  <h4 className="text-lg font-semibold text-foreground mb-1">
-                                    {dish.name}
-                                  </h4>
-                                  <p className="text-muted-foreground text-sm">
-                                    {dish.description}
-                                  </p>
+                              <div className="flex items-center gap-4">
+                                <div className="w-24 h-24 flex-shrink-0 overflow-hidden rounded-lg">
+                                  <img 
+                                    src={dish.image} 
+                                    alt={dish.name} 
+                                    className="w-full h-full object-cover hover-lift"
+                                  />
                                 </div>
-                                <span className="text-xl font-serif font-bold text-gold whitespace-nowrap">
-                                  {dish.price}
-                                </span>
+                                <div className="flex-1 flex justify-between items-start gap-4">
+                                  <div>
+                                    <h4 className="text-lg font-semibold text-foreground mb-1">
+                                      {dish.name}
+                                    </h4>
+                                    <p className="text-muted-foreground text-sm">
+                                      {dish.description}
+                                    </p>
+                                  </div>
+                                  <span className="text-xl font-serif font-bold text-gold whitespace-nowrap">
+                                    {dish.price}
+                                  </span>
+                                </div>
                               </div>
                             </div>
                           ))}
