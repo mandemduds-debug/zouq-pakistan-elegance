@@ -54,71 +54,18 @@ const LocationSpecificNavigation: React.FC<LocationSpecificNavigationProps> = ({
             </span>
           </div>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
-            <button 
-              onClick={() => scrollToSection('hjem')} 
-              className="hover:text-gold transition-colors"
-            >
-              Hjem
-            </button>
-            <button 
-              onClick={() => scrollToSection('meny')} 
-              className="hover:text-gold transition-colors"
-            >
-              Meny
-            </button>
-            <button 
-              onClick={() => scrollToSection('catering')} 
-              className="hover:text-gold transition-colors"
-            >
-              Catering
-            </button>
-            <button 
-              onClick={() => scrollToSection('opplevelsen')} 
-              className="hover:text-gold transition-colors"
-            >
-              Opplevelsen
-            </button>
-            <button 
-              onClick={() => scrollToSection('om-oss')} 
-              className="hover:text-gold transition-colors"
-            >
-              Om Oss
-            </button>
-            <button 
-              onClick={() => scrollToSection('lokasjoner')} 
-              className="hover:text-gold transition-colors"
-            >
-              Andre avdelinger
-            </button>
-            <button 
-              onClick={() => scrollToSection('kontakt')} 
-              className="hover:text-gold transition-colors"
-            >
-              Kontakt
-            </button>
-            <Button 
-              className="bg-gradient-gold text-background hover:opacity-90 transition-all font-semibold"
-            >
-              Book Bord
-            </Button>
-          </div>
-
-          {/* Mobile Menu Button */}
+          {/* Burger Menu Button */}
           <button
-            className="md:hidden p-2"
+            className="p-2"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
         </div>
 
-        {/* Mobile Menu */}
+        {/* Burger Menu */}
         {isMobileMenuOpen && (
-          <div className={`md:hidden mt-4 py-4 rounded-lg ${
-            isScrolled ? 'bg-background/95' : 'bg-black/50'
-          }`}>
+          <div className="mt-4 py-4 rounded-lg bg-background/95 backdrop-blur-sm">
             <div className="flex flex-col space-y-4">
               <button 
                 onClick={navigateToHome}
@@ -156,12 +103,6 @@ const LocationSpecificNavigation: React.FC<LocationSpecificNavigationProps> = ({
                 className="text-left py-2 hover:text-gold transition-colors"
               >
                 Om Oss
-              </button>
-              <button 
-                onClick={() => scrollToSection('lokasjoner')} 
-                className="text-left py-2 hover:text-gold transition-colors"
-              >
-                Andre avdelinger
               </button>
               <button 
                 onClick={() => scrollToSection('kontakt')} 
