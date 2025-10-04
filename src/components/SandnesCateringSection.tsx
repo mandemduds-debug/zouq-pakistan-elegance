@@ -280,25 +280,25 @@ const SandnesCateringSection = () => {
 
         {/* CTA Section */}
         <div id="catering-contact" className="text-center">
-          <div className="bg-gradient-gold rounded-2xl p-8 md:p-12 text-background shadow-2xl">
-            <h3 className="text-3xl md:text-4xl font-serif font-bold mb-4">
+          <div className="bg-gradient-gold rounded-2xl p-8 md:p-12 shadow-2xl">
+            <h3 className="text-3xl md:text-4xl font-serif font-bold mb-4 text-white drop-shadow-md">
               Klar for å bestille catering i Sandnes?
             </h3>
-            <p className="text-lg mb-8 opacity-90 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg mb-8 max-w-2xl mx-auto leading-relaxed text-white/95 drop-shadow">
               La oss gjøre ditt neste arrangement i Sandnes til en kulinarisk opplevelse. 
               Kontakt oss for tilpasset tilbud!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
                 size="lg" 
-                className="bg-background text-gold hover:bg-background/90 font-semibold text-lg px-8 py-6 shadow-lg"
+                className="bg-white text-gold hover:bg-white/95 font-semibold text-lg px-8 py-6 shadow-lg"
               >
                 Bestill Catering Nå
               </Button>
               <Button 
                 variant="outline" 
                 size="lg"
-                className="bg-background/20 border-2 border-background text-background hover:bg-background hover:text-gold font-semibold text-lg px-8 py-6"
+                className="bg-white/95 border-2 border-white text-gold hover:bg-white hover:text-gold/90 font-semibold text-lg px-8 py-6 shadow-md"
               >
                 <Phone className="h-5 w-5 mr-2" />
                 Få et Tilbud i Dag
