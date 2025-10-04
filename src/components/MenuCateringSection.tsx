@@ -215,81 +215,127 @@ const MenuCateringSection = ({ locationName }: MenuCateringSectionProps) => {
 
           {/* Menu Tab */}
           <TabsContent value="meny" className="space-y-8">
-            {/* Menu Images Gallery */}
-            <div className={`grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 ${isVisible ? 'animate-fade-up' : 'opacity-0'}`}>
-              <div className="relative aspect-square overflow-hidden rounded-lg shadow-lg hover-lift">
-                <img src={menuWrapDeal} alt="Wrap Deal" className="w-full h-full object-cover" />
-              </div>
-              <div className="relative aspect-square overflow-hidden rounded-lg shadow-lg hover-lift">
-                <img src={menuVegetarDeal} alt="Vegetar Deal" className="w-full h-full object-cover" />
-              </div>
-              <div className="relative aspect-square overflow-hidden rounded-lg shadow-lg hover-lift">
-                <img src={menuButterChicken} alt="Butter Chicken Deal" className="w-full h-full object-cover" />
-              </div>
-              <div className="relative aspect-square overflow-hidden rounded-lg shadow-lg hover-lift">
-                <img src={menuSnackDeal} alt="Snack Deal" className="w-full h-full object-cover" />
-              </div>
+            {/* Intro Text */}
+            <div className={`text-center mb-8 ${isVisible ? 'animate-fade-up' : 'opacity-0'}`}>
+              <h3 className="text-2xl md:text-3xl font-serif font-bold text-foreground mb-4">
+                Smak våre beste retter
+              </h3>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                Opplev høydepunktene fra vår autentiske pakistanske meny. Bestill takeaway og nyt smakene hjemme!
+              </p>
             </div>
 
-            {/* Complete Menu with All Categories */}
-            <div className={`space-y-6 ${isVisible ? 'animate-fade-up' : 'opacity-0'}`}>
-              {menuCategories.map((category, categoryIndex) => (
-                <Collapsible key={categoryIndex}>
-                  <Card className="overflow-hidden">
-                    <CollapsibleTrigger className="w-full">
-                      <div className="flex items-center justify-between p-6 hover:bg-secondary/30 transition-colors cursor-pointer">
-                        <h3 className="text-2xl font-serif font-bold text-foreground text-left">
-                          {category.name}
-                        </h3>
-                        <ChevronDown className="h-6 w-6 text-muted-foreground transition-transform duration-200" />
-                      </div>
-                    </CollapsibleTrigger>
-                    <CollapsibleContent>
-                      <CardContent className="p-6 pt-0">
-                        <div className="space-y-4">
-                          {category.dishes.map((dish, dishIndex) => (
-                            <div 
-                              key={dishIndex} 
-                              className="border-b border-border pb-4 last:border-b-0 hover:bg-secondary/10 p-3 rounded-lg transition-colors"
-                            >
-                              <div className="flex items-center gap-4">
-                                <div className="w-24 h-24 flex-shrink-0 overflow-hidden rounded-lg">
-                                  <img 
-                                    src={dish.image} 
-                                    alt={dish.name} 
-                                    className="w-full h-full object-cover hover-lift"
-                                  />
-                                </div>
-                                <div className="flex-1 flex justify-between items-start gap-4">
-                                  <div>
-                                    <h4 className="text-lg font-semibold text-foreground mb-1">
-                                      {dish.name}
-                                    </h4>
-                                    <p className="text-muted-foreground text-sm">
-                                      {dish.description}
-                                    </p>
-                                  </div>
-                                  <span className="text-xl font-serif font-bold text-gold whitespace-nowrap">
-                                    {dish.price}
-                                  </span>
-                                </div>
-                              </div>
-                            </div>
-                          ))}
-                        </div>
-                      </CardContent>
-                    </CollapsibleContent>
-                  </Card>
-                </Collapsible>
-              ))}
+            {/* Highlighted Dishes Grid */}
+            <div className={`grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12 ${isVisible ? 'animate-fade-up' : 'opacity-0'}`}>
+              {/* Butter Chicken Deal */}
+              <Card className="overflow-hidden hover-lift">
+                <div className="aspect-video overflow-hidden">
+                  <img src={menuButterChicken} alt="Butter Chicken Deal" className="w-full h-full object-cover" />
+                </div>
+                <CardContent className="p-6">
+                  <h4 className="text-xl font-serif font-bold text-foreground mb-2">
+                    Butter Chicken Deal
+                  </h4>
+                  <p className="text-muted-foreground mb-3">
+                    Butter chicken, naan og valgfri brus
+                  </p>
+                  <span className="text-2xl font-serif font-bold text-gold">299,-</span>
+                </CardContent>
+              </Card>
+
+              {/* Wrap Deal */}
+              <Card className="overflow-hidden hover-lift">
+                <div className="aspect-video overflow-hidden">
+                  <img src={menuWrapDeal} alt="Wrap Deal" className="w-full h-full object-cover" />
+                </div>
+                <CardContent className="p-6">
+                  <h4 className="text-xl font-serif font-bold text-foreground mb-2">
+                    Wrap Deal
+                  </h4>
+                  <p className="text-muted-foreground mb-3">
+                    Kylling Tikka wrap og valgfri 0,5 l brus
+                  </p>
+                  <span className="text-2xl font-serif font-bold text-gold">180,-</span>
+                </CardContent>
+              </Card>
+
+              {/* BBQ Deal */}
+              <Card className="overflow-hidden hover-lift">
+                <div className="aspect-video overflow-hidden">
+                  <img src={menuBbqDeal} alt="BBQ Deal" className="w-full h-full object-cover" />
+                </div>
+                <CardContent className="p-6">
+                  <h4 className="text-xl font-serif font-bold text-foreground mb-2">
+                    BBQ Deal
+                  </h4>
+                  <p className="text-muted-foreground mb-3">
+                    Tandoori kyllinglår, naan valgfri 0,5 l brus
+                  </p>
+                  <span className="text-2xl font-serif font-bold text-gold">299,-</span>
+                </CardContent>
+              </Card>
+
+              {/* Vegetar Deal */}
+              <Card className="overflow-hidden hover-lift">
+                <div className="aspect-video overflow-hidden">
+                  <img src={menuVegetarDeal} alt="Vegetar Deal" className="w-full h-full object-cover" />
+                </div>
+                <CardContent className="p-6">
+                  <h4 className="text-xl font-serif font-bold text-foreground mb-2">
+                    Vegetar Deal
+                  </h4>
+                  <p className="text-muted-foreground mb-3">
+                    Daal tarka, naan og valgfri 0,5 l brus
+                  </p>
+                  <span className="text-2xl font-serif font-bold text-gold">275,-</span>
+                </CardContent>
+              </Card>
+
+              {/* Snack Deal */}
+              <Card className="overflow-hidden hover-lift">
+                <div className="aspect-video overflow-hidden">
+                  <img src={menuSnackDeal} alt="Snack Deal" className="w-full h-full object-cover" />
+                </div>
+                <CardContent className="p-6">
+                  <h4 className="text-xl font-serif font-bold text-foreground mb-2">
+                    Snack Deal
+                  </h4>
+                  <p className="text-muted-foreground mb-3">
+                    Pakora vegetar, Potato cheese balls, samosa vegetar valgfri 0,5 l brus
+                  </p>
+                  <span className="text-2xl font-serif font-bold text-gold">215,-</span>
+                </CardContent>
+              </Card>
+
+              {/* Naan Dip Deal */}
+              <Card className="overflow-hidden hover-lift">
+                <div className="aspect-video overflow-hidden">
+                  <img src={menuNaanDip} alt="Naan Dip Deal" className="w-full h-full object-cover" />
+                </div>
+                <CardContent className="p-6">
+                  <h4 className="text-xl font-serif font-bold text-foreground mb-2">
+                    Naan Dip Deal
+                  </h4>
+                  <p className="text-muted-foreground mb-3">
+                    Naan, chutney mix valgfri 0,5 l brus
+                  </p>
+                  <span className="text-2xl font-serif font-bold text-gold">129,-</span>
+                </CardContent>
+              </Card>
             </div>
 
-            {/* Order Button */}
-            <div className="text-center mt-12">
+            {/* Call to Action */}
+            <div className={`text-center bg-primary/5 rounded-lg p-8 mb-8 ${isVisible ? 'animate-fade-up' : 'opacity-0'}`}>
+              <h3 className="text-2xl md:text-3xl font-serif font-bold text-foreground mb-4">
+                Klar for å bestille?
+              </h3>
+              <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">
+                Se hele menyen og bestill dine favoritter for takeaway. Rask levering og fersk, autentisk mat!
+              </p>
               <Button asChild size="lg" className="hover-lift">
                 <a href="https://stavanger.zouq.no/articles" target="_blank" rel="noopener noreferrer">
                   <ShoppingCart className="mr-2 h-5 w-5" />
-                  Bestill Takeaway
+                  Bestill Takeaway Nå
                 </a>
               </Button>
             </div>
