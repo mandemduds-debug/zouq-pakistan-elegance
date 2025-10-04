@@ -173,16 +173,16 @@ const VisitUsSection = ({ locations, currentLocationName }: VisitUsSectionProps)
 
           {/* Contact Form */}
           <div className={`${isVisible ? 'animate-slide-left' : 'opacity-0'}`}>
-            <Card className="shadow-luxury">
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-serif font-bold text-foreground mb-6">
+            <Card className="shadow-luxury h-full flex flex-col">
+              <CardContent className="p-6 flex-1 flex flex-col">
+                <h3 className="text-2xl font-serif font-bold text-foreground mb-4">
                   Send oss en melding
                 </h3>
                 
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid md:grid-cols-2 gap-4">
+                <form onSubmit={handleSubmit} className="space-y-4 flex-1 flex flex-col">
+                  <div className="grid md:grid-cols-2 gap-3">
                     <div>
-                      <label htmlFor="name" className="block text-sm font-semibold text-foreground mb-2">
+                      <label htmlFor="name" className="block text-sm font-semibold text-foreground mb-1">
                         Navn *
                       </label>
                       <Input 
@@ -196,7 +196,7 @@ const VisitUsSection = ({ locations, currentLocationName }: VisitUsSectionProps)
                       />
                     </div>
                     <div>
-                      <label htmlFor="phone" className="block text-sm font-semibold text-foreground mb-2">
+                      <label htmlFor="phone" className="block text-sm font-semibold text-foreground mb-1">
                         Telefon
                       </label>
                       <Input 
@@ -211,7 +211,7 @@ const VisitUsSection = ({ locations, currentLocationName }: VisitUsSectionProps)
                   </div>
                   
                   <div>
-                    <label htmlFor="email" className="block text-sm font-semibold text-foreground mb-2">
+                    <label htmlFor="email" className="block text-sm font-semibold text-foreground mb-1">
                       E-post *
                     </label>
                     <Input 
@@ -225,23 +225,23 @@ const VisitUsSection = ({ locations, currentLocationName }: VisitUsSectionProps)
                     />
                   </div>
                   
-                  <div>
-                    <label htmlFor="message" className="block text-sm font-semibold text-foreground mb-2">
+                  <div className="flex-1 flex flex-col">
+                    <label htmlFor="message" className="block text-sm font-semibold text-foreground mb-1">
                       Melding *
                     </label>
                     <Textarea 
                       id="message" 
                       name="message" 
                       required 
-                      rows={5} 
+                      rows={4} 
                       value={formData.message} 
                       onChange={handleInputChange} 
-                      className="border-border focus:ring-primary focus:border-primary resize-none" 
+                      className="border-border focus:ring-primary focus:border-primary resize-none flex-1" 
                       placeholder="Fortell oss hvordan vi kan hjelpe deg..." 
                     />
                   </div>
                   
-                  <Button type="submit" className="w-full bg-gradient-gold text-background font-semibold hover:opacity-90 transition-all hover-lift text-lg py-6">
+                  <Button type="submit" className="w-full bg-gradient-gold text-background font-semibold hover:opacity-90 transition-all hover-lift text-lg py-5 mt-auto">
                     Send Melding
                   </Button>
                 </form>
