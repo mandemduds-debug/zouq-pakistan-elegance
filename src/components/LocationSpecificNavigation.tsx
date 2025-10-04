@@ -63,22 +63,10 @@ const LocationSpecificNavigation: React.FC<LocationSpecificNavigationProps> = ({
               Hjem
             </button>
             <button 
-              onClick={() => scrollToSection('om-oss')} 
-              className="hover:text-gold transition-colors"
-            >
-              Om Oss
-            </button>
-            <button 
               onClick={() => scrollToSection('meny')} 
               className="hover:text-gold transition-colors"
             >
               Meny
-            </button>
-            <button 
-              onClick={() => scrollToSection('opplevelsen')} 
-              className="hover:text-gold transition-colors"
-            >
-              Opplevelsen
             </button>
             <button 
               onClick={() => scrollToSection('catering')} 
@@ -87,22 +75,22 @@ const LocationSpecificNavigation: React.FC<LocationSpecificNavigationProps> = ({
               Catering
             </button>
             <button 
-              onClick={() => scrollToSection('galleri')} 
+              onClick={() => scrollToSection('opplevelsen')} 
               className="hover:text-gold transition-colors"
             >
-              Galleri
+              Opplevelsen
+            </button>
+            <button 
+              onClick={() => scrollToSection('om-oss')} 
+              className="hover:text-gold transition-colors"
+            >
+              Om Oss
             </button>
             <button 
               onClick={() => scrollToSection('lokasjoner')} 
               className="hover:text-gold transition-colors"
             >
-              Andre Avdelinger
-            </button>
-            <button 
-              onClick={() => scrollToSection('nyheter')} 
-              className="hover:text-gold transition-colors"
-            >
-              Nyheter
+              Andre avdelinger
             </button>
             <button 
               onClick={() => scrollToSection('kontakt')} 
@@ -146,22 +134,10 @@ const LocationSpecificNavigation: React.FC<LocationSpecificNavigationProps> = ({
                 Hjem
               </button>
               <button 
-                onClick={() => scrollToSection('om-oss')} 
-                className="text-left py-2 hover:text-gold transition-colors"
-              >
-                Om Oss
-              </button>
-              <button 
                 onClick={() => scrollToSection('meny')} 
                 className="text-left py-2 hover:text-gold transition-colors"
               >
                 Meny
-              </button>
-              <button 
-                onClick={() => scrollToSection('opplevelsen')} 
-                className="text-left py-2 hover:text-gold transition-colors"
-              >
-                Opplevelsen
               </button>
               <button 
                 onClick={() => scrollToSection('catering')} 
@@ -170,22 +146,22 @@ const LocationSpecificNavigation: React.FC<LocationSpecificNavigationProps> = ({
                 Catering
               </button>
               <button 
-                onClick={() => scrollToSection('galleri')} 
+                onClick={() => scrollToSection('opplevelsen')} 
                 className="text-left py-2 hover:text-gold transition-colors"
               >
-                Galleri
+                Opplevelsen
+              </button>
+              <button 
+                onClick={() => scrollToSection('om-oss')} 
+                className="text-left py-2 hover:text-gold transition-colors"
+              >
+                Om Oss
               </button>
               <button 
                 onClick={() => scrollToSection('lokasjoner')} 
                 className="text-left py-2 hover:text-gold transition-colors"
               >
-                Andre Avdelinger
-              </button>
-              <button 
-                onClick={() => scrollToSection('nyheter')} 
-                className="text-left py-2 hover:text-gold transition-colors"
-              >
-                Nyheter
+                Andre avdelinger
               </button>
               <button 
                 onClick={() => scrollToSection('kontakt')} 
