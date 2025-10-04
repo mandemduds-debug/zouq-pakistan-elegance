@@ -84,13 +84,7 @@ const LocationSpecificNavigation: React.FC<LocationSpecificNavigationProps> = ({
               
               <div className="h-px bg-gold/20 my-2"></div>
               
-              <button 
-                onClick={() => scrollToSection('hjem')} 
-                className="text-left px-4 py-3 rounded-lg hover:bg-gold/10 hover:text-gold transition-all font-medium"
-              >
-                Hjem
-              </button>
-              <button 
+              <button
                 onClick={() => scrollToSection('meny')} 
                 className="text-left px-4 py-3 rounded-lg hover:bg-gold/10 hover:text-gold transition-all font-medium"
               >
