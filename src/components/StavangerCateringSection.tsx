@@ -1,12 +1,12 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Check, Clock, MapPin, Phone } from 'lucide-react';
-import experienceGrill from '@/assets/experience-grill.png';
-import experienceNaan from '@/assets/experience-naan.png';
-import experienceDining from '@/assets/experience-dining.png';
-import experienceBiryani from '@/assets/experience-biryani.png';
-import experienceSharing from '@/assets/experience-sharing.png';
+import cateringBiryani from '@/assets/catering-biryani.png';
+import cateringWrap from '@/assets/catering-wrap.png';
 import cateringGrill from '@/assets/catering-grill.png';
+import cateringTandoori from '@/assets/catering-tandoori.png';
+import cateringKebab from '@/assets/catering-kebab.png';
+import cateringPakora from '@/assets/catering-pakora.png';
 
 const StavangerCateringSection = () => {
   const scrollToContact = () => {
@@ -69,30 +69,30 @@ const StavangerCateringSection = () => {
           </div>
         </div>
 
-        {/* Image Gallery Row - PROMINENT */}
+        {/* Image Gallery Row */}
         <div className="mb-16">
-          <div className="bg-card rounded-2xl p-6 shadow-2xl border-2 border-gold/20">
-            <h3 className="text-2xl font-serif font-bold text-foreground mb-6 text-center">
+          <div className="bg-card/95 backdrop-blur-md rounded-2xl p-8 shadow-[0_20px_60px_rgba(0,0,0,0.5)] border-4 border-gold/40">
+            <h3 className="text-3xl font-serif font-bold text-foreground mb-8 text-center drop-shadow-lg">
               Smak av Zouq
             </h3>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-              <div className="overflow-hidden rounded-lg shadow-xl hover-lift border-2 border-gold/30">
-                <img src={experienceGrill} alt="Grillmat" className="w-full h-48 object-cover" />
+              <div className="overflow-hidden rounded-xl shadow-2xl hover-lift border-4 border-gold/50">
+                <img src={cateringBiryani} alt="Biryani" className="w-full h-56 object-cover" />
               </div>
-              <div className="overflow-hidden rounded-lg shadow-xl hover-lift border-2 border-gold/30">
-                <img src={experienceNaan} alt="Naan brød" className="w-full h-48 object-cover" />
+              <div className="overflow-hidden rounded-xl shadow-2xl hover-lift border-4 border-gold/50">
+                <img src={cateringWrap} alt="Wrap" className="w-full h-56 object-cover" />
               </div>
-              <div className="overflow-hidden rounded-lg shadow-xl hover-lift border-2 border-gold/30">
-                <img src={experienceDining} alt="Servering" className="w-full h-48 object-cover" />
+              <div className="overflow-hidden rounded-xl shadow-2xl hover-lift border-4 border-gold/50">
+                <img src={cateringGrill} alt="Grill" className="w-full h-56 object-cover" />
               </div>
-              <div className="overflow-hidden rounded-lg shadow-xl hover-lift border-2 border-gold/30">
-                <img src={cateringGrill} alt="Catering grill" className="w-full h-48 object-cover" />
+              <div className="overflow-hidden rounded-xl shadow-2xl hover-lift border-4 border-gold/50">
+                <img src={cateringTandoori} alt="Tandoori" className="w-full h-56 object-cover" />
               </div>
-              <div className="overflow-hidden rounded-lg shadow-xl hover-lift border-2 border-gold/30">
-                <img src={experienceBiryani} alt="Biryani rett" className="w-full h-48 object-cover" />
+              <div className="overflow-hidden rounded-xl shadow-2xl hover-lift border-4 border-gold/50">
+                <img src={cateringKebab} alt="Kebab" className="w-full h-56 object-cover" />
               </div>
-              <div className="overflow-hidden rounded-lg shadow-xl hover-lift border-2 border-gold/30">
-                <img src={experienceSharing} alt="Deling av mat" className="w-full h-48 object-cover" />
+              <div className="overflow-hidden rounded-xl shadow-2xl hover-lift border-4 border-gold/50">
+                <img src={cateringPakora} alt="Pakora" className="w-full h-56 object-cover" />
               </div>
             </div>
           </div>
