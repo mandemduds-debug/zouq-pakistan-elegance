@@ -1,7 +1,12 @@
 import { useEffect, useRef, useState } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Music, Users, Utensils, Sparkles } from 'lucide-react';
-import spicesGallery from '@/assets/spices-gallery.jpg';
+import experienceNaan from '@/assets/experience-naan.png';
+import experienceDining from '@/assets/experience-dining.png';
+import experienceGrill from '@/assets/experience-grill.png';
+import experienceSharing from '@/assets/experience-sharing.png';
+import experienceGroup from '@/assets/experience-group.png';
+import experienceAppetizer from '@/assets/experience-appetizer.png';
 
 const experiences = [
   {
@@ -51,20 +56,52 @@ const ExperienceSection = () => {
     <section id="opplevelsen" ref={sectionRef} className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Image Side */}
+          {/* Image Grid */}
           <div className={`relative ${isVisible ? 'animate-fade-up' : 'opacity-0'}`}>
-            <div className="relative overflow-hidden rounded-lg shadow-luxury">
-              <img
-                src={spicesGallery}
-                alt="Zouq restaurant experience"
-                className="w-full h-96 object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-gold/20" />
+            <div className="grid grid-cols-2 gap-4">
+              <div className="relative overflow-hidden rounded-lg shadow-luxury">
+                <img
+                  src={experienceNaan}
+                  alt="Autentisk naan brød"
+                  className="w-full h-56 object-cover hover-lift"
+                />
+              </div>
+              <div className="relative overflow-hidden rounded-lg shadow-luxury">
+                <img
+                  src={experienceDining}
+                  alt="Sosial spiseopplevelse"
+                  className="w-full h-56 object-cover hover-lift"
+                />
+              </div>
+              <div className="relative overflow-hidden rounded-lg shadow-luxury">
+                <img
+                  src={experienceGrill}
+                  alt="Grillretter"
+                  className="w-full h-56 object-cover hover-lift"
+                />
+              </div>
+              <div className="relative overflow-hidden rounded-lg shadow-luxury">
+                <img
+                  src={experienceSharing}
+                  alt="Deling av mat"
+                  className="w-full h-56 object-cover hover-lift"
+                />
+              </div>
+              <div className="relative overflow-hidden rounded-lg shadow-luxury">
+                <img
+                  src={experienceGroup}
+                  alt="Gruppemåltid"
+                  className="w-full h-56 object-cover hover-lift"
+                />
+              </div>
+              <div className="relative overflow-hidden rounded-lg shadow-luxury">
+                <img
+                  src={experienceAppetizer}
+                  alt="Forretter"
+                  className="w-full h-56 object-cover hover-lift"
+                />
+              </div>
             </div>
-            
-            {/* Floating Elements */}
-            <div className="absolute -top-8 -right-8 w-32 h-32 bg-gold/10 rounded-full blur-xl" />
-            <div className="absolute -bottom-8 -left-8 w-24 h-24 bg-primary/10 rounded-full blur-lg" />
           </div>
 
           {/* Content Side */}
