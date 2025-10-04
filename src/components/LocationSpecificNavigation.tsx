@@ -54,67 +54,72 @@ const LocationSpecificNavigation: React.FC<LocationSpecificNavigationProps> = ({
             </span>
           </div>
 
-          {/* Burger Menu Button */}
-          <button
-            className="p-2"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          >
-            {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </button>
+          {/* Book Bord Button & Burger Menu */}
+          <div className="flex items-center gap-3">
+            <Button 
+              className="bg-gradient-gold text-background hover:opacity-90 transition-all font-semibold"
+            >
+              Book Bord
+            </Button>
+            <button
+              className="p-2"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            >
+              {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </button>
+          </div>
         </div>
 
         {/* Burger Menu */}
         {isMobileMenuOpen && (
-          <div className="mt-4 py-4 rounded-lg bg-background/95 backdrop-blur-sm">
-            <div className="flex flex-col space-y-4">
+          <div className="mt-6 py-6 px-6 rounded-xl bg-background/98 backdrop-blur-md shadow-luxury border border-gold/20">
+            <div className="flex flex-col space-y-2">
               <button 
                 onClick={navigateToHome}
-                className="text-left py-2 hover:text-gold transition-colors flex items-center space-x-2"
+                className="text-left px-4 py-3 rounded-lg hover:bg-gold/10 hover:text-gold transition-all flex items-center space-x-3 group"
               >
-                <Home className="h-4 w-4" />
-                <span>Alle avdelinger</span>
+                <Home className="h-5 w-5 group-hover:scale-110 transition-transform" />
+                <span className="font-medium">Alle avdelinger</span>
               </button>
+              
+              <div className="h-px bg-gold/20 my-2"></div>
+              
               <button 
                 onClick={() => scrollToSection('hjem')} 
-                className="text-left py-2 hover:text-gold transition-colors"
+                className="text-left px-4 py-3 rounded-lg hover:bg-gold/10 hover:text-gold transition-all font-medium"
               >
                 Hjem
               </button>
               <button 
                 onClick={() => scrollToSection('meny')} 
-                className="text-left py-2 hover:text-gold transition-colors"
+                className="text-left px-4 py-3 rounded-lg hover:bg-gold/10 hover:text-gold transition-all font-medium"
               >
                 Meny
               </button>
               <button 
                 onClick={() => scrollToSection('catering')} 
-                className="text-left py-2 hover:text-gold transition-colors"
+                className="text-left px-4 py-3 rounded-lg hover:bg-gold/10 hover:text-gold transition-all font-medium"
               >
                 Catering
               </button>
               <button 
                 onClick={() => scrollToSection('opplevelsen')} 
-                className="text-left py-2 hover:text-gold transition-colors"
+                className="text-left px-4 py-3 rounded-lg hover:bg-gold/10 hover:text-gold transition-all font-medium"
               >
                 Opplevelsen
               </button>
               <button 
                 onClick={() => scrollToSection('om-oss')} 
-                className="text-left py-2 hover:text-gold transition-colors"
+                className="text-left px-4 py-3 rounded-lg hover:bg-gold/10 hover:text-gold transition-all font-medium"
               >
                 Om Oss
               </button>
               <button 
                 onClick={() => scrollToSection('kontakt')} 
-                className="text-left py-2 hover:text-gold transition-colors"
+                className="text-left px-4 py-3 rounded-lg hover:bg-gold/10 hover:text-gold transition-all font-medium"
               >
                 Kontakt
               </button>
-              <Button 
-                className="bg-gradient-gold text-background hover:opacity-90 transition-all font-semibold mt-4"
-              >
-                Book Bord
-              </Button>
             </div>
           </div>
         )}
