@@ -17,85 +17,90 @@ const SandnesCateringSection = () => {
   return (
     <section id="catering" className="py-20 bg-gradient-to-br from-background to-secondary/10">
       <div className="max-w-7xl mx-auto px-6">
-        {/* Header Section with Better Contrast */}
+        {/* Header Section with Strong Contrast */}
         <div className="text-center mb-12">
-          <div className="bg-card/80 backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-lg border border-border/50">
+          <div className="bg-card rounded-3xl p-8 md:p-12 shadow-2xl border-2 border-gold/20">
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-foreground mb-6">
               Catering Sandnes - Bryllup, Konfirmasjon & Bedriftsarrangementer
             </h2>
-            <p className="text-xl text-foreground/80 max-w-3xl mx-auto leading-relaxed mb-8">
+            <p className="text-xl text-foreground max-w-3xl mx-auto leading-relaxed mb-8">
               Opplev Zouqs eksklusive pakistanske catering i Sandnes sentrum og omegn. 
               Vi kombinerer tradisjonell smak med moderne eleganse for alle dine arrangementer.
             </p>
             <Button 
               onClick={scrollToContact}
               size="lg" 
-              className="bg-gradient-gold text-background hover:opacity-90 font-semibold text-lg px-8 py-6 shadow-lg"
+              className="bg-gradient-gold text-background hover:opacity-90 font-semibold text-lg px-8 py-6 shadow-xl"
             >
               Bestill Catering
             </Button>
           </div>
         </div>
 
-        {/* Why Choose Section with Better Organization */}
-        <div className="mb-12">
-          <div className="bg-card/60 backdrop-blur-sm rounded-2xl p-8 md:p-10 border border-border/50">
-            <h3 className="text-3xl font-serif font-semibold text-foreground mb-8 text-center">
+        {/* Why Choose Section with Strong Contrast */}
+        <div className="mb-16">
+          <div className="bg-card rounded-2xl p-8 md:p-10 shadow-2xl border-2 border-gold/20">
+            <h3 className="text-3xl font-serif font-bold text-foreground mb-8 text-center">
               Hvorfor velge Zouq for catering i Sandnes?
             </h3>
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="text-center bg-background/50 rounded-xl p-6">
-                <div className="w-16 h-16 mx-auto mb-4 bg-gradient-gold rounded-full flex items-center justify-center shadow-md">
-                  <Check className="h-8 w-8 text-background" />
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="text-center bg-background rounded-xl p-6 shadow-lg border border-border">
+                <div className="w-20 h-20 mx-auto mb-4 bg-gradient-gold rounded-full flex items-center justify-center shadow-lg">
+                  <Check className="h-10 w-10 text-background" />
                 </div>
-                <h4 className="text-xl font-semibold text-foreground mb-3">Moderne Eleganse</h4>
-                <p className="text-foreground/70 leading-relaxed">Sofistikert presentasjon av autentiske pakistanske retter</p>
+                <h4 className="text-xl font-bold text-foreground mb-3">Moderne Eleganse</h4>
+                <p className="text-foreground leading-relaxed">Sofistikert presentasjon av autentiske pakistanske retter</p>
               </div>
-              <div className="text-center bg-background/50 rounded-xl p-6">
-                <div className="w-16 h-16 mx-auto mb-4 bg-gradient-gold rounded-full flex items-center justify-center shadow-md">
-                  <Clock className="h-8 w-8 text-background" />
+              <div className="text-center bg-background rounded-xl p-6 shadow-lg border border-border">
+                <div className="w-20 h-20 mx-auto mb-4 bg-gradient-gold rounded-full flex items-center justify-center shadow-lg">
+                  <Clock className="h-10 w-10 text-background" />
                 </div>
-                <h4 className="text-xl font-semibold text-foreground mb-3">Lokal Tilstedeværelse</h4>
-                <p className="text-foreground/70 leading-relaxed">Rask og pålitelig levering i hele Sandnes-området</p>
+                <h4 className="text-xl font-bold text-foreground mb-3">Lokal Tilstedeværelse</h4>
+                <p className="text-foreground leading-relaxed">Rask og pålitelig levering i hele Sandnes-området</p>
               </div>
-              <div className="text-center bg-background/50 rounded-xl p-6">
-                <div className="w-16 h-16 mx-auto mb-4 bg-gradient-gold rounded-full flex items-center justify-center shadow-md">
-                  <MapPin className="h-8 w-8 text-background" />
+              <div className="text-center bg-background rounded-xl p-6 shadow-lg border border-border">
+                <div className="w-20 h-20 mx-auto mb-4 bg-gradient-gold rounded-full flex items-center justify-center shadow-lg">
+                  <MapPin className="h-10 w-10 text-background" />
                 </div>
-                <h4 className="text-xl font-semibold text-foreground mb-3">Personlig Service</h4>
-                <p className="text-foreground/70 leading-relaxed">Skreddersydde løsninger for dine behov</p>
+                <h4 className="text-xl font-bold text-foreground mb-3">Personlig Service</h4>
+                <p className="text-foreground leading-relaxed">Skreddersydde løsninger for dine behov</p>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Image Gallery Row */}
+        {/* Image Gallery Row - PROMINENT */}
         <div className="mb-16">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-            <div className="overflow-hidden rounded-lg shadow-md hover-lift">
-              <img src={experienceGrill} alt="Grillmat" className="w-full h-40 object-cover" />
-            </div>
-            <div className="overflow-hidden rounded-lg shadow-md hover-lift">
-              <img src={experienceNaan} alt="Naan brød" className="w-full h-40 object-cover" />
-            </div>
-            <div className="overflow-hidden rounded-lg shadow-md hover-lift">
-              <img src={experienceDining} alt="Servering" className="w-full h-40 object-cover" />
-            </div>
-            <div className="overflow-hidden rounded-lg shadow-md hover-lift">
-              <img src={cateringGrill} alt="Catering grill" className="w-full h-40 object-cover" />
-            </div>
-            <div className="overflow-hidden rounded-lg shadow-md hover-lift">
-              <img src={experienceBiryani} alt="Biryani rett" className="w-full h-40 object-cover" />
-            </div>
-            <div className="overflow-hidden rounded-lg shadow-md hover-lift">
-              <img src={experienceSharing} alt="Deling av mat" className="w-full h-40 object-cover" />
+          <div className="bg-card rounded-2xl p-6 shadow-2xl border-2 border-gold/20">
+            <h3 className="text-2xl font-serif font-bold text-foreground mb-6 text-center">
+              Smak av Zouq
+            </h3>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+              <div className="overflow-hidden rounded-lg shadow-xl hover-lift border-2 border-gold/30">
+                <img src={experienceGrill} alt="Grillmat" className="w-full h-48 object-cover" />
+              </div>
+              <div className="overflow-hidden rounded-lg shadow-xl hover-lift border-2 border-gold/30">
+                <img src={experienceNaan} alt="Naan brød" className="w-full h-48 object-cover" />
+              </div>
+              <div className="overflow-hidden rounded-lg shadow-xl hover-lift border-2 border-gold/30">
+                <img src={experienceDining} alt="Servering" className="w-full h-48 object-cover" />
+              </div>
+              <div className="overflow-hidden rounded-lg shadow-xl hover-lift border-2 border-gold/30">
+                <img src={cateringGrill} alt="Catering grill" className="w-full h-48 object-cover" />
+              </div>
+              <div className="overflow-hidden rounded-lg shadow-xl hover-lift border-2 border-gold/30">
+                <img src={experienceBiryani} alt="Biryani rett" className="w-full h-48 object-cover" />
+              </div>
+              <div className="overflow-hidden rounded-lg shadow-xl hover-lift border-2 border-gold/30">
+                <img src={experienceSharing} alt="Deling av mat" className="w-full h-48 object-cover" />
+              </div>
             </div>
           </div>
         </div>
 
-        {/* Catering Categories with Better Contrast */}
+        {/* Catering Categories with Strong Contrast */}
         <div className="grid md:grid-cols-2 gap-8 mb-16">
-          <Card className="overflow-hidden hover-lift bg-card/90 backdrop-blur-sm border-border/50 shadow-lg">
+          <Card className="overflow-hidden hover-lift bg-card shadow-xl border-2 border-gold/20">
             <CardContent className="p-8">
               <h3 className="text-2xl font-serif font-semibold text-foreground mb-4">
                 Catering til Konfirmasjoner i Sandnes
