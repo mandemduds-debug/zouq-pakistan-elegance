@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import restaurantInterior from '@/assets/restaurant-interior.jpg';
+import restaurantInterior from '@/assets/zouq-dining-experience.png';
 const ZouqAboutSection = () => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
