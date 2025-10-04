@@ -332,9 +332,9 @@ const MenuCateringSection = ({ locationName }: MenuCateringSectionProps) => {
               <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">
                 Se hele menyen og bestill dine favoritter for takeaway. Rask levering og fersk, autentisk mat!
               </p>
-              <Button asChild size="lg" className="hover-lift">
+              <Button asChild size="lg" className="hover-lift px-10 py-7 text-lg">
                 <a href="https://stavanger.zouq.no/articles" target="_blank" rel="noopener noreferrer">
-                  <ShoppingCart className="mr-2 h-5 w-5" />
+                  <ShoppingCart className="mr-2 h-6 w-6" />
                   Bestill Takeaway Nå
                 </a>
               </Button>
