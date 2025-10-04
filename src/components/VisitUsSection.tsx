@@ -173,13 +173,13 @@ const VisitUsSection = ({ locations, currentLocationName }: VisitUsSectionProps)
 
           {/* Contact Form */}
           <div className={`${isVisible ? 'animate-slide-left' : 'opacity-0'}`}>
-            <Card className="shadow-luxury h-full flex flex-col">
-              <CardContent className="p-6 flex-1 flex flex-col">
+            <Card className="shadow-luxury">
+              <CardContent className="p-6">
                 <h3 className="text-2xl font-serif font-bold text-foreground mb-4">
                   Send oss en melding
                 </h3>
                 
-                <form onSubmit={handleSubmit} className="space-y-4 flex-1 flex flex-col">
+                <form onSubmit={handleSubmit} className="space-y-4">
                   <div className="grid md:grid-cols-2 gap-3">
                     <div>
                       <label htmlFor="name" className="block text-sm font-semibold text-foreground mb-1">
@@ -225,7 +225,7 @@ const VisitUsSection = ({ locations, currentLocationName }: VisitUsSectionProps)
                     />
                   </div>
                   
-                  <div className="flex-1 flex flex-col">
+                  <div>
                     <label htmlFor="message" className="block text-sm font-semibold text-foreground mb-1">
                       Melding *
                     </label>
@@ -233,15 +233,15 @@ const VisitUsSection = ({ locations, currentLocationName }: VisitUsSectionProps)
                       id="message" 
                       name="message" 
                       required 
-                      rows={4} 
+                      rows={3} 
                       value={formData.message} 
                       onChange={handleInputChange} 
-                      className="border-border focus:ring-primary focus:border-primary resize-none flex-1" 
+                      className="border-border focus:ring-primary focus:border-primary resize-none max-h-32" 
                       placeholder="Fortell oss hvordan vi kan hjelpe deg..." 
                     />
                   </div>
                   
-                  <Button type="submit" className="w-full bg-gradient-gold text-background font-semibold hover:opacity-90 transition-all hover-lift text-lg py-5 mt-auto">
+                  <Button type="submit" className="w-full bg-gradient-gold text-background font-semibold hover:opacity-90 transition-all hover-lift text-base py-4">
                     Send Melding
                   </Button>
                 </form>
