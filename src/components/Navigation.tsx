@@ -41,12 +41,6 @@ const Navigation = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <button
-              onClick={() => scrollToSection('hjem')}
-              className={`${isScrolled ? 'text-foreground' : 'text-white'} hover:text-primary transition-colors font-medium`}
-            >
-              Hjem
-            </button>
-            <button
               onClick={() => scrollToSection('om-oss')}
               className={`${isScrolled ? 'text-foreground' : 'text-white'} hover:text-primary transition-colors font-medium`}
             >
@@ -98,12 +92,6 @@ const Navigation = () => {
         {isMobileMenuOpen && (
           <div className="md:hidden absolute top-full left-0 right-0 bg-background/95 backdrop-blur-lg shadow-luxury">
             <div className="px-6 py-4 space-y-4">
-              <button
-                onClick={() => scrollToSection('hjem')}
-                className="block text-foreground hover:text-primary transition-colors font-medium"
-              >
-                Hjem
-              </button>
               <button
                 onClick={() => scrollToSection('om-oss')}
                 className="block text-foreground hover:text-primary transition-colors font-medium"

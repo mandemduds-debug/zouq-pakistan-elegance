@@ -33,11 +33,6 @@ const Footer = () => {
             <h3 className="text-lg font-semibold text-background mb-4">Navigasjon</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#hjem" className="text-background/80 hover:text-gold transition-colors">
-                  Hjem
-                </a>
-              </li>
-              <li>
                 <a href="#om-oss" className="text-background/80 hover:text-gold transition-colors">
                   Om Zouq
                 </a>
@@ -60,18 +55,13 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Services & News */}
+          {/* Services */}
           <div>
             <h3 className="text-lg font-semibold text-background mb-4">Tjenester</h3>
-            <ul className="space-y-2 mb-6">
+            <ul className="space-y-2">
               <li>
                 <a href="#" className="text-background/80 hover:text-gold transition-colors">
                   Bordbestilling
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-background/80 hover:text-gold transition-colors">
-                  Private Eventer
                 </a>
               </li>
               <li>
@@ -82,25 +72,6 @@ const Footer = () => {
               <li>
                 <a href="#" className="text-background/80 hover:text-gold transition-colors">
                   Takeaway
-                </a>
-              </li>
-            </ul>
-            
-            <h4 className="text-base font-semibold text-background mb-3">Nyheter</h4>
-            <ul className="space-y-2">
-              <li>
-                <a href="#" className="text-background/80 hover:text-gold transition-colors text-sm">
-                  Ny signaturmeny lansert
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-background/80 hover:text-gold transition-colors text-sm">
-                  Kulturell kveld med live musikk
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-background/80 hover:text-gold transition-colors text-sm">
-                  Ny interiørdesign
                 </a>
               </li>
             </ul>
