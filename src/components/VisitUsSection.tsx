@@ -64,7 +64,7 @@ const VisitUsSection = ({ locations, currentLocationName }: VisitUsSectionProps)
         {/* Header */}
         <div className={`text-center mb-16 ${isVisible ? 'animate-fade-up' : 'opacity-0'}`}>
           <h2 className="text-4xl md:text-5xl font-serif font-bold text-foreground mb-6">
-            Besøk Oss
+            Besøk oss
           </h2>
           <div className="w-20 h-1 bg-gradient-gold mx-auto mb-8" />
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
