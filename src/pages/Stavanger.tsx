@@ -2,7 +2,7 @@ import LocationSpecificNavigation from '@/components/LocationSpecificNavigation'
 import ZouqAboutSection from '@/components/ZouqAboutSection';
 import MenuCateringSection from '@/components/MenuCateringSection';
 import ZouqExperienceSection from '@/components/ZouqExperienceSection';
-
+import ScrollToTop from '@/components/ScrollToTop';
 import VisitUsSection from '@/components/VisitUsSection';
 import Footer from '@/components/Footer';
 import { useState, useEffect } from 'react';
@@ -121,6 +121,7 @@ const Stavanger = () => {
       
       <VisitUsSection locations={stavangerOtherLocations} currentLocationName="Stavanger" />
       <Footer />
+      <ScrollToTop />
     </div>
   );
 };
