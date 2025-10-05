@@ -80,7 +80,7 @@ const SandnesHeroSection = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 
               size="lg" 
-              className="bg-gradient-gold text-background font-semibold hover:opacity-90 transition-all hover-lift text-lg px-8 py-6"
+              className="bg-gradient-gold text-white font-semibold hover:opacity-90 transition-all hover-lift text-lg px-8 py-6"
             >
               Book Bord
             </Button>
