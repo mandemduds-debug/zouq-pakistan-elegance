@@ -53,7 +53,7 @@ const ZouqExperienceSection = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-32 bg-background">
+    <section id="opplevelsen" ref={sectionRef} className="py-32 bg-background">
       <div className="container mx-auto px-6">
         {/* Experience Section */}
         <div className="grid lg:grid-cols-2 gap-20 items-center">
