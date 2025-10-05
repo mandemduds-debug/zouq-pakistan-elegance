@@ -7,6 +7,8 @@ import Footer from '@/components/Footer';
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { ChevronDown } from 'lucide-react';
+import stavangerLocation from '@/assets/stavanger-location.png';
+import sandnesLocation from '@/assets/sandnes-location.png';
 
 // Location-specific locations (excluding current location)
 const sandvikaOtherLocations = [
@@ -15,7 +17,7 @@ const sandvikaOtherLocations = [
     address: 'Øvre Holmegate 15, 4006 Stavanger',
     phone: '+47 51 89 12 34',
     hours: 'Man-Søn: 15:00-23:00',
-    image: '/src/assets/restaurant-interior.jpg',
+    image: stavangerLocation,
     description: 'Vår flaggskiprestaurant i hjerte av Stavanger'
   },
   {
@@ -23,7 +25,7 @@ const sandvikaOtherLocations = [
     address: 'Langgata 45, 4306 Sandnes',
     phone: '+47 51 68 45 67',
     hours: 'Man-Søn: 15:00-23:00',
-    image: '/src/assets/restaurant-interior.jpg',
+    image: sandnesLocation,
     description: 'Moderne eleganse i Sandnes sentrum'
   }
 ];

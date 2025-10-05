@@ -9,6 +9,8 @@ import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { ChevronDown } from 'lucide-react';
 import stavangerHero from '@/assets/stavanger-hero.png';
+import sandnesLocation from '@/assets/sandnes-location.png';
+import sandvikaLocation from '@/assets/sandvika-location.png';
 
 // Location-specific locations (excluding current location)
 const stavangerOtherLocations = [
@@ -17,7 +19,7 @@ const stavangerOtherLocations = [
     address: 'Langgata 45, 4306 Sandnes',
     phone: '+47 51 68 45 67',
     hours: 'Man-Søn: 15:00-23:00',
-    image: '/src/assets/restaurant-interior.jpg',
+    image: sandnesLocation,
     description: 'Moderne eleganse i Sandnes sentrum'
   },
   {
@@ -25,7 +27,7 @@ const stavangerOtherLocations = [
     address: 'Sandvika Storsenter, 1338 Sandvika',
     phone: '+47 67 54 89 12',
     hours: 'Man-Søn: 15:00-23:00',
-    image: '/src/assets/restaurant-interior.jpg',
+    image: sandvikaLocation,
     description: 'Pakistansk luksus ved fjorden'
   }
 ];
