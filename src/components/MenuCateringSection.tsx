@@ -44,6 +44,10 @@ import galleryBiryani from '@/assets/gallery-biryani.png';
 import galleryGrill from '@/assets/gallery-grill.png';
 import galleryTandoori from '@/assets/gallery-tandoori.png';
 import gallerySeekhKebab from '@/assets/gallery-seekh-kebab.png';
+import cateringPakoraNew from '@/assets/catering-pakora-new.png';
+import cateringSoup from '@/assets/catering-soup.png';
+import cateringGrillNew from '@/assets/catering-grill-new.png';
+import cateringKofta from '@/assets/catering-kofta.png';
 
 
 const menuCategories = [
@@ -393,7 +397,11 @@ const MenuCateringSection = ({ locationName }: MenuCateringSectionProps) => {
                     { src: galleryBiryani, alt: 'Tradisjonell biryani', category: 'Risretter' },
                     { src: galleryGrill, alt: 'Grilling av kebabs', category: 'Grill' },
                     { src: galleryTandoori, alt: 'Tandoori kylling', category: 'Tandoori' },
-                    { src: gallerySeekhKebab, alt: 'Seekh kebabs', category: 'Kebab' }
+                    { src: gallerySeekhKebab, alt: 'Seekh kebabs', category: 'Kebab' },
+                    { src: cateringPakoraNew, alt: 'Sprøstekte pakoras med dipp', category: 'Forretter' },
+                    { src: cateringSoup, alt: 'Kremet spinatsuppe', category: 'Suppe' },
+                    { src: cateringGrillNew, alt: 'Saftig grillet kjøtt', category: 'Grill' },
+                    { src: cateringKofta, alt: 'Fritterte kofta med saus', category: 'Forretter' }
                   ].map((image, index) => (
                     <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
                       <div className="group relative overflow-hidden rounded-lg shadow-luxury hover-lift">
