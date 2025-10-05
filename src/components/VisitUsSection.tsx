@@ -161,7 +161,7 @@ const VisitUsSection = ({ locations, currentLocationName }: VisitUsSectionProps)
             <div>
               <h4 className="font-semibold text-foreground mb-4">Følg oss</h4>
               <div className="flex space-x-4">
-                <a href="#" className="w-10 h-10 bg-gradient-red rounded-lg flex items-center justify-center hover-lift transition-all">
+                <a href="#" className="w-10 h-10 bg-gradient-gold rounded-lg flex items-center justify-center hover-lift transition-all">
                   <Instagram className="h-5 w-5 text-white" />
                 </a>
                 <a href="#" className="w-10 h-10 bg-gradient-gold rounded-lg flex items-center justify-center hover-lift transition-all">
