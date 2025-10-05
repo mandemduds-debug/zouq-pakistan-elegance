@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X, Home } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import zouqLogo from '@/assets/zouq-logo-new.png';
 
 interface LocationSpecificNavigationProps {
   locationName: string;
@@ -49,8 +50,13 @@ const LocationSpecificNavigation: React.FC<LocationSpecificNavigationProps> = ({
               <Home className="h-5 w-5" />
               <span className="text-sm">Alle avdelinger</span>
             </button>
-            <span className="text-2xl font-serif font-bold">
-              Zouq {locationName}
+            <img 
+              src={zouqLogo} 
+              alt="Zouq Restaurant Logo" 
+              className="h-10"
+            />
+            <span className="text-xl font-serif font-bold">
+              {locationName}
             </span>
           </div>
 
