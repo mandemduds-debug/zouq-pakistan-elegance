@@ -4,14 +4,16 @@ import foodImage from '@/assets/zouq-about-food.png';
 
 interface ZouqAboutSectionProps {
   imageSrc?: 'interior' | 'food';
+  customImage?: string;
+  customAlt?: string;
 }
 
-const ZouqAboutSection = ({ imageSrc = 'interior' }: ZouqAboutSectionProps) => {
+const ZouqAboutSection = ({ imageSrc = 'interior', customImage, customAlt }: ZouqAboutSectionProps) => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
   
-  const selectedImage = imageSrc === 'food' ? foodImage : restaurantInterior;
-  const altText = imageSrc === 'food' ? 'Zouq autentisk pakistansk mat' : 'Zouq restaurant interior';
+  const selectedImage = customImage || (imageSrc === 'food' ? foodImage : restaurantInterior);
+  const altText = customAlt || (imageSrc === 'food' ? 'Zouq autentisk pakistansk mat' : 'Zouq restaurant interior');
   useEffect(() => {
     const observer = new IntersectionObserver(([entry]) => {
       if (entry.isIntersecting) {

@@ -10,6 +10,7 @@ import { ChevronDown } from 'lucide-react';
 import stavangerLocation from '@/assets/stavanger-location.png';
 import sandnesLocation from '@/assets/sandnes-location.png';
 import sandvikaHero from '@/assets/sandvika-hero.png';
+import sandvikaAbout from '@/assets/sandvika-about.png';
 
 // Location-specific locations (excluding current location)
 const sandvikaOtherLocations = [
@@ -117,7 +118,7 @@ const Sandvika = () => {
     <div className="min-h-screen bg-background">
       <LocationSpecificNavigation locationName="Sandvika" />
       <SandvikaHeroSection />
-      <ZouqAboutSection />
+      <ZouqAboutSection customImage={sandvikaAbout} customAlt="Zouq Sandvika - Autentisk pakistansk mat" />
       <MenuCateringSection locationName="Sandvika" />
       
       <VisitUsSection locations={sandvikaOtherLocations} currentLocationName="Sandvika" />
