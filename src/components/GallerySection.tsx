@@ -1,16 +1,33 @@
 import { useEffect, useRef, useState } from 'react';
-import biryaniDish from '@/assets/biryani-dish.jpg';
-import grillMenu from '@/assets/grill-menu.jpg';
-import authenticDesserts from '@/assets/authentic-desserts.jpg';
-import spicesGallery from '@/assets/spices-gallery.jpg';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import galleryNaan from '@/assets/gallery-naan.png';
+import galleryDiningDrinks from '@/assets/gallery-dining-drinks.png';
+import galleryGrillPlatter from '@/assets/gallery-grill-platter.png';
+import gallerySharing from '@/assets/gallery-sharing.png';
+import galleryGroupDining from '@/assets/gallery-group-dining.png';
+import galleryWrap from '@/assets/gallery-wrap.png';
+import galleryBiryani from '@/assets/gallery-biryani.png';
+import galleryGrill from '@/assets/gallery-grill.png';
+import galleryTandoori from '@/assets/gallery-tandoori.png';
+import galleryseekhKebab from '@/assets/gallery-seekh-kebab.png';
 
 const galleryImages = [
-  { src: biryaniDish, alt: 'Tradisjonell biryani med autentiske krydder', category: 'Risretter' },
-  { src: grillMenu, alt: 'Fritert kylling med grønn chutney', category: 'Frityr' },
-  { src: authenticDesserts, alt: 'Fersk naan-brød laget på tradisjonelt vis', category: 'Brød' },
-  { src: grillMenu, alt: 'Sizzling kebabs med grønnsaker', category: 'Grill' },
-  { src: biryaniDish, alt: 'Krydret kylling med ris og drikke', category: 'Hovedretter' },
-  { src: spicesGallery, alt: 'Vår erfarne kjøkkensjef', category: 'Kjøkken' }
+  { src: galleryNaan, alt: 'Fersk naan-brød serveres', category: 'Brød' },
+  { src: galleryDiningDrinks, alt: 'Hygge og drikker', category: 'Opplevelse' },
+  { src: galleryGrillPlatter, alt: 'Grillet kjøtt med grønnsaker', category: 'Grill' },
+  { src: gallerySharing, alt: 'Deling av mat sammen', category: 'Opplevelse' },
+  { src: galleryGroupDining, alt: 'Gruppemiddag', category: 'Opplevelse' },
+  { src: galleryWrap, alt: 'Nyte en wrap', category: 'Wraps' },
+  { src: galleryBiryani, alt: 'Tradisjonell biryani', category: 'Risretter' },
+  { src: galleryGrill, alt: 'Grilling av kebabs', category: 'Grill' },
+  { src: galleryTandoori, alt: 'Tandoori kylling', category: 'Tandoori' },
+  { src: galleryseekhKebab, alt: 'Seekh kebabs', category: 'Kebab' }
 ];
 
 const GallerySection = () => {
@@ -50,39 +67,49 @@ const GallerySection = () => {
           </p>
         </div>
 
-        {/* Gallery Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {galleryImages.map((image, index) => (
-            <div
-              key={index}
-              className={`group relative overflow-hidden rounded-lg shadow-luxury cursor-pointer hover-lift ${
-                isVisible ? 'animate-scale-in' : 'opacity-0'
-              }`}
-              style={{ animationDelay: `${index * 100}ms` }}
-              onClick={() => setSelectedImage(index)}
-            >
-              <div className="aspect-square overflow-hidden">
-                <img
-                  src={image.src}
-                  alt={image.alt}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                />
-              </div>
-              
-              {/* Overlay */}
-              <div className="absolute inset-0 bg-gradient-overlay opacity-0 group-hover:opacity-80 transition-opacity duration-300 flex items-center justify-center">
-                <div className="text-center text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                  <div className="text-sm uppercase tracking-wider font-semibold mb-2 text-gold">
-                    {image.category}
-                  </div>
-                  <div className="w-12 h-0.5 bg-white mx-auto" />
-                </div>
-              </div>
+        {/* Gallery Carousel */}
+        <div className={`${isVisible ? 'animate-fade-up' : 'opacity-0'}`}>
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full"
+          >
+            <CarouselContent className="-ml-4">
+              {galleryImages.map((image, index) => (
+                <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
+                  <div
+                    className="group relative overflow-hidden rounded-lg shadow-luxury cursor-pointer hover-lift"
+                    onClick={() => setSelectedImage(index)}
+                  >
+                    <div className="aspect-square overflow-hidden">
+                      <img
+                        src={image.src}
+                        alt={image.alt}
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      />
+                    </div>
+                    
+                    {/* Overlay */}
+                    <div className="absolute inset-0 bg-gradient-overlay opacity-0 group-hover:opacity-80 transition-opacity duration-300 flex items-center justify-center">
+                      <div className="text-center text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                        <div className="text-sm uppercase tracking-wider font-semibold mb-2 text-gold">
+                          {image.category}
+                        </div>
+                        <div className="w-12 h-0.5 bg-white mx-auto" />
+                      </div>
+                    </div>
 
-              {/* Corner Accent */}
-              <div className="absolute top-4 right-4 w-2 h-2 bg-gold rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-            </div>
-          ))}
+                    {/* Corner Accent */}
+                    <div className="absolute top-4 right-4 w-2 h-2 bg-gold rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="left-4" />
+            <CarouselNext className="right-4" />
+          </Carousel>
         </div>
 
         {/* Modal for expanded view */}
