@@ -79,7 +79,7 @@ const LocationSelector = () => {
                 style={{ animationDelay: `${index * 100}ms` }}
                 onClick={() => handleLocationSelect(location.route)}
               >
-                <div className="aspect-[16/9] overflow-hidden flex-shrink-0">
+                <div className="aspect-[4/3] overflow-hidden flex-shrink-0">
                   <img
                     src={location.image}
                     alt={`Zouq ${location.name}`}
