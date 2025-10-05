@@ -228,7 +228,7 @@ const MenuCateringSection = ({ locationName }: MenuCateringSectionProps) => {
             {/* Highlighted Dishes Grid */}
             <div className={`grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12 ${isVisible ? 'animate-fade-up' : 'opacity-0'}`}>
               {/* Butter Chicken Deal */}
-              <Card className="overflow-hidden hover-lift bg-background shadow-lg">
+              <Card className="overflow-hidden hover-lift">
                 <div className="aspect-video overflow-hidden">
                   <img src={menuButterChicken} alt="Butter Chicken Deal" className="w-full h-full object-cover" />
                 </div>
@@ -244,7 +244,7 @@ const MenuCateringSection = ({ locationName }: MenuCateringSectionProps) => {
               </Card>
 
               {/* Wrap Deal */}
-              <Card className="overflow-hidden hover-lift bg-background shadow-lg">
+              <Card className="overflow-hidden hover-lift">
                 <div className="aspect-video overflow-hidden">
                   <img src={menuWrapDeal} alt="Wrap Deal" className="w-full h-full object-cover" />
                 </div>
@@ -260,7 +260,7 @@ const MenuCateringSection = ({ locationName }: MenuCateringSectionProps) => {
               </Card>
 
               {/* BBQ Deal */}
-              <Card className="overflow-hidden hover-lift bg-background shadow-lg">
+              <Card className="overflow-hidden hover-lift">
                 <div className="aspect-video overflow-hidden">
                   <img src={menuBbqDeal} alt="BBQ Deal" className="w-full h-full object-cover" />
                 </div>
@@ -276,7 +276,7 @@ const MenuCateringSection = ({ locationName }: MenuCateringSectionProps) => {
               </Card>
 
               {/* Vegetar Deal */}
-              <Card className="overflow-hidden hover-lift bg-background shadow-lg">
+              <Card className="overflow-hidden hover-lift">
                 <div className="aspect-video overflow-hidden">
                   <img src={menuVegetarDeal} alt="Vegetar Deal" className="w-full h-full object-cover" />
                 </div>
@@ -292,7 +292,7 @@ const MenuCateringSection = ({ locationName }: MenuCateringSectionProps) => {
               </Card>
 
               {/* Snack Deal */}
-              <Card className="overflow-hidden hover-lift bg-background shadow-lg">
+              <Card className="overflow-hidden hover-lift">
                 <div className="aspect-video overflow-hidden">
                   <img src={menuSnackDeal} alt="Snack Deal" className="w-full h-full object-cover" />
                 </div>
@@ -308,7 +308,7 @@ const MenuCateringSection = ({ locationName }: MenuCateringSectionProps) => {
               </Card>
 
               {/* Naan Dip Deal */}
-              <Card className="overflow-hidden hover-lift bg-background shadow-lg">
+              <Card className="overflow-hidden hover-lift">
                 <div className="aspect-video overflow-hidden">
                   <img src={menuNaanDip} alt="Naan Dip Deal" className="w-full h-full object-cover" />
                 </div>
@@ -386,7 +386,7 @@ const MenuCateringSection = ({ locationName }: MenuCateringSectionProps) => {
 
             {/* Detailed Catering Categories */}
             <div className="grid md:grid-cols-2 gap-8 mb-16">
-              <Card className="overflow-hidden hover-lift bg-background shadow-lg">
+              <Card className="overflow-hidden hover-lift">
                 <CardContent className="p-8">
                   <h4 className="text-2xl font-serif font-semibold text-foreground mb-4">
                     Catering til Konfirmasjoner i {locationName || 'Norge'}
@@ -416,7 +416,7 @@ const MenuCateringSection = ({ locationName }: MenuCateringSectionProps) => {
                 </CardContent>
               </Card>
 
-              <Card className="overflow-hidden hover-lift bg-background shadow-lg">
+              <Card className="overflow-hidden hover-lift">
                 <CardContent className="p-8">
                   <h4 className="text-2xl font-serif font-semibold text-foreground mb-4">
                     Catering til Bryllup i {locationName || 'Norge'}
@@ -446,7 +446,7 @@ const MenuCateringSection = ({ locationName }: MenuCateringSectionProps) => {
                 </CardContent>
               </Card>
 
-              <Card className="overflow-hidden hover-lift bg-background shadow-lg">
+              <Card className="overflow-hidden hover-lift">
                 <CardContent className="p-8">
                   <h4 className="text-2xl font-serif font-semibold text-foreground mb-4">
                     Catering til Selskaper & Private Anledninger
@@ -476,7 +476,7 @@ const MenuCateringSection = ({ locationName }: MenuCateringSectionProps) => {
                 </CardContent>
               </Card>
 
-              <Card className="overflow-hidden hover-lift bg-background shadow-lg">
+              <Card className="overflow-hidden hover-lift">
                 <CardContent className="p-8">
                   <h4 className="text-2xl font-serif font-semibold text-foreground mb-4">
                     Julebord Catering & Bedriftsarrangementer {locationName || 'Norge'}
