@@ -47,7 +47,7 @@ const SandvikaHeroSection = () => {
   };
 
   return (
-    <section id="hjem" className="relative h-screen flex items-center justify-center overflow-hidden">
+    <section id="hjem" className="relative h-[70vh] flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
         <img
@@ -55,7 +55,7 @@ const SandvikaHeroSection = () => {
           alt="Zouq Sandvika grillmat"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-overlay" />
+        <div className="absolute inset-0 bg-black/70" />
       </div>
 
       {/* Pattern Overlay */}
@@ -80,7 +80,7 @@ const SandvikaHeroSection = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 
               size="lg" 
-              className="bg-gradient-gold text-background font-semibold hover:opacity-90 transition-all hover-lift text-lg px-8 py-6"
+              className="bg-gradient-gold text-white font-semibold hover:opacity-90 transition-all hover-lift text-lg px-8 py-6"
             >
               Book Bord
             </Button>
