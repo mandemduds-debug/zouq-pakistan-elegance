@@ -389,7 +389,7 @@ const MenuCateringSection = ({ locationName }: MenuCateringSectionProps) => {
                     { src: galleryGrillPlatter, alt: 'Grillet kjøtt med grønnsaker', category: 'Grill' },
                     { src: gallerySharing, alt: 'Deling av mat sammen', category: 'Opplevelse' },
                     { src: galleryGroupDining, alt: 'Gruppemiddag', category: 'Opplevelse' },
-                    { src: galleryWrap, alt: 'Nyte en wrap', category: 'Wraps' },
+                    { src: galleryWrap, alt: 'Nyte en wrap', category: 'Cheesenaan' },
                     { src: galleryBiryani, alt: 'Tradisjonell biryani', category: 'Risretter' },
                     { src: galleryGrill, alt: 'Grilling av kebabs', category: 'Grill' },
                     { src: galleryTandoori, alt: 'Tandoori kylling', category: 'Tandoori' },
