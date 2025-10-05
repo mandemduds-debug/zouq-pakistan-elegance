@@ -3,6 +3,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { MapPin, Clock, Phone } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from '@/components/ui/carousel';
 import stavangerImage from '@/assets/stavanger-location.png';
 import sandnesImage from '@/assets/sandnes-location.png';
 import sandvikaImage from '@/assets/sandvika-location.png';
@@ -141,24 +142,35 @@ const LocationSelector = () => {
           </div>
 
           {/* Fotogalleri */}
-          <div className="mt-16 max-w-7xl mx-auto">
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
-              {galleryImages.map((image, index) => (
-                <div
-                  key={index}
-                  className={`aspect-square overflow-hidden rounded-lg hover-lift ${
-                    isVisible ? 'animate-fade-up' : 'opacity-0'
-                  }`}
-                  style={{ animationDelay: `${(index + 3) * 50}ms` }}
-                >
-                  <img
-                    src={image.src}
-                    alt={image.alt}
-                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
-                  />
-                </div>
-              ))}
-            </div>
+          <div className="mt-16 max-w-7xl mx-auto px-8">
+            <Carousel
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+              className="w-full"
+            >
+              <CarouselContent>
+                {galleryImages.map((image, index) => (
+                  <CarouselItem key={index} className="md:basis-1/3 lg:basis-1/5">
+                    <div
+                      className={`aspect-square overflow-hidden rounded-lg hover-lift ${
+                        isVisible ? 'animate-fade-up' : 'opacity-0'
+                      }`}
+                      style={{ animationDelay: `${(index + 3) * 50}ms` }}
+                    >
+                      <img
+                        src={image.src}
+                        alt={image.alt}
+                        className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                      />
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="hidden md:flex" />
+              <CarouselNext className="hidden md:flex" />
+            </Carousel>
           </div>
         </div>
       </main>
