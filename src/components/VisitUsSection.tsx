@@ -165,7 +165,7 @@ const VisitUsSection = ({ locations, currentLocationName }: VisitUsSectionProps)
                   <Instagram className="h-5 w-5 text-white" />
                 </a>
                 <a href="#" className="w-10 h-10 bg-gradient-gold rounded-lg flex items-center justify-center hover-lift transition-all">
-                  <Facebook className="h-5 w-5 text-background" />
+                  <Facebook className="h-5 w-5 text-white" />
                 </a>
               </div>
             </div>
