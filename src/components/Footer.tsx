@@ -106,6 +106,9 @@ const Footer = () => {
             <div className="text-background/60 text-sm">
               © {currentYear} Zouq Restaurant. Alle rettigheter forbeholdt.
             </div>
+            <div className="text-background/60 text-sm">
+              Designed & Developed by <a href="https://onlinetrap.no" target="_blank" rel="noopener noreferrer" className="text-gold hover:text-gold/80 transition-colors">Onlinetrap.no</a>
+            </div>
             <div className="flex space-x-6 text-sm">
               <a href="#" className="text-background/60 hover:text-gold transition-colors">
                 Personvern
