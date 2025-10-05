@@ -4,6 +4,13 @@ import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
 import { ShoppingCart, Phone, Users, Calendar, MapPin, Star, Check, Clock, ChevronDown } from 'lucide-react';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 import biryaniDish from '@/assets/biryani-dish.jpg';
 import authenticDesserts from '@/assets/authentic-desserts.jpg';
 import grillMenu from '@/assets/grill-menu.jpg';
@@ -27,6 +34,17 @@ import menuCheeseburger from '/lovable-uploads/02c9a918-de9d-4f45-9445-4599a3958
 import menuMangoLassi from '/lovable-uploads/ebda083b-c1b2-45f2-9fe2-c395c1766af5.png';
 import menuVeganDeal from '/lovable-uploads/c61c4a04-7bc6-4201-99c0-b6b51f685055.png';
 import menuRaita from '/lovable-uploads/40eb0406-05e1-4dbb-9c63-c74807ba87f9.png';
+import galleryNaan from '@/assets/gallery-naan.png';
+import galleryDiningDrinks from '@/assets/gallery-dining-drinks.png';
+import galleryGrillPlatter from '@/assets/gallery-grill-platter.png';
+import gallerySharing from '@/assets/gallery-sharing.png';
+import galleryGroupDining from '@/assets/gallery-group-dining.png';
+import galleryWrap from '@/assets/gallery-wrap.png';
+import galleryBiryani from '@/assets/gallery-biryani.png';
+import galleryGrill from '@/assets/gallery-grill.png';
+import galleryTandoori from '@/assets/gallery-tandoori.png';
+import gallerySeekhKebab from '@/assets/gallery-seekh-kebab.png';
+
 
 const menuCategories = [
   {
@@ -352,6 +370,60 @@ const MenuCateringSection = ({ locationName }: MenuCateringSectionProps) => {
                 Opplev Zouqs eksklusive pakistanske catering i {locationName ? `${locationName} sentrum og omegn` : 'Norge'}. 
                 Vi kombinerer tradisjonell smak med moderne eleganse for alle dine arrangementer.
               </p>
+            </div>
+
+
+            {/* Gallery Carousel */}
+            <div className="mb-16">
+              <Carousel
+                opts={{
+                  align: "start",
+                  loop: true,
+                }}
+                className="w-full"
+              >
+                <CarouselContent className="-ml-4">
+                  {[
+                    { src: galleryNaan, alt: 'Fersk naan-brød serveres', category: 'Brød' },
+                    { src: galleryDiningDrinks, alt: 'Hygge og drikker', category: 'Opplevelse' },
+                    { src: galleryGrillPlatter, alt: 'Grillet kjøtt med grønnsaker', category: 'Grill' },
+                    { src: gallerySharing, alt: 'Deling av mat sammen', category: 'Opplevelse' },
+                    { src: galleryGroupDining, alt: 'Gruppemiddag', category: 'Opplevelse' },
+                    { src: galleryWrap, alt: 'Nyte en wrap', category: 'Wraps' },
+                    { src: galleryBiryani, alt: 'Tradisjonell biryani', category: 'Risretter' },
+                    { src: galleryGrill, alt: 'Grilling av kebabs', category: 'Grill' },
+                    { src: galleryTandoori, alt: 'Tandoori kylling', category: 'Tandoori' },
+                    { src: gallerySeekhKebab, alt: 'Seekh kebabs', category: 'Kebab' }
+                  ].map((image, index) => (
+                    <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
+                      <div className="group relative overflow-hidden rounded-lg shadow-luxury hover-lift">
+                        <div className="aspect-square overflow-hidden">
+                          <img
+                            src={image.src}
+                            alt={image.alt}
+                            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                          />
+                        </div>
+                        
+                        {/* Overlay */}
+                        <div className="absolute inset-0 bg-gradient-overlay opacity-0 group-hover:opacity-80 transition-opacity duration-300 flex items-center justify-center">
+                          <div className="text-center text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                            <div className="text-sm uppercase tracking-wider font-semibold mb-2 text-gold">
+                              {image.category}
+                            </div>
+                            <div className="w-12 h-0.5 bg-white mx-auto" />
+                          </div>
+                        </div>
+
+                        {/* Corner Accent */}
+                        <div className="absolute top-4 right-4 w-2 h-2 bg-gold rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                      </div>
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <CarouselPrevious className="left-4" />
+                <CarouselNext className="right-4" />
+              </Carousel>
             </div>
 
             {/* Why Choose Us - Expanded */}
