@@ -1,8 +1,17 @@
 import { useEffect, useRef, useState } from 'react';
-import restaurantInterior from '@/assets/zouq-about-food.png';
-const ZouqAboutSection = () => {
+import restaurantInterior from '@/assets/zouq-dining-experience.png';
+import foodImage from '@/assets/zouq-about-food.png';
+
+interface ZouqAboutSectionProps {
+  imageSrc?: 'interior' | 'food';
+}
+
+const ZouqAboutSection = ({ imageSrc = 'interior' }: ZouqAboutSectionProps) => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
+  
+  const selectedImage = imageSrc === 'food' ? foodImage : restaurantInterior;
+  const altText = imageSrc === 'food' ? 'Zouq autentisk pakistansk mat' : 'Zouq restaurant interior';
   useEffect(() => {
     const observer = new IntersectionObserver(([entry]) => {
       if (entry.isIntersecting) {
@@ -61,7 +70,7 @@ const ZouqAboutSection = () => {
           {/* Image */}
           <div className={`relative ${isVisible ? 'animate-slide-left' : 'opacity-0'}`}>
             <div className="relative overflow-hidden rounded-lg shadow-luxury">
-              <img src={restaurantInterior} alt="Zouq autentisk pakistansk mat" className="w-full h-full object-cover hover-lift" />
+              <img src={selectedImage} alt={altText} className="w-full h-full object-cover hover-lift" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
             </div>
           </div>

@@ -117,7 +117,7 @@ const Sandnes = () => {
     <div className="min-h-screen bg-background">
       <LocationSpecificNavigation locationName="Sandnes" />
       <SandnesHeroSection />
-      <ZouqAboutSection />
+      <ZouqAboutSection imageSrc="food" />
       <MenuCateringSection locationName="Sandnes" />
       
       <VisitUsSection locations={sandnesOtherLocations} currentLocationName="Sandnes" />
