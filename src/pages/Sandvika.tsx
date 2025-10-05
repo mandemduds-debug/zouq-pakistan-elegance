@@ -9,6 +9,7 @@ import { Button } from '@/components/ui/button';
 import { ChevronDown } from 'lucide-react';
 import stavangerLocation from '@/assets/stavanger-location.png';
 import sandnesLocation from '@/assets/sandnes-location.png';
+import sandvikaHero from '@/assets/sandvika-hero.png';
 
 // Location-specific locations (excluding current location)
 const sandvikaOtherLocations = [
@@ -50,8 +51,8 @@ const SandvikaHeroSection = () => {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
         <img
-          src="/src/assets/hero-image.jpg"
-          alt="Zouq Sandvika"
+          src={sandvikaHero}
+          alt="Zouq Sandvika grillmat"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-overlay" />
