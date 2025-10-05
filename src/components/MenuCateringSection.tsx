@@ -458,7 +458,8 @@ const MenuCateringSection = ({ locationName }: MenuCateringSectionProps) => {
 
             {/* Detailed Catering Categories */}
             <div className="grid md:grid-cols-2 gap-8 mb-16">
-              <Card className="overflow-hidden hover-lift">
+              <Card className="overflow-hidden hover-lift bg-secondary/30 border-gold/20">
+
                 <CardContent className="p-8">
                   <h4 className="text-2xl font-serif font-semibold text-foreground mb-4">
                     Catering til Konfirmasjoner i {locationName || 'Norge'}
@@ -488,7 +489,8 @@ const MenuCateringSection = ({ locationName }: MenuCateringSectionProps) => {
                 </CardContent>
               </Card>
 
-              <Card className="overflow-hidden hover-lift">
+              <Card className="overflow-hidden hover-lift bg-secondary/30 border-gold/20">
+
                 <CardContent className="p-8">
                   <h4 className="text-2xl font-serif font-semibold text-foreground mb-4">
                     Catering til Bryllup i {locationName || 'Norge'}
@@ -518,7 +520,8 @@ const MenuCateringSection = ({ locationName }: MenuCateringSectionProps) => {
                 </CardContent>
               </Card>
 
-              <Card className="overflow-hidden hover-lift">
+              <Card className="overflow-hidden hover-lift bg-secondary/30 border-gold/20">
+
                 <CardContent className="p-8">
                   <h4 className="text-2xl font-serif font-semibold text-foreground mb-4">
                     Catering til Selskaper & Private Anledninger
@@ -548,7 +551,8 @@ const MenuCateringSection = ({ locationName }: MenuCateringSectionProps) => {
                 </CardContent>
               </Card>
 
-              <Card className="overflow-hidden hover-lift">
+              <Card className="overflow-hidden hover-lift bg-secondary/30 border-gold/20">
+
                 <CardContent className="p-8">
                   <h4 className="text-2xl font-serif font-semibold text-foreground mb-4">
                     Julebord Catering & Bedriftsarrangementer {locationName || 'Norge'}
