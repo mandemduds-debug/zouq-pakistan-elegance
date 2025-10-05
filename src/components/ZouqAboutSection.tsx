@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import restaurantInterior from '@/assets/zouq-dining-experience.png';
+import restaurantInterior from '@/assets/zouq-about-food.png';
 const ZouqAboutSection = () => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
@@ -61,7 +61,7 @@ const ZouqAboutSection = () => {
           {/* Image */}
           <div className={`relative ${isVisible ? 'animate-slide-left' : 'opacity-0'}`}>
             <div className="relative overflow-hidden rounded-lg shadow-luxury">
-              <img src={restaurantInterior} alt="Zouq restaurant interior" className="w-full h-full object-cover hover-lift" />
+              <img src={restaurantInterior} alt="Zouq autentisk pakistansk mat" className="w-full h-full object-cover hover-lift" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
             </div>
           </div>
