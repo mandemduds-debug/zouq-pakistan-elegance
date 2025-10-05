@@ -1,4 +1,5 @@
 import { MapPin, Phone, Mail, Instagram, Facebook } from 'lucide-react';
+import zouqLogo from '@/assets/zouq-logo-new.png';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -9,9 +10,11 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <div className="text-3xl font-serif font-bold text-gold mb-4">
-              Zouq
-            </div>
+            <img 
+              src={zouqLogo} 
+              alt="Zouq Restaurant Logo" 
+              className="h-12 mb-4"
+            />
             <div className="flex space-x-4">
               <a
                 href="#"
