@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import stavangerImage from '@/assets/stavanger-location.png';
 import sandnesImage from '@/assets/sandnes-location.png';
 import sandvikaImage from '@/assets/sandvika-location.png';
-import zouqLogo from '@/assets/zouq-logo.png';
+import zouqLogo from '@/assets/zouq-logo-new.png';
 
 const locations = [
   {
