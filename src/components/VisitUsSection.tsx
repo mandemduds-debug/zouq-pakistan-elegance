@@ -241,7 +241,7 @@ const VisitUsSection = ({ locations, currentLocationName }: VisitUsSectionProps)
                     />
                   </div>
                   
-                  <Button type="submit" className="w-full bg-gradient-gold text-background font-semibold hover:opacity-90 transition-all hover-lift text-base py-4">
+                  <Button type="submit" className="w-full bg-gradient-gold text-white font-semibold hover:opacity-90 transition-all hover-lift text-base py-4">
                     Send Melding
                   </Button>
                 </form>
