@@ -714,7 +714,7 @@ const MenuCateringSection = ({ locationName }: MenuCateringSectionProps) => {
             {/* Enhanced CTA */}
             <div className="text-center">
               <div className="bg-gradient-gold rounded-2xl p-8 md:p-12 text-background">
-                <h4 className="text-2xl md:text-3xl font-serif font-bold mb-4">
+                <h4 className="text-2xl md:text-3xl font-serif font-bold mb-4 text-white">
                   Klar for å bestille catering i {locationName || 'Norge'}?
                 </h4>
                 <p className="text-lg mb-8 opacity-90 max-w-2xl mx-auto text-white">
