@@ -1,12 +1,12 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Check, Clock, MapPin, Phone } from 'lucide-react';
-import cateringBiryani from '@/assets/catering-biryani.png';
-import cateringWrap from '@/assets/catering-wrap.png';
-import cateringGrill from '@/assets/catering-grill.png';
-import cateringTandoori from '@/assets/catering-tandoori.png';
-import cateringKebab from '@/assets/catering-kebab.png';
-import cateringPakora from '@/assets/catering-pakora.png';
+import sandnesCatering1 from '@/assets/sandnes-catering-1.png';
+import sandnesCatering2 from '@/assets/sandnes-catering-2.png';
+import sandnesCatering3 from '@/assets/sandnes-catering-3.png';
+import sandnesCatering4 from '@/assets/sandnes-catering-4.png';
+import sandnesCatering5 from '@/assets/sandnes-catering-5.png';
+import sandnesCatering6 from '@/assets/sandnes-catering-6.png';
 
 const SandnesCateringSection = () => {
   const scrollToContact = () => {
@@ -77,22 +77,22 @@ const SandnesCateringSection = () => {
             </h3>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
               <div className="overflow-hidden rounded-xl shadow-2xl hover-lift border-4 border-gold/50">
-                <img src={cateringBiryani} alt="Biryani" className="w-full h-56 object-cover" />
+                <img src={sandnesCatering1} alt="Naan brød" className="w-full h-56 object-cover" />
               </div>
               <div className="overflow-hidden rounded-xl shadow-2xl hover-lift border-4 border-gold/50">
-                <img src={cateringWrap} alt="Wrap" className="w-full h-56 object-cover" />
+                <img src={sandnesCatering2} alt="Grill rett" className="w-full h-56 object-cover" />
               </div>
               <div className="overflow-hidden rounded-xl shadow-2xl hover-lift border-4 border-gold/50">
-                <img src={cateringGrill} alt="Grill" className="w-full h-56 object-cover" />
+                <img src={sandnesCatering3} alt="Wrap" className="w-full h-56 object-cover" />
               </div>
               <div className="overflow-hidden rounded-xl shadow-2xl hover-lift border-4 border-gold/50">
-                <img src={cateringTandoori} alt="Tandoori" className="w-full h-56 object-cover" />
+                <img src={sandnesCatering4} alt="Curry" className="w-full h-56 object-cover" />
               </div>
               <div className="overflow-hidden rounded-xl shadow-2xl hover-lift border-4 border-gold/50">
-                <img src={cateringKebab} alt="Kebab" className="w-full h-56 object-cover" />
+                <img src={sandnesCatering5} alt="Tandoori" className="w-full h-56 object-cover" />
               </div>
               <div className="overflow-hidden rounded-xl shadow-2xl hover-lift border-4 border-gold/50">
-                <img src={cateringPakora} alt="Pakora" className="w-full h-56 object-cover" />
+                <img src={sandnesCatering6} alt="Pakora" className="w-full h-56 object-cover" />
               </div>
             </div>
           </div>
