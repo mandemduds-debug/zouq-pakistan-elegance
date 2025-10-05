@@ -342,7 +342,7 @@ const MenuCateringSection = ({ locationName }: MenuCateringSectionProps) => {
           </TabsContent>
 
           {/* Catering Tab */}
-          <TabsContent value="catering" className="space-y-12">
+          <TabsContent id="catering" value="catering" className="space-y-12">
             {/* Hero Section */}
             <div className="text-center mb-12">
               <h3 className="text-3xl md:text-4xl font-serif font-bold text-foreground mb-4">
