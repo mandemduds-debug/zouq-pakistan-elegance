@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Music, Users, Utensils, Sparkles } from 'lucide-react';
 import experienceNaan from '@/assets/experience-naan.png';
-import experienceDining from '@/assets/experience-dining.png';
+import experienceGroupDining from '@/assets/experience-group-dining.png';
 import experienceGrill from '@/assets/experience-grill.png';
 import experienceSharing from '@/assets/experience-sharing.png';
 import experienceGroup from '@/assets/experience-group.png';
@@ -69,7 +69,7 @@ const ZouqExperienceSection = () => {
               </div>
               <div className="relative overflow-hidden rounded-lg shadow-luxury">
                 <img
-                  src={experienceDining}
+                  src={experienceGroupDining}
                   alt="Sosial spiseopplevelse"
                   className="w-full h-56 object-cover hover-lift"
                 />
