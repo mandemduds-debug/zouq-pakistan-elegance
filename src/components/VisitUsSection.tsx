@@ -96,7 +96,7 @@ const VisitUsSection = ({ locations, currentLocationName }: VisitUsSectionProps)
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0">
                     <div className="w-12 h-12 bg-gradient-gold rounded-lg flex items-center justify-center">
-                      <Mail className="h-6 w-6 text-background" />
+                      <Mail className="h-6 w-6 text-white" />
                     </div>
                   </div>
                   <div>
@@ -109,7 +109,7 @@ const VisitUsSection = ({ locations, currentLocationName }: VisitUsSectionProps)
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0">
                     <div className="w-12 h-12 bg-gradient-gold rounded-lg flex items-center justify-center">
-                      <Clock className="h-6 w-6 text-background" />
+                      <Clock className="h-6 w-6 text-white" />
                     </div>
                   </div>
                   <div>
