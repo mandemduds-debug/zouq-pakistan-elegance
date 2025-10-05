@@ -399,7 +399,7 @@ const MenuCateringSection = ({ locationName }: MenuCateringSectionProps) => {
                     { src: galleryTandoori, alt: 'Tandoori kylling', category: 'Tandoori' },
                     { src: gallerySeekhKebab, alt: 'Seekh kebabs', category: 'Kebab' },
                     { src: cateringPakoraNew, alt: 'Sprøstekte pakoras med dipp', category: 'Forretter' },
-                    { src: cateringSoup, alt: 'Kremet spinatsuppe', category: 'Suppe' },
+                    { src: cateringSoup, alt: 'Kremet palak masala', category: 'Masala' },
                     { src: cateringGrillNew, alt: 'Saftig grillet kjøtt', category: 'Grill' },
                     { src: cateringKofta, alt: 'Fritterte kofta med saus', category: 'Forretter' }
                   ].map((image, index) => (
