@@ -142,9 +142,6 @@ const LocationSelector = () => {
 
           {/* Fotogalleri */}
           <div className="mt-16 max-w-7xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-center text-foreground mb-8">
-              Vårt Kjøkken
-            </h2>
             <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
               {galleryImages.map((image, index) => (
                 <div
