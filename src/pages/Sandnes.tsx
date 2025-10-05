@@ -47,7 +47,7 @@ const SandnesHeroSection = () => {
   };
 
   return (
-    <section id="hjem" className="relative h-screen flex items-center justify-center overflow-hidden">
+    <section id="hjem" className="relative h-[70vh] flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
         <img
