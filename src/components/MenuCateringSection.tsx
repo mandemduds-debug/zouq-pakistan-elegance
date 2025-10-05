@@ -388,7 +388,7 @@ const MenuCateringSection = ({ locationName }: MenuCateringSectionProps) => {
               >
                 <CarouselContent className="-ml-4">
                   {[
-                    { src: galleryNaan, alt: 'Fersk naan-brød serveres', category: 'Brød' },
+                    { src: galleryNaan, alt: 'Fersk naan-brød serveres', category: 'Nanbrød' },
                     { src: galleryDiningDrinks, alt: 'Hygge og drikker', category: 'Opplevelse' },
                     { src: galleryGrillPlatter, alt: 'Grillet kjøtt med grønnsaker', category: 'Grill' },
                     { src: gallerySharing, alt: 'Deling av mat sammen', category: 'Opplevelse' },
