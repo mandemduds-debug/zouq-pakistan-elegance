@@ -83,7 +83,7 @@ const VisitUsSection = ({ locations, currentLocationName }: VisitUsSectionProps)
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0">
-                    <div className="w-12 h-12 bg-gradient-red rounded-lg flex items-center justify-center">
+                    <div className="w-12 h-12 bg-gradient-gold rounded-lg flex items-center justify-center">
                       <Phone className="h-6 w-6 text-white" />
                     </div>
                   </div>
