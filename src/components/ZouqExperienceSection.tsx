@@ -131,9 +131,7 @@ const ZouqExperienceSection = () => {
                   <CardContent className="p-4">
                     <div className="flex items-center space-x-4">
                       <div className="flex-shrink-0">
-                        <div className="w-10 h-10 bg-gradient-gold rounded-lg flex items-center justify-center">
-                          <experience.icon className="h-5 w-5 text-white" />
-                        </div>
+                        <experience.icon className="h-8 w-8 text-gold" />
                       </div>
                       <div>
                         <h4 className="text-base font-semibold text-foreground mb-1">
