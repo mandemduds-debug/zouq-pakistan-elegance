@@ -67,26 +67,26 @@ const LocationSelector = () => {
       </header>
 
       {/* Restauranter - Synlige Umiddelbart */}
-      <main className="py-12 pb-4" style={{ backgroundColor: '#f4e9da' }}>
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="grid md:grid-cols-3 gap-6 max-w-7xl mx-auto">
+      <main className="flex-1 flex items-center py-8" style={{ backgroundColor: '#f4e9da' }}>
+        <div className="container mx-auto px-4 md:px-6 w-full">
+          <div className="grid md:grid-cols-3 gap-6 max-w-7xl mx-auto h-full">
             {locations.map((location, index) => (
               <Card 
                 key={location.id}
-                className={`overflow-hidden hover-lift cursor-pointer group border-2 hover:border-primary transition-all duration-300 ${
+                className={`overflow-hidden hover-lift cursor-pointer group border-2 hover:border-primary transition-all duration-300 flex flex-col h-full ${
                   isVisible ? 'animate-fade-up' : 'opacity-0'
                 }`}
                 style={{ animationDelay: `${index * 100}ms` }}
                 onClick={() => handleLocationSelect(location.route)}
               >
-                <div className="aspect-[16/10] overflow-hidden">
+                <div className="aspect-[16/9] overflow-hidden flex-shrink-0">
                   <img
                     src={location.image}
                     alt={`Zouq ${location.name}`}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                 </div>
-                <CardContent className="p-5">
+                <CardContent className="p-5 flex-1 flex flex-col">
                   <h2 className="text-2xl font-serif font-bold text-foreground mb-4">
                     {location.name}
                   </h2>
@@ -107,7 +107,7 @@ const LocationSelector = () => {
                   </div>
                   
                   <Button 
-                    className="w-full bg-gradient-gold font-semibold hover:opacity-90 transition-all"
+                    className="w-full bg-gradient-gold font-semibold hover:opacity-90 transition-all mt-auto"
                     style={{ color: '#f4e9da' }}
                   >
                     Velg Restaurant
@@ -116,9 +116,6 @@ const LocationSelector = () => {
               </Card>
             ))}
           </div>
-          <p className="text-center text-foreground text-base md:text-lg mt-10 mb-8 max-w-2xl mx-auto">
-            Spis ekte pakistansk mat. Vi tilbyr både dine-in og takeaway. Velg din restaurant for å utforske menyen vår.
-          </p>
         </div>
       </main>
 
