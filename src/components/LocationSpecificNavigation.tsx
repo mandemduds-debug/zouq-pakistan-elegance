@@ -57,7 +57,7 @@ const LocationSpecificNavigation: React.FC<LocationSpecificNavigationProps> = ({
           {/* Book Bord Button & Burger Menu */}
           <div className="flex items-center gap-3">
             <Button 
-              className="bg-gradient-gold text-background hover:opacity-90 transition-all font-semibold"
+              className="bg-gradient-gold text-white hover:opacity-90 transition-all font-semibold"
             >
               Book Bord
             </Button>
