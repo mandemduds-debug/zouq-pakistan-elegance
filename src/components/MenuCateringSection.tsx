@@ -724,7 +724,7 @@ const MenuCateringSection = ({ locationName }: MenuCateringSectionProps) => {
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button 
                     size="lg" 
-                    className="bg-white text-foreground hover:bg-gray-50 font-semibold text-lg px-8 py-6"
+                    className="bg-white text-gold hover:bg-gray-50 font-semibold text-lg px-8 py-6"
                   >
                     <Calendar className="h-5 w-5 mr-2" />
                     Bestill Catering Nå
