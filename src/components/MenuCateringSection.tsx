@@ -717,7 +717,7 @@ const MenuCateringSection = ({ locationName }: MenuCateringSectionProps) => {
                 <h4 className="text-2xl md:text-3xl font-serif font-bold mb-4">
                   Klar for å bestille catering i {locationName || 'Norge'}?
                 </h4>
-                <p className="text-lg mb-8 opacity-90 max-w-2xl mx-auto">
+                <p className="text-lg mb-8 opacity-90 max-w-2xl mx-auto text-white">
                   La oss gjøre ditt neste arrangement i {locationName || 'Norge'} til en kulinarisk opplevelse. 
                   Kontakt oss for skreddersydd tilbud og personlig service!
                 </p>
