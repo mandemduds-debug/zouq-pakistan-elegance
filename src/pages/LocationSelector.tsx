@@ -7,6 +7,16 @@ import stavangerImage from '@/assets/stavanger-location.png';
 import sandnesImage from '@/assets/sandnes-location.png';
 import sandvikaImage from '@/assets/sandvika-location.png';
 import zouqLogo from '@/assets/zouq-logo-new.png';
+import galleryBiryani from '@/assets/gallery-biryani.png';
+import galleryDining from '@/assets/gallery-dining-drinks.png';
+import galleryGrillPlatter from '@/assets/gallery-grill-platter.png';
+import galleryGrill from '@/assets/gallery-grill.png';
+import galleryGroupDining from '@/assets/gallery-group-dining.png';
+import galleryNaan from '@/assets/gallery-naan.png';
+import galleryKebab from '@/assets/gallery-seekh-kebab.png';
+import gallerySharing from '@/assets/gallery-sharing.png';
+import galleryTandoori from '@/assets/gallery-tandoori.png';
+import galleryWrap from '@/assets/gallery-wrap.png';
 
 const locations = [
   {
@@ -39,6 +49,19 @@ const locations = [
     description: 'Pakistansk luksus ved fjorden',
     route: '/sandvika'
   }
+];
+
+const galleryImages = [
+  { src: galleryBiryani, alt: 'Autentisk Biryani' },
+  { src: galleryGrillPlatter, alt: 'Grilltallerken' },
+  { src: galleryTandoori, alt: 'Tandoori Spesialiteter' },
+  { src: galleryNaan, alt: 'Fersk Naan' },
+  { src: galleryKebab, alt: 'Seekh Kebab' },
+  { src: galleryWrap, alt: 'Wrap' },
+  { src: gallerySharing, alt: 'Deling' },
+  { src: galleryGroupDining, alt: 'Gruppeservering' },
+  { src: galleryGrill, alt: 'Grill' },
+  { src: galleryDining, alt: 'Servering og Drikke' }
 ];
 
 const LocationSelector = () => {
@@ -115,6 +138,30 @@ const LocationSelector = () => {
                 </CardContent>
               </Card>
             ))}
+          </div>
+
+          {/* Fotogalleri */}
+          <div className="mt-16 max-w-7xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-center text-foreground mb-8">
+              Vårt Kjøkken
+            </h2>
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+              {galleryImages.map((image, index) => (
+                <div
+                  key={index}
+                  className={`aspect-square overflow-hidden rounded-lg hover-lift ${
+                    isVisible ? 'animate-fade-up' : 'opacity-0'
+                  }`}
+                  style={{ animationDelay: `${(index + 3) * 50}ms` }}
+                >
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </main>
