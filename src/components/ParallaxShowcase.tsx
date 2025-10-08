@@ -61,7 +61,7 @@ const ParallaxShowcase = () => {
           <img
             src={naan}
             alt="Authentic cuisine"
-            className="absolute top-[8%] left-[8%] w-64 h-80 object-cover rounded-xl shadow-2xl opacity-60"
+            className="absolute top-[8%] left-[8%] w-64 h-80 object-cover rounded-xl shadow-2xl opacity-90"
           />
         </div>
 
@@ -72,7 +72,7 @@ const ParallaxShowcase = () => {
           <img
             src={sharing}
             alt="Dining experience"
-            className="absolute bottom-[5%] right-[10%] w-72 h-88 object-cover rounded-xl shadow-2xl opacity-60"
+            className="absolute bottom-[5%] right-[10%] w-72 h-88 object-cover rounded-xl shadow-2xl opacity-90"
           />
         </div>
 
@@ -84,7 +84,7 @@ const ParallaxShowcase = () => {
           <img
             src={grillImage}
             alt="Grilled specialties"
-            className="absolute top-[12%] right-[8%] w-80 h-96 object-cover rounded-xl shadow-2xl opacity-80"
+            className="absolute top-[12%] right-[8%] w-80 h-96 object-cover rounded-xl shadow-2xl opacity-95"
           />
         </div>
 
@@ -95,7 +95,7 @@ const ParallaxShowcase = () => {
           <img
             src={groupDining}
             alt="Group dining"
-            className="absolute bottom-[8%] left-[10%] w-72 h-88 object-cover rounded-xl shadow-2xl opacity-80"
+            className="absolute bottom-[8%] left-[10%] w-72 h-88 object-cover rounded-xl shadow-2xl opacity-95"
           />
         </div>
 
@@ -132,9 +132,9 @@ const ParallaxShowcase = () => {
 
         {/* Overlay Text - Above Everything */}
         <div 
-          className="absolute inset-0 z-30 flex items-start justify-center pt-12 px-6 pointer-events-none"
+          className="absolute inset-0 z-30 flex items-start justify-start pt-20 pl-12 md:pl-24 px-6 pointer-events-none"
         >
-          <h2 className="font-serif text-5xl md:text-7xl lg:text-9xl text-black font-bold leading-tight max-w-6xl text-center" style={{ opacity: 1 }}>
+          <h2 className="font-serif text-5xl md:text-7xl lg:text-9xl text-black font-bold leading-tight max-w-5xl" style={{ opacity: 1 }}>
             Noen ganger vil du aldri forstå verdien av et øyeblikk før det blir et minne.
           </h2>
         </div>
