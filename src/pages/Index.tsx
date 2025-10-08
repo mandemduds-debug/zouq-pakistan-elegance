@@ -5,6 +5,7 @@ import MenuSection from '@/components/MenuSection';
 import ExperienceSection from '@/components/ExperienceSection';
 import GallerySection from '@/components/GallerySection';
 import LocationsSection from '@/components/LocationsSection';
+import ParallaxShowcase from '@/components/ParallaxShowcase';
 import NewsSection from '@/components/NewsSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
@@ -19,6 +20,7 @@ const Index = () => {
       <ExperienceSection />
       <GallerySection />
       <LocationsSection />
+      <ParallaxShowcase />
       <NewsSection />
       <ContactSection />
       <Footer />
