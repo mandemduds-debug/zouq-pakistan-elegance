@@ -42,7 +42,7 @@ const ParallaxShowcase = () => {
   return (
     <section 
       ref={sectionRef}
-      className="relative min-h-[200vh] overflow-hidden bg-gradient-to-b from-background via-muted/20 to-background"
+      className="relative min-h-[120vh] overflow-hidden bg-gradient-to-b from-background via-muted/20 to-background"
     >
       {/* Sticky Container */}
       <div className="sticky top-0 h-screen flex items-center justify-center overflow-hidden">
