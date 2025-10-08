@@ -56,13 +56,19 @@ const ParallaxShowcase = () => {
         {/* Layer 1 - Background Images */}
         <div 
           className="absolute inset-0 transition-transform duration-300 ease-out"
-          style={{ transform: `translateY(${layer1Speed}px)` }}
+          style={{ transform: `translate(${-layer1Speed}px, ${layer1Speed * 0.5}px)` }}
         >
           <img
             src={naan}
             alt="Authentic cuisine"
             className="absolute top-[8%] left-[8%] w-64 h-80 object-cover rounded-xl shadow-2xl opacity-60"
           />
+        </div>
+
+        <div 
+          className="absolute inset-0 transition-transform duration-300 ease-out"
+          style={{ transform: `translate(${layer1Speed}px, ${layer1Speed * 0.5}px)` }}
+        >
           <img
             src={sharing}
             alt="Dining experience"
@@ -73,13 +79,19 @@ const ParallaxShowcase = () => {
         {/* Layer 2 - Mid Images */}
         <div 
           className="absolute inset-0 transition-transform duration-300 ease-out"
-          style={{ transform: `translateY(${-layer2Speed}px)` }}
+          style={{ transform: `translate(${layer2Speed}px, ${-layer2Speed * 0.4}px)` }}
         >
           <img
             src={grillImage}
             alt="Grilled specialties"
             className="absolute top-[12%] right-[8%] w-80 h-96 object-cover rounded-xl shadow-2xl opacity-80"
           />
+        </div>
+
+        <div 
+          className="absolute inset-0 transition-transform duration-300 ease-out"
+          style={{ transform: `translate(${-layer2Speed}px, ${layer2Speed * 0.4}px)` }}
+        >
           <img
             src={groupDining}
             alt="Group dining"
@@ -90,7 +102,7 @@ const ParallaxShowcase = () => {
         {/* Layer 3 - Front Images */}
         <div 
           className="absolute inset-0 transition-transform duration-300 ease-out"
-          style={{ transform: `translateX(${layer3Speed - 180}px)` }}
+          style={{ transform: `translate(${-layer3Speed}px, ${layer3Speed * 0.3}px)` }}
         >
           <img
             src={biryaniImage}
@@ -101,7 +113,7 @@ const ParallaxShowcase = () => {
 
         <div 
           className="absolute inset-0 transition-transform duration-300 ease-out"
-          style={{ transform: `translateX(${-layer3Speed + 180}px)` }}
+          style={{ transform: `translate(${layer3Speed}px, ${-layer3Speed * 0.3}px)` }}
         >
           <img
             src={dining}
