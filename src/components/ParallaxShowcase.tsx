@@ -53,7 +53,7 @@ const ParallaxShowcase = () => {
           style={{ opacity: 0.8 }}
         />
 
-        {/* Layer 1 - Background Images (Slowest) */}
+        {/* Layer 1 - Background Images */}
         <div 
           className="absolute inset-0 transition-transform duration-300 ease-out"
           style={{ transform: `translateY(${layer1Speed}px)` }}
@@ -61,12 +61,12 @@ const ParallaxShowcase = () => {
           <img
             src={naan}
             alt="Authentic cuisine"
-            className="absolute top-[5%] left-[15%] w-56 h-72 object-cover rounded-2xl shadow-2xl opacity-50 blur-sm"
+            className="absolute top-[8%] left-[8%] w-64 h-80 object-cover rounded-xl shadow-2xl opacity-60"
           />
           <img
             src={sharing}
             alt="Dining experience"
-            className="absolute bottom-[8%] right-[18%] w-64 h-80 object-cover rounded-2xl shadow-2xl opacity-50 blur-sm"
+            className="absolute bottom-[5%] right-[10%] w-72 h-88 object-cover rounded-xl shadow-2xl opacity-60"
           />
         </div>
 
@@ -78,40 +78,40 @@ const ParallaxShowcase = () => {
           <img
             src={grillImage}
             alt="Grilled specialties"
-            className="absolute top-[15%] right-[20%] w-72 h-88 object-cover rounded-2xl shadow-2xl opacity-70"
+            className="absolute top-[12%] right-[8%] w-80 h-96 object-cover rounded-xl shadow-2xl opacity-80"
           />
           <img
             src={groupDining}
             alt="Group dining"
-            className="absolute bottom-[12%] left-[22%] w-64 h-80 object-cover rounded-2xl shadow-2xl opacity-70"
+            className="absolute bottom-[8%] left-[10%] w-72 h-88 object-cover rounded-xl shadow-2xl opacity-80"
           />
         </div>
 
         {/* Layer 3 - Front Images */}
         <div 
           className="absolute inset-0 transition-transform duration-300 ease-out"
-          style={{ transform: `translateX(${layer3Speed - 150}px)` }}
+          style={{ transform: `translateX(${layer3Speed - 180}px)` }}
         >
           <img
             src={biryaniImage}
             alt="Signature biryani"
-            className="absolute top-[25%] left-[18%] w-80 h-96 object-cover rounded-3xl shadow-elegant"
+            className="absolute top-[30%] left-[5%] w-96 h-[460px] object-cover rounded-2xl shadow-elegant"
           />
         </div>
 
         <div 
           className="absolute inset-0 transition-transform duration-300 ease-out"
-          style={{ transform: `translateX(${-layer3Speed + 150}px)` }}
+          style={{ transform: `translateX(${-layer3Speed + 180}px)` }}
         >
           <img
             src={dining}
             alt="Premium dining"
-            className="absolute top-[20%] right-[16%] w-80 h-[420px] object-cover rounded-3xl shadow-elegant"
+            className="absolute top-[25%] right-[5%] w-96 h-[480px] object-cover rounded-2xl shadow-elegant"
           />
         </div>
 
         {/* Center Video Container */}
-        <div className="relative z-15 w-[500px] h-[320px] bg-muted/80 backdrop-blur-sm rounded-2xl shadow-elegant flex items-center justify-center border-2 border-border">
+        <div className="relative z-15 w-[600px] h-[400px] bg-muted/70 backdrop-blur-sm rounded-2xl shadow-elegant flex items-center justify-center border-2 border-border/50">
           <div className="text-center p-8">
             <p className="text-muted-foreground text-sm mb-2">Video Container</p>
             <p className="text-xs text-muted-foreground/60">Add your video here</p>
@@ -126,7 +126,7 @@ const ParallaxShowcase = () => {
             transform: `scale(${0.9 + (opacityFade * 0.1)})` 
           }}
         >
-          <h2 className="font-serif text-4xl md:text-6xl lg:text-8xl text-foreground leading-tight max-w-6xl text-center">
+          <h2 className="font-serif text-5xl md:text-7xl lg:text-9xl text-black font-bold leading-tight max-w-6xl text-center">
             Noen ganger vil du aldri forstå verdien av et øyeblikk før det blir et minne.
           </h2>
         </div>
