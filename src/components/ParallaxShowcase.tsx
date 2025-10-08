@@ -33,10 +33,10 @@ const ParallaxShowcase = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const layer1Speed = scrollProgress * 200;
-  const layer2Speed = scrollProgress * 150;
-  const layer3Speed = scrollProgress * 100;
-  const layer4Speed = scrollProgress * 50;
+  const layer1Speed = scrollProgress * 350;
+  const layer2Speed = scrollProgress * 250;
+  const layer3Speed = scrollProgress * 180;
+  const layer4Speed = scrollProgress * 80;
   const opacityFade = Math.min(1, scrollProgress * 2);
 
   return (
@@ -118,7 +118,7 @@ const ParallaxShowcase = () => {
             transform: `scale(${0.8 + (opacityFade * 0.2)})` 
           }}
         >
-          <h2 className="font-serif text-3xl md:text-5xl lg:text-6xl text-foreground leading-tight max-w-4xl mx-auto">
+          <h2 className="font-serif text-4xl md:text-6xl lg:text-8xl text-foreground leading-tight max-w-6xl mx-auto">
             Noen ganger vil du aldri forstå verdien av et øyeblikk før det blir et minne.
           </h2>
         </div>
