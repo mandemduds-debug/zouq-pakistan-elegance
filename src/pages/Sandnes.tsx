@@ -4,7 +4,7 @@ import MenuCateringSection from '@/components/MenuCateringSection';
 import ScrollToTop from '@/components/ScrollToTop';
 import VisitUsSection from '@/components/VisitUsSection';
 import Footer from '@/components/Footer';
-import PhotoTextGridSection from '@/components/PhotoTextGridSection';
+import ParallaxShowcase from '@/components/ParallaxShowcase';
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { ChevronDown } from 'lucide-react';
@@ -119,7 +119,7 @@ const Sandnes = () => {
       <LocationSpecificNavigation locationName="Sandnes" />
       <SandnesHeroSection />
       <ZouqAboutSection imageSrc="food" />
-      <PhotoTextGridSection />
+      <ParallaxShowcase />
       <MenuCateringSection locationName="Sandnes" />
       
       <VisitUsSection locations={sandnesOtherLocations} currentLocationName="Sandnes" />
