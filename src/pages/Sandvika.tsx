@@ -4,6 +4,7 @@ import MenuCateringSection from '@/components/MenuCateringSection';
 import ScrollToTop from '@/components/ScrollToTop';
 import VisitUsSection from '@/components/VisitUsSection';
 import Footer from '@/components/Footer';
+import PhotoTextGridSection from '@/components/PhotoTextGridSection';
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { ChevronDown } from 'lucide-react';
@@ -119,6 +120,7 @@ const Sandvika = () => {
       <LocationSpecificNavigation locationName="Sandvika" />
       <SandvikaHeroSection />
       <ZouqAboutSection customImage={sandvikaAbout} customAlt="Zouq Sandvika - Autentisk pakistansk mat" />
+      <PhotoTextGridSection />
       <MenuCateringSection locationName="Sandvika" />
       
       <VisitUsSection locations={sandvikaOtherLocations} currentLocationName="Sandvika" />
