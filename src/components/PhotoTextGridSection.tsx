@@ -21,7 +21,6 @@ const PhotoTextGridSection = () => {
         const sectionHeight = rect.height;
         const viewportHeight = window.innerHeight;
         
-        // Calculate scroll progress when section is in view
         if (sectionTop < viewportHeight && sectionTop + sectionHeight > 0) {
           const progress = (viewportHeight - sectionTop) / (viewportHeight + sectionHeight);
           setScrollY(progress);
@@ -30,111 +29,99 @@ const PhotoTextGridSection = () => {
     };
 
     window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Initial call
+    handleScroll();
     
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Calculate parallax offset for images
-  const leftParallax = scrollY * -150; // Move left images to the left
-  const rightParallax = scrollY * 150; // Move right images to the right
+  // Calculate parallax movements
+  const parallaxLeft = scrollY * -100;
+  const parallaxRight = scrollY * 100;
 
   return (
     <section 
       ref={sectionRef}
-      className="py-32 bg-background relative overflow-hidden"
+      className="relative min-h-screen py-20 overflow-hidden"
+      style={{ backgroundColor: '#F5F1E8' }}
     >
-      <div className="container mx-auto px-4">
-        <div className="relative flex items-center justify-center min-h-[600px]">
-          {/* Left Images - Parallax */}
-          <div className="absolute left-0 top-0 bottom-0 w-1/4 flex flex-col justify-center gap-6 transition-transform duration-300 ease-out"
-            style={{ transform: `translateX(${leftParallax}px)` }}>
-            <div className="relative overflow-hidden rounded-lg shadow-elegant">
-              <img 
-                src={biryaniImage}
-                alt="Zouq biryani"
-                className="w-full h-48 object-cover"
-              />
-            </div>
-            <div className="relative overflow-hidden rounded-lg shadow-elegant">
-              <img 
-                src={grillImage}
-                alt="Zouq grill"
-                className="w-full h-48 object-cover"
-              />
-            </div>
-            <div className="relative overflow-hidden rounded-lg shadow-elegant">
-              <img 
-                src={naan}
-                alt="Zouq naan"
-                className="w-full h-48 object-cover"
-              />
-            </div>
-            <div className="relative overflow-hidden rounded-lg shadow-elegant">
-              <img 
-                src={appetizer}
-                alt="Zouq appetizer"
-                className="w-full h-48 object-cover"
-              />
-            </div>
-          </div>
+      {/* Text Overlay */}
+      <div className="absolute top-20 left-8 md:left-16 z-20 max-w-md">
+        <h2 className="font-serif text-4xl md:text-6xl leading-tight text-foreground">
+          of a moment until it<br />becomes a memory.
+        </h2>
+      </div>
 
-          {/* Center Video - Fixed */}
-          <div className="relative z-10 w-full max-w-md mx-auto">
-            <div className="relative overflow-hidden rounded-2xl shadow-elegant">
-              <video 
-                autoPlay 
-                loop 
-                muted 
-                playsInline
-                className="w-full h-[600px] object-cover"
-              >
-                <source src={showcaseVideo} type="video/mp4" />
-              </video>
-            </div>
-            
-            {/* Text Below Video */}
-            <div className="mt-8 text-center">
-              <h3 className="font-serif text-3xl md:text-4xl mb-4 text-foreground">
-                Opplev Zouq
-              </h3>
-              <p className="text-lg text-muted-foreground leading-relaxed max-w-lg mx-auto">
-                En kulinarisk reise gjennom autentiske smaker, moderne eleganse og uforglemmelige øyeblikk.
-              </p>
-            </div>
-          </div>
+      <div className="relative h-screen flex items-center justify-center">
+        {/* Left Side Images */}
+        <div 
+          className="absolute left-0 top-0 w-1/3 h-full transition-transform duration-300 ease-out"
+          style={{ transform: `translateX(${parallaxLeft}px)` }}
+        >
+          <img 
+            src={biryaniImage}
+            alt="Zouq restaurant interior"
+            className="absolute top-[10%] left-[5%] w-64 h-80 object-cover rounded-lg shadow-lg"
+          />
+          <img 
+            src={naan}
+            alt="Zouq dining atmosphere"
+            className="absolute top-[55%] left-[15%] w-56 h-72 object-cover rounded-lg shadow-lg"
+          />
+        </div>
 
-          {/* Right Images - Parallax */}
-          <div className="absolute right-0 top-0 bottom-0 w-1/4 flex flex-col justify-center gap-6 transition-transform duration-300 ease-out"
-            style={{ transform: `translateX(${rightParallax}px)` }}>
-            <div className="relative overflow-hidden rounded-lg shadow-elegant">
-              <img 
-                src={groupDining}
-                alt="Zouq group dining"
-                className="w-full h-48 object-cover"
-              />
-            </div>
-            <div className="relative overflow-hidden rounded-lg shadow-elegant">
-              <img 
-                src={sharing}
-                alt="Zouq sharing"
-                className="w-full h-48 object-cover"
-              />
-            </div>
-            <div className="relative overflow-hidden rounded-lg shadow-elegant">
-              <img 
-                src={wrapImage}
-                alt="Zouq wrap"
-                className="w-full h-48 object-cover"
-              />
-            </div>
-            <div className="relative overflow-hidden rounded-lg shadow-elegant">
-              <img 
-                src={dining}
-                alt="Zouq dining"
-                className="w-full h-48 object-cover"
-              />
-            </div>
+        {/* Center Video - Fixed Position */}
+        <div className="relative z-10">
+          <div className="relative overflow-hidden rounded-lg shadow-2xl">
+            <video 
+              autoPlay 
+              loop 
+              muted 
+              playsInline
+              className="w-[600px] h-[700px] object-cover"
+            >
+              <source src={showcaseVideo} type="video/mp4" />
+            </video>
+          </div>
+        </div>
+
+        {/* Right Side Images */}
+        <div 
+          className="absolute right-0 top-0 w-1/3 h-full transition-transform duration-300 ease-out"
+          style={{ transform: `translateX(${parallaxRight}px)` }}
+        >
+          <img 
+            src={groupDining}
+            alt="Zouq dining experience"
+            className="absolute top-[5%] right-[5%] w-60 h-72 object-cover rounded-lg shadow-lg"
+          />
+          <img 
+            src={dining}
+            alt="Zouq group dining"
+            className="absolute top-[60%] right-[12%] w-64 h-80 object-cover rounded-lg shadow-lg"
+          />
+        </div>
+
+        {/* Bottom Side Images */}
+        <div className="absolute bottom-10 left-0 right-0 flex justify-between px-20">
+          <div 
+            className="transition-transform duration-300 ease-out"
+            style={{ transform: `translateX(${parallaxLeft}px)` }}
+          >
+            <img 
+              src={grillImage}
+              alt="Zouq dishes"
+              className="w-72 h-56 object-cover rounded-lg shadow-lg"
+            />
+          </div>
+          <div 
+            className="transition-transform duration-300 ease-out"
+            style={{ transform: `translateX(${parallaxRight}px)` }}
+          >
+            <img 
+              src={sharing}
+              alt="Zouq ambiance"
+              className="w-80 h-64 object-cover rounded-lg shadow-lg"
+            />
           </div>
         </div>
       </div>
