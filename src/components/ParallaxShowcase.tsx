@@ -33,10 +33,10 @@ const ParallaxShowcase = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const layer1Speed = scrollProgress * 350;
-  const layer2Speed = scrollProgress * 250;
-  const layer3Speed = scrollProgress * 180;
-  const layer4Speed = scrollProgress * 80;
+  const layer1Speed = scrollProgress * 400;
+  const layer2Speed = scrollProgress * 300;
+  const layer3Speed = scrollProgress * 220;
+  const layer4Speed = scrollProgress * 100;
   const opacityFade = Math.min(1, scrollProgress * 2);
 
   return (
@@ -61,12 +61,12 @@ const ParallaxShowcase = () => {
           <img
             src={naan}
             alt="Authentic cuisine"
-            className="absolute top-[10%] left-[5%] w-64 h-80 object-cover rounded-2xl shadow-2xl opacity-40 blur-sm"
+            className="absolute top-[5%] left-[15%] w-56 h-72 object-cover rounded-2xl shadow-2xl opacity-50 blur-sm"
           />
           <img
             src={sharing}
             alt="Dining experience"
-            className="absolute bottom-[15%] right-[8%] w-72 h-96 object-cover rounded-2xl shadow-2xl opacity-40 blur-sm"
+            className="absolute bottom-[8%] right-[18%] w-64 h-80 object-cover rounded-2xl shadow-2xl opacity-50 blur-sm"
           />
         </div>
 
@@ -78,47 +78,55 @@ const ParallaxShowcase = () => {
           <img
             src={grillImage}
             alt="Grilled specialties"
-            className="absolute top-[20%] right-[10%] w-80 h-96 object-cover rounded-2xl shadow-2xl opacity-60"
+            className="absolute top-[15%] right-[20%] w-72 h-88 object-cover rounded-2xl shadow-2xl opacity-70"
           />
           <img
             src={groupDining}
             alt="Group dining"
-            className="absolute bottom-[10%] left-[12%] w-72 h-88 object-cover rounded-2xl shadow-2xl opacity-60"
+            className="absolute bottom-[12%] left-[22%] w-64 h-80 object-cover rounded-2xl shadow-2xl opacity-70"
           />
         </div>
 
         {/* Layer 3 - Front Images */}
         <div 
           className="absolute inset-0 transition-transform duration-300 ease-out"
-          style={{ transform: `translateX(${layer3Speed - 100}px)` }}
+          style={{ transform: `translateX(${layer3Speed - 150}px)` }}
         >
           <img
             src={biryaniImage}
             alt="Signature biryani"
-            className="absolute top-[35%] left-[8%] w-96 h-[500px] object-cover rounded-3xl shadow-elegant"
+            className="absolute top-[25%] left-[18%] w-80 h-96 object-cover rounded-3xl shadow-elegant"
           />
         </div>
 
         <div 
           className="absolute inset-0 transition-transform duration-300 ease-out"
-          style={{ transform: `translateX(${-layer3Speed + 100}px)` }}
+          style={{ transform: `translateX(${-layer3Speed + 150}px)` }}
         >
           <img
             src={dining}
             alt="Premium dining"
-            className="absolute top-[30%] right-[6%] w-96 h-[520px] object-cover rounded-3xl shadow-elegant"
+            className="absolute top-[20%] right-[16%] w-80 h-[420px] object-cover rounded-3xl shadow-elegant"
           />
         </div>
 
-        {/* Center Content - Hero Text */}
+        {/* Center Video Container */}
+        <div className="relative z-15 w-[500px] h-[320px] bg-muted/80 backdrop-blur-sm rounded-2xl shadow-elegant flex items-center justify-center border-2 border-border">
+          <div className="text-center p-8">
+            <p className="text-muted-foreground text-sm mb-2">Video Container</p>
+            <p className="text-xs text-muted-foreground/60">Add your video here</p>
+          </div>
+        </div>
+
+        {/* Overlay Text - Above Everything */}
         <div 
-          className="relative z-20 text-center px-4 transition-all duration-500"
+          className="absolute inset-0 z-30 flex items-start justify-center pt-12 px-6 pointer-events-none"
           style={{ 
             opacity: opacityFade,
-            transform: `scale(${0.8 + (opacityFade * 0.2)})` 
+            transform: `scale(${0.9 + (opacityFade * 0.1)})` 
           }}
         >
-          <h2 className="font-serif text-4xl md:text-6xl lg:text-8xl text-foreground leading-tight max-w-6xl mx-auto">
+          <h2 className="font-serif text-4xl md:text-6xl lg:text-8xl text-foreground leading-tight max-w-6xl text-center">
             Noen ganger vil du aldri forstå verdien av et øyeblikk før det blir et minne.
           </h2>
         </div>
