@@ -124,10 +124,8 @@ const ParallaxShowcase = () => {
             </span>
           </div>
           
-          <h2 className="font-serif text-5xl md:text-7xl lg:text-8xl mb-6 text-foreground leading-tight">
-            En Kulinarisk
-            <br />
-            <span className="text-primary">Reise</span>
+          <h2 className="font-serif text-3xl md:text-5xl lg:text-6xl mb-6 text-foreground leading-tight max-w-4xl">
+            Noen ganger vil du aldri forstå verdien av et øyeblikk før det blir et minne.
           </h2>
           
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-8">
