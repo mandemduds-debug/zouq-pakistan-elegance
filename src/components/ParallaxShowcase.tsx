@@ -118,37 +118,9 @@ const ParallaxShowcase = () => {
             transform: `scale(${0.8 + (opacityFade * 0.2)})` 
           }}
         >
-          <div className="mb-8">
-            <span className="inline-block px-6 py-2 bg-primary/10 backdrop-blur-sm rounded-full text-sm font-medium text-primary border border-primary/20">
-              Opplev Forskjellen
-            </span>
-          </div>
-          
-          <h2 className="font-serif text-3xl md:text-5xl lg:text-6xl mb-6 text-foreground leading-tight max-w-4xl">
+          <h2 className="font-serif text-3xl md:text-5xl lg:text-6xl text-foreground leading-tight max-w-4xl mx-auto">
             Noen ganger vil du aldri forstå verdien av et øyeblikk før det blir et minne.
           </h2>
-          
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-8">
-            Fra hjertevarm gjestfrihet til autentiske smaker fra Pakistan – 
-            hver opplevelse er skapt for å bli et minne som varer.
-          </p>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <div className="text-center">
-              <div className="text-4xl font-serif text-foreground">20+</div>
-              <div className="text-sm text-muted-foreground">Års Erfaring</div>
-            </div>
-            <div className="hidden sm:block w-px h-12 bg-border" />
-            <div className="text-center">
-              <div className="text-4xl font-serif text-foreground">100+</div>
-              <div className="text-sm text-muted-foreground">Unike Retter</div>
-            </div>
-            <div className="hidden sm:block w-px h-12 bg-border" />
-            <div className="text-center">
-              <div className="text-4xl font-serif text-foreground">3</div>
-              <div className="text-sm text-muted-foreground">Restauranter</div>
-            </div>
-          </div>
         </div>
 
         {/* Floating Elements */}
