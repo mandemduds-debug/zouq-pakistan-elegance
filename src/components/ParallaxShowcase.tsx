@@ -135,7 +135,7 @@ const ParallaxShowcase = () => {
           className="absolute inset-0 z-30 flex items-start justify-center pt-20 px-6 pointer-events-none"
         >
           <h2 className="font-serif text-3xl md:text-5xl lg:text-6xl text-black font-bold leading-tight max-w-4xl text-center" style={{ opacity: 1 }}>
-            Noen ganger vil du aldri forstå verdien av et øyeblikk før det blir et minne.
+            Noen ganger forstår du ikke verdien av et øyeblikk for det blir et minne.
           </h2>
         </div>
 
