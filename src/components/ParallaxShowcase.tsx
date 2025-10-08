@@ -121,12 +121,8 @@ const ParallaxShowcase = () => {
         {/* Overlay Text - Above Everything */}
         <div 
           className="absolute inset-0 z-30 flex items-start justify-center pt-12 px-6 pointer-events-none"
-          style={{ 
-            opacity: opacityFade,
-            transform: `scale(${0.9 + (opacityFade * 0.1)})` 
-          }}
         >
-          <h2 className="font-serif text-5xl md:text-7xl lg:text-9xl text-black font-bold leading-tight max-w-6xl text-center">
+          <h2 className="font-serif text-5xl md:text-7xl lg:text-9xl text-black font-bold leading-tight max-w-6xl text-center" style={{ opacity: 1 }}>
             Noen ganger vil du aldri forstå verdien av et øyeblikk før det blir et minne.
           </h2>
         </div>
