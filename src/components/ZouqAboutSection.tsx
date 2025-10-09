@@ -27,7 +27,7 @@ const ZouqAboutSection = ({ imageSrc = 'interior', customImage, customAlt }: Zou
     }
     return () => observer.disconnect();
   }, []);
-  return <section id="om-oss" ref={sectionRef} className="py-32 bg-beige-warm">
+  return <section id="om-oss" ref={sectionRef} className="py-32 bg-background">
       <div className="container mx-auto px-6">
         {/* Main About Content */}
         <div className="grid lg:grid-cols-2 gap-20 items-center">
