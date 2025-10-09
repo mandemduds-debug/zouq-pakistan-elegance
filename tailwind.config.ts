@@ -58,6 +58,12 @@ export default {
           light: "hsl(var(--earth-light))",
           dark: "hsl(var(--earth-dark))",
         },
+        beige: {
+          DEFAULT: "hsl(var(--beige))",
+          light: "hsl(var(--beige-light))",
+          dark: "hsl(var(--beige-dark))",
+          warm: "hsl(var(--beige-warm))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
