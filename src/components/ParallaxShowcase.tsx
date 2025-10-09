@@ -112,7 +112,7 @@ const ParallaxShowcase = () => {
         </div>
 
         <div 
-          className="absolute inset-0 transition-transform duration-300 ease-out"
+          className="absolute inset-0 transition-transform duration-300 ease-out bg-[#b5977b]"
           style={{ transform: `translate(${layer3Speed}px, ${-layer3Speed * 0.3}px)` }}
         >
           <img
