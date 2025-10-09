@@ -254,7 +254,7 @@ const MenuCateringSection = ({ locationName }: MenuCateringSectionProps) => {
                 <div className="aspect-video overflow-hidden">
                   <img src={menuButterChicken} alt="Butter Chicken Deal" className="w-full h-full object-cover" />
                 </div>
-                <CardContent className="p-6 bg-beige-warm">
+                <CardContent className="p-6">
                   <h4 className="text-xl font-serif font-bold text-foreground mb-2">
                     Butter Chicken Deal
                   </h4>
@@ -270,7 +270,7 @@ const MenuCateringSection = ({ locationName }: MenuCateringSectionProps) => {
                 <div className="aspect-video overflow-hidden">
                   <img src={menuWrapDeal} alt="Wrap Deal" className="w-full h-full object-cover" />
                 </div>
-                <CardContent className="p-6 bg-beige-warm">
+                <CardContent className="p-6">
                   <h4 className="text-xl font-serif font-bold text-foreground mb-2">
                     Wrap Deal
                   </h4>
@@ -286,7 +286,7 @@ const MenuCateringSection = ({ locationName }: MenuCateringSectionProps) => {
                 <div className="aspect-video overflow-hidden">
                   <img src={menuBbqDeal} alt="BBQ Deal" className="w-full h-full object-cover" />
                 </div>
-                <CardContent className="p-6 bg-beige-warm">
+                <CardContent className="p-6">
                   <h4 className="text-xl font-serif font-bold text-foreground mb-2">
                     BBQ Deal
                   </h4>
@@ -302,7 +302,7 @@ const MenuCateringSection = ({ locationName }: MenuCateringSectionProps) => {
                 <div className="aspect-video overflow-hidden">
                   <img src={menuVegetarDeal} alt="Vegetar Deal" className="w-full h-full object-cover" />
                 </div>
-                <CardContent className="p-6 bg-beige-warm">
+                <CardContent className="p-6">
                   <h4 className="text-xl font-serif font-bold text-foreground mb-2">
                     Vegetar Deal
                   </h4>
@@ -318,7 +318,7 @@ const MenuCateringSection = ({ locationName }: MenuCateringSectionProps) => {
                 <div className="aspect-video overflow-hidden">
                   <img src={menuSnackDeal} alt="Snack Deal" className="w-full h-full object-cover" />
                 </div>
-                <CardContent className="p-6 bg-beige-warm">
+                <CardContent className="p-6">
                   <h4 className="text-xl font-serif font-bold text-foreground mb-2">
                     Snack Deal
                   </h4>
